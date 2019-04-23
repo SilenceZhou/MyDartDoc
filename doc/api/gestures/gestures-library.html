@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="gestures library API docs, for the Dart programming language.">
+  <title>gestures library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li class="self-crumb">gestures library</li>
+  </ol>
+  <div class="self-name">gestures</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li class="self-crumb">gestures library</li>
+    </ol>
+    
+    <h5><span class="package-name">flutter</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="animation/animation-library.html">animation</a></li>
+          <li><a href="cupertino/cupertino-library.html">cupertino</a></li>
+          <li><a href="foundation/foundation-library.html">foundation</a></li>
+          <li><a href="gestures/gestures-library.html">gestures</a></li>
+          <li><a href="material/material-library.html">material</a></li>
+          <li><a href="painting/painting-library.html">painting</a></li>
+          <li><a href="physics/physics-library.html">physics</a></li>
+          <li><a href="rendering/rendering-library.html">rendering</a></li>
+          <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
+          <li><a href="semantics/semantics-library.html">semantics</a></li>
+          <li><a href="services/services-library.html">services</a></li>
+          <li><a href="widgets/widgets-library.html">widgets</a></li>
+          <li class="section-title">Dart</li>
+          <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+          <li class="section-subtitle">Core</li>
+            <li class="section-subitem"><a href="dart-async/dart-async-library.html">dart:async</a></li>
+            <li class="section-subitem"><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
+            <li class="section-subitem"><a href="dart-convert/dart-convert-library.html">dart:convert</a></li>
+            <li class="section-subitem"><a href="dart-core/dart-core-library.html">dart:core</a></li>
+            <li class="section-subitem"><a href="dart-developer/dart-developer-library.html">dart:developer</a></li>
+            <li class="section-subitem"><a href="dart-math/dart-math-library.html">dart:math</a></li>
+            <li class="section-subitem"><a href="dart-typed_data/dart-typed_data-library.html">dart:typed_data</a></li>
+          <li class="section-subtitle">VM</li>
+            <li class="section-subitem"><a href="dart-io/dart-io-library.html">dart:io</a></li>
+            <li class="section-subitem"><a href="dart-isolate/dart-isolate-library.html">dart:isolate</a></li>
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>gestures library </h1></div>
+
+    <section class="desc markdown">
+      <p>The Flutter gesture recognizers.</p>
+<p>To use, import <code>package:flutter/gestures.dart</code>.</p>
+    </section>
+    
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="DelayedMultiDragGestureRecognizer">
+          <span class="name "><a href="gestures/DelayedMultiDragGestureRecognizer-class.html">DelayedMultiDragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement both horizontally and vertically on a per-pointer basis
+after a delay. <a href="gestures/DelayedMultiDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="DoubleTapGestureRecognizer">
+          <span class="name "><a href="gestures/DoubleTapGestureRecognizer-class.html">DoubleTapGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes when the user has tapped the screen at the same location twice in
+quick succession.
+        </dd>
+        <dt id="Drag">
+          <span class="name "><a href="gestures/Drag-class.html">Drag</a></span>         
+        </dt>
+        <dd>
+          Interface for objects that receive updates about drags. <a href="gestures/Drag-class.html">[...]</a>
+        </dd>
+        <dt id="DragDownDetails">
+          <span class="name "><a href="gestures/DragDownDetails-class.html">DragDownDetails</a></span>         
+        </dt>
+        <dd>
+          Details object for callbacks that use <a href="gestures/GestureDragDownCallback.html">GestureDragDownCallback</a>. <a href="gestures/DragDownDetails-class.html">[...]</a>
+        </dd>
+        <dt id="DragEndDetails">
+          <span class="name "><a href="gestures/DragEndDetails-class.html">DragEndDetails</a></span>         
+        </dt>
+        <dd>
+          Details object for callbacks that use <a href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a>. <a href="gestures/DragEndDetails-class.html">[...]</a>
+        </dd>
+        <dt id="DragGestureRecognizer">
+          <span class="name "><a href="gestures/DragGestureRecognizer-class.html">DragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement. <a href="gestures/DragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="DragStartDetails">
+          <span class="name "><a href="gestures/DragStartDetails-class.html">DragStartDetails</a></span>         
+        </dt>
+        <dd>
+          Details object for callbacks that use <a href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a>. <a href="gestures/DragStartDetails-class.html">[...]</a>
+        </dd>
+        <dt id="DragUpdateDetails">
+          <span class="name "><a href="gestures/DragUpdateDetails-class.html">DragUpdateDetails</a></span>         
+        </dt>
+        <dd>
+          Details object for callbacks that use <a href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a>. <a href="gestures/DragUpdateDetails-class.html">[...]</a>
+        </dd>
+        <dt id="EagerGestureRecognizer">
+          <span class="name "><a href="gestures/EagerGestureRecognizer-class.html">EagerGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          A gesture recognizer that eagerly claims victory in all gesture arenas. <a href="gestures/EagerGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="FlutterErrorDetailsForPointerEventDispatcher">
+          <span class="name "><a href="gestures/FlutterErrorDetailsForPointerEventDispatcher-class.html">FlutterErrorDetailsForPointerEventDispatcher</a></span>         
+        </dt>
+        <dd>
+          Variant of <a href="foundation/FlutterErrorDetails-class.html">FlutterErrorDetails</a> with extra fields for the gesture
+library's binding's pointer event dispatcher (<a href="gestures/GestureBinding/dispatchEvent.html">GestureBinding.dispatchEvent</a>). <a href="gestures/FlutterErrorDetailsForPointerEventDispatcher-class.html">[...]</a>
+        </dd>
+        <dt id="FlutterErrorDetailsForPointerRouter">
+          <span class="name "><a href="gestures/FlutterErrorDetailsForPointerRouter-class.html">FlutterErrorDetailsForPointerRouter</a></span>         
+        </dt>
+        <dd>
+          Variant of <a href="foundation/FlutterErrorDetails-class.html">FlutterErrorDetails</a> with extra fields for the gestures
+library's pointer router (<a href="gestures/PointerRouter-class.html">PointerRouter</a>). <a href="gestures/FlutterErrorDetailsForPointerRouter-class.html">[...]</a>
+        </dd>
+        <dt id="ForcePressDetails">
+          <span class="name "><a href="gestures/ForcePressDetails-class.html">ForcePressDetails</a></span>         
+        </dt>
+        <dd>
+          Details object for callbacks that use <a href="gestures/GestureForcePressStartCallback.html">GestureForcePressStartCallback</a>,
+<a href="gestures/GestureForcePressPeakCallback.html">GestureForcePressPeakCallback</a>, <a href="gestures/GestureForcePressEndCallback.html">GestureForcePressEndCallback</a> or
+<a href="gestures/GestureForcePressUpdateCallback.html">GestureForcePressUpdateCallback</a>. <a href="gestures/ForcePressDetails-class.html">[...]</a>
+        </dd>
+        <dt id="ForcePressGestureRecognizer">
+          <span class="name "><a href="gestures/ForcePressGestureRecognizer-class.html">ForcePressGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes a force press on devices that have force sensors. <a href="gestures/ForcePressGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="GestureArenaEntry">
+          <span class="name "><a href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></span>         
+        </dt>
+        <dd>
+          An interface to information to an arena. <a href="gestures/GestureArenaEntry-class.html">[...]</a>
+        </dd>
+        <dt id="GestureArenaManager">
+          <span class="name "><a href="gestures/GestureArenaManager-class.html">GestureArenaManager</a></span>         
+        </dt>
+        <dd>
+          The first member to accept or the last member to not reject wins. <a href="gestures/GestureArenaManager-class.html">[...]</a>
+        </dd>
+        <dt id="GestureArenaMember">
+          <span class="name "><a href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></span>         
+        </dt>
+        <dd>
+          Represents an object participating in an arena. <a href="gestures/GestureArenaMember-class.html">[...]</a>
+        </dd>
+        <dt id="GestureArenaTeam">
+          <span class="name "><a href="gestures/GestureArenaTeam-class.html">GestureArenaTeam</a></span>         
+        </dt>
+        <dd>
+          A group of <a href="gestures/GestureArenaMember-class.html">GestureArenaMember</a> objects that are competing as a unit in the
+<a href="gestures/GestureArenaManager-class.html">GestureArenaManager</a>. <a href="gestures/GestureArenaTeam-class.html">[...]</a>
+        </dd>
+        <dt id="GestureLongPressDragStartDetails">
+          <span class="name "><a href="gestures/GestureLongPressDragStartDetails-class.html">GestureLongPressDragStartDetails</a></span>         
+        </dt>
+        <dd>
+          Details for callbacks that use <a href="gestures/GestureLongPressDragStartCallback.html">GestureLongPressDragStartCallback</a>. <a href="gestures/GestureLongPressDragStartDetails-class.html">[...]</a>
+        </dd>
+        <dt id="GestureLongPressDragUpdateDetails">
+          <span class="name "><a href="gestures/GestureLongPressDragUpdateDetails-class.html">GestureLongPressDragUpdateDetails</a></span>         
+        </dt>
+        <dd>
+          Details for callbacks that use <a href="gestures/GestureLongPressDragUpdateCallback.html">GestureLongPressDragUpdateCallback</a>. <a href="gestures/GestureLongPressDragUpdateDetails-class.html">[...]</a>
+        </dd>
+        <dt id="GestureLongPressDragUpDetails">
+          <span class="name "><a href="gestures/GestureLongPressDragUpDetails-class.html">GestureLongPressDragUpDetails</a></span>         
+        </dt>
+        <dd>
+          Details for callbacks that use <a href="gestures/GestureLongPressDragUpCallback.html">GestureLongPressDragUpCallback</a>. <a href="gestures/GestureLongPressDragUpDetails-class.html">[...]</a>
+        </dd>
+        <dt id="GestureRecognizer">
+          <span class="name "><a href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          The base class that all gesture recognizers inherit from. <a href="gestures/GestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="HitTestable">
+          <span class="name "><a href="gestures/HitTestable-class.html">HitTestable</a></span>         
+        </dt>
+        <dd>
+          An object that can hit-test pointers.
+        </dd>
+        <dt id="HitTestDispatcher">
+          <span class="name "><a href="gestures/HitTestDispatcher-class.html">HitTestDispatcher</a></span>         
+        </dt>
+        <dd>
+          An object that can dispatch events.
+        </dd>
+        <dt id="HitTestEntry">
+          <span class="name "><a href="gestures/HitTestEntry-class.html">HitTestEntry</a></span>         
+        </dt>
+        <dd>
+          Data collected during a hit test about a specific <a href="gestures/HitTestTarget-class.html">HitTestTarget</a>. <a href="gestures/HitTestEntry-class.html">[...]</a>
+        </dd>
+        <dt id="HitTestResult">
+          <span class="name "><a href="gestures/HitTestResult-class.html">HitTestResult</a></span>         
+        </dt>
+        <dd>
+          The result of performing a hit test.
+        </dd>
+        <dt id="HitTestTarget">
+          <span class="name "><a href="gestures/HitTestTarget-class.html">HitTestTarget</a></span>         
+        </dt>
+        <dd>
+          An object that can handle events.
+        </dd>
+        <dt id="HorizontalDragGestureRecognizer">
+          <span class="name "><a href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement in the horizontal direction. <a href="gestures/HorizontalDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="HorizontalMultiDragGestureRecognizer">
+          <span class="name "><a href="gestures/HorizontalMultiDragGestureRecognizer-class.html">HorizontalMultiDragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement in the horizontal direction on a per-pointer basis. <a href="gestures/HorizontalMultiDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="ImmediateMultiDragGestureRecognizer">
+          <span class="name "><a href="gestures/ImmediateMultiDragGestureRecognizer-class.html">ImmediateMultiDragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement both horizontally and vertically on a per-pointer basis. <a href="gestures/ImmediateMultiDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="LeastSquaresSolver">
+          <span class="name "><a href="gestures/LeastSquaresSolver-class.html">LeastSquaresSolver</a></span>         
+        </dt>
+        <dd>
+          Uses the least-squares algorithm to fit a polynomial to a set of data.
+        </dd>
+        <dt id="LongPressDragGestureRecognizer">
+          <span class="name "><a href="gestures/LongPressDragGestureRecognizer-class.html">LongPressDragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes long presses that can be subsequently dragged around. <a href="gestures/LongPressDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="LongPressGestureRecognizer">
+          <span class="name "><a href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes when the user has pressed down at the same location for a long
+period of time.
+        </dd>
+        <dt id="MouseTracker">
+          <span class="name "><a href="gestures/MouseTracker-class.html">MouseTracker</a></span>         
+        </dt>
+        <dd>
+          Keeps state about which objects are interested in tracking mouse positions
+and notifies them when a mouse pointer enters, moves, or leaves an annotated
+region that they are interested in. <a href="gestures/MouseTracker-class.html">[...]</a>
+        </dd>
+        <dt id="MouseTrackerAnnotation">
+          <span class="name "><a href="gestures/MouseTrackerAnnotation-class.html">MouseTrackerAnnotation</a></span>         
+        </dt>
+        <dd>
+          The annotation object used to annotate layers that are interested in mouse
+movements. <a href="gestures/MouseTrackerAnnotation-class.html">[...]</a>
+        </dd>
+        <dt id="MultiDragGestureRecognizer">
+          <span class="name "><a href="gestures/MultiDragGestureRecognizer-class.html">MultiDragGestureRecognizer</a><span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="gestures/MultiDragPointerState-class.html">MultiDragPointerState</a></span>&gt;</span></span>         
+        </dt>
+        <dd>
+          Recognizes movement on a per-pointer basis. <a href="gestures/MultiDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="MultiDragPointerState">
+          <span class="name "><a href="gestures/MultiDragPointerState-class.html">MultiDragPointerState</a></span>         
+        </dt>
+        <dd>
+          Per-pointer state for a <a href="gestures/MultiDragGestureRecognizer-class.html">MultiDragGestureRecognizer</a>. <a href="gestures/MultiDragPointerState-class.html">[...]</a>
+        </dd>
+        <dt id="MultiTapGestureRecognizer">
+          <span class="name "><a href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes taps on a per-pointer basis. <a href="gestures/MultiTapGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="Offset">
+          <span class="name "><a href="dart-ui/Offset-class.html">Offset</a></span>         
+        </dt>
+        <dd>
+          An immutable 2D floating-point offset. <a href="dart-ui/Offset-class.html">[...]</a>
+        </dd>
+        <dt id="OneSequenceGestureRecognizer">
+          <span class="name "><a href="gestures/OneSequenceGestureRecognizer-class.html">OneSequenceGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Base class for gesture recognizers that can only recognize one
+gesture at a time. For example, a single <a href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a>
+can never recognize two taps happening simultaneously, even if
+multiple pointers are placed on the same widget. <a href="gestures/OneSequenceGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="PanGestureRecognizer">
+          <span class="name "><a href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement both horizontally and vertically. <a href="gestures/PanGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="PointerAddedEvent">
+          <span class="name "><a href="gestures/PointerAddedEvent-class.html">PointerAddedEvent</a></span>         
+        </dt>
+        <dd>
+          The device has started tracking the pointer. <a href="gestures/PointerAddedEvent-class.html">[...]</a>
+        </dd>
+        <dt id="PointerCancelEvent">
+          <span class="name "><a href="gestures/PointerCancelEvent-class.html">PointerCancelEvent</a></span>         
+        </dt>
+        <dd>
+          The input from the pointer is no longer directed towards this receiver.
+        </dd>
+        <dt id="PointerDownEvent">
+          <span class="name "><a href="gestures/PointerDownEvent-class.html">PointerDownEvent</a></span>         
+        </dt>
+        <dd>
+          The pointer has made contact with the device.
+        </dd>
+        <dt id="PointerEnterEvent">
+          <span class="name "><a href="gestures/PointerEnterEvent-class.html">PointerEnterEvent</a></span>         
+        </dt>
+        <dd>
+          The pointer has moved with respect to the device while the pointer is not
+in contact with the device, and it has entered a target object. <a href="gestures/PointerEnterEvent-class.html">[...]</a>
+        </dd>
+        <dt id="PointerEvent">
+          <span class="name "><a href="gestures/PointerEvent-class.html">PointerEvent</a></span>         
+        </dt>
+        <dd>
+          Base class for touch, stylus, or mouse events. <a href="gestures/PointerEvent-class.html">[...]</a>
+        </dd>
+        <dt id="PointerEventConverter">
+          <span class="name "><a href="gestures/PointerEventConverter-class.html">PointerEventConverter</a></span>         
+        </dt>
+        <dd>
+          Converts from engine pointer data to framework pointer events. <a href="gestures/PointerEventConverter-class.html">[...]</a>
+        </dd>
+        <dt id="PointerExitEvent">
+          <span class="name "><a href="gestures/PointerExitEvent-class.html">PointerExitEvent</a></span>         
+        </dt>
+        <dd>
+          The pointer has moved with respect to the device while the pointer is not
+in contact with the device, and entered a target object. <a href="gestures/PointerExitEvent-class.html">[...]</a>
+        </dd>
+        <dt id="PointerHoverEvent">
+          <span class="name "><a href="gestures/PointerHoverEvent-class.html">PointerHoverEvent</a></span>         
+        </dt>
+        <dd>
+          The pointer has moved with respect to the device while the pointer is not
+in contact with the device. <a href="gestures/PointerHoverEvent-class.html">[...]</a>
+        </dd>
+        <dt id="PointerMoveEvent">
+          <span class="name "><a href="gestures/PointerMoveEvent-class.html">PointerMoveEvent</a></span>         
+        </dt>
+        <dd>
+          The pointer has moved with respect to the device while the pointer is in
+contact with the device. <a href="gestures/PointerMoveEvent-class.html">[...]</a>
+        </dd>
+        <dt id="PointerRemovedEvent">
+          <span class="name "><a href="gestures/PointerRemovedEvent-class.html">PointerRemovedEvent</a></span>         
+        </dt>
+        <dd>
+          The device is no longer tracking the pointer. <a href="gestures/PointerRemovedEvent-class.html">[...]</a>
+        </dd>
+        <dt id="PointerRouter">
+          <span class="name "><a href="gestures/PointerRouter-class.html">PointerRouter</a></span>         
+        </dt>
+        <dd>
+          A routing table for <a href="gestures/PointerEvent-class.html">PointerEvent</a> events.
+        </dd>
+        <dt id="PointerUpEvent">
+          <span class="name "><a href="gestures/PointerUpEvent-class.html">PointerUpEvent</a></span>         
+        </dt>
+        <dd>
+          The pointer has stopped making contact with the device.
+        </dd>
+        <dt id="PolynomialFit">
+          <span class="name "><a href="gestures/PolynomialFit-class.html">PolynomialFit</a></span>         
+        </dt>
+        <dd>
+          An nth degree polynomial fit to a dataset.
+        </dd>
+        <dt id="PrimaryPointerGestureRecognizer">
+          <span class="name "><a href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          A base class for gesture recognizers that track a single primary pointer. <a href="gestures/PrimaryPointerGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="ScaleEndDetails">
+          <span class="name "><a href="gestures/ScaleEndDetails-class.html">ScaleEndDetails</a></span>         
+        </dt>
+        <dd>
+          Details for <a href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a>.
+        </dd>
+        <dt id="ScaleGestureRecognizer">
+          <span class="name "><a href="gestures/ScaleGestureRecognizer-class.html">ScaleGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes a scale gesture. <a href="gestures/ScaleGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="ScaleStartDetails">
+          <span class="name "><a href="gestures/ScaleStartDetails-class.html">ScaleStartDetails</a></span>         
+        </dt>
+        <dd>
+          Details for <a href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a>.
+        </dd>
+        <dt id="ScaleUpdateDetails">
+          <span class="name "><a href="gestures/ScaleUpdateDetails-class.html">ScaleUpdateDetails</a></span>         
+        </dt>
+        <dd>
+          Details for <a href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a>.
+        </dd>
+        <dt id="TapDownDetails">
+          <span class="name "><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></span>         
+        </dt>
+        <dd>
+          Details for <a href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a>, such as position. <a href="gestures/TapDownDetails-class.html">[...]</a>
+        </dd>
+        <dt id="TapGestureRecognizer">
+          <span class="name "><a href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes taps. <a href="gestures/TapGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="TapUpDetails">
+          <span class="name "><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></span>         
+        </dt>
+        <dd>
+          Details for <a href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a>, such as position. <a href="gestures/TapUpDetails-class.html">[...]</a>
+        </dd>
+        <dt id="Velocity">
+          <span class="name "><a href="gestures/Velocity-class.html">Velocity</a></span>         
+        </dt>
+        <dd>
+          A velocity in two dimensions.
+        </dd>
+        <dt id="VelocityEstimate">
+          <span class="name "><a href="gestures/VelocityEstimate-class.html">VelocityEstimate</a></span>         
+        </dt>
+        <dd>
+          A two dimensional velocity estimate. <a href="gestures/VelocityEstimate-class.html">[...]</a>
+        </dd>
+        <dt id="VelocityTracker">
+          <span class="name "><a href="gestures/VelocityTracker-class.html">VelocityTracker</a></span>         
+        </dt>
+        <dd>
+          Computes a pointer's velocity based on data from <a href="gestures/PointerMoveEvent-class.html">PointerMoveEvent</a>s. <a href="gestures/VelocityTracker-class.html">[...]</a>
+        </dd>
+        <dt id="VerticalDragGestureRecognizer">
+          <span class="name "><a href="gestures/VerticalDragGestureRecognizer-class.html">VerticalDragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement in the vertical direction. <a href="gestures/VerticalDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+        <dt id="VerticalMultiDragGestureRecognizer">
+          <span class="name "><a href="gestures/VerticalMultiDragGestureRecognizer-class.html">VerticalMultiDragGestureRecognizer</a></span>         
+        </dt>
+        <dd>
+          Recognizes movement in the vertical direction on a per-pointer basis. <a href="gestures/VerticalMultiDragGestureRecognizer-class.html">[...]</a>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="mixins">
+      <h2>Mixins</h2>
+
+      <dl>
+        <dt id="GestureBinding">
+          <span class="name "><a href="gestures/GestureBinding-mixin.html">GestureBinding</a></span>         
+        </dt>
+        <dd>
+          A binding for the gesture subsystem. <a href="gestures/GestureBinding-mixin.html">[...]</a>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="kBackMouseButton" class="constant">
+          <span class="name "><a href="gestures/kBackMouseButton-constant.html">kBackMouseButton</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/int-class.html">int</a></span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the back mouse button. <a href="gestures/kBackMouseButton-constant.html">[...]</a>
+                  
+  <div>
+            <span class="signature"><code>8</code></span>
+          </div>
+        </dd>
+        <dt id="kDoubleTapMinTime" class="constant">
+          <span class="name "><a href="gestures/kDoubleTapMinTime-constant.html">kDoubleTapMinTime</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/Duration-class.html">Duration</a></span>
+                  </dt>
+        <dd>
+          The minimum time from the end of the first tap to the start of the second
+tap in a double-tap gesture. (Currently not honored by the
+DoubleTapGestureRecognizer.)
+                  
+  <div>
+            <span class="signature"><code>const <a href="dart-core/Duration/Duration.html">Duration</a>(milliseconds: 40)</code></span>
+          </div>
+        </dd>
+        <dt id="kDoubleTapSlop" class="constant">
+          <span class="name "><a href="gestures/kDoubleTapSlop-constant.html">kDoubleTapSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          Distance between the initial position of the first touch and the start
+position of a potential second touch for the second touch to be considered
+the second touch of a double-tap gesture.
+                  
+  <div>
+            <span class="signature"><code>100.0</code></span>
+          </div>
+        </dd>
+        <dt id="kDoubleTapTimeout" class="constant">
+          <span class="name "><a href="gestures/kDoubleTapTimeout-constant.html">kDoubleTapTimeout</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/Duration-class.html">Duration</a></span>
+                  </dt>
+        <dd>
+          The maximum time from the start of the first tap to the start of the second
+tap in a double-tap gesture.
+                  
+  <div>
+            <span class="signature"><code>const <a href="dart-core/Duration/Duration.html">Duration</a>(milliseconds: 300)</code></span>
+          </div>
+        </dd>
+        <dt id="kDoubleTapTouchSlop" class="constant">
+          <span class="name "><a href="gestures/kDoubleTapTouchSlop-constant.html">kDoubleTapTouchSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          The maximum distance that the first touch in a double-tap gesture can travel
+before deciding that it is not part of a double-tap gesture.
+DoubleTapGestureRecognizer also restricts the second touch to this distance.
+                  
+  <div>
+            <span class="signature"><code>kTouchSlop</code></span>
+          </div>
+        </dd>
+        <dt id="kForwardMouseButton" class="constant">
+          <span class="name "><a href="gestures/kForwardMouseButton-constant.html">kForwardMouseButton</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/int-class.html">int</a></span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the forward mouse button. <a href="gestures/kForwardMouseButton-constant.html">[...]</a>
+                  
+  <div>
+            <span class="signature"><code>16</code></span>
+          </div>
+        </dd>
+        <dt id="kHoverTapSlop" class="constant">
+          <span class="name "><a href="gestures/kHoverTapSlop-constant.html">kHoverTapSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          Maximum distance between the down and up pointers for a tap. (Currently not
+honored by the <a href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a>; <a href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a>,
+which TapGestureRecognizer inherits from, uses <a href="gestures/kTouchSlop-constant.html">kTouchSlop</a>.)
+                  
+  <div>
+            <span class="signature"><code>20.0</code></span>
+          </div>
+        </dd>
+        <dt id="kHoverTapTimeout" class="constant">
+          <span class="name "><a href="gestures/kHoverTapTimeout-constant.html">kHoverTapTimeout</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/Duration-class.html">Duration</a></span>
+                  </dt>
+        <dd>
+          Maximum length of time between a tap down and a tap up for the gesture to be
+considered a tap. (Currently not honored by the TapGestureRecognizer.)
+                  
+  <div>
+            <span class="signature"><code>const <a href="dart-core/Duration/Duration.html">Duration</a>(milliseconds: 150)</code></span>
+          </div>
+        </dd>
+        <dt id="kJumpTapTimeout" class="constant">
+          <span class="name "><a href="gestures/kJumpTapTimeout-constant.html">kJumpTapTimeout</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/Duration-class.html">Duration</a></span>
+                  </dt>
+        <dd>
+          The maximum time from the start of the first tap to the start of the second
+tap in a jump-tap gesture.
+                  
+  <div>
+            <span class="signature"><code>const <a href="dart-core/Duration/Duration.html">Duration</a>(milliseconds: 500)</code></span>
+          </div>
+        </dd>
+        <dt id="kLongPressTimeout" class="constant">
+          <span class="name "><a href="gestures/kLongPressTimeout-constant.html">kLongPressTimeout</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/Duration-class.html">Duration</a></span>
+                  </dt>
+        <dd>
+          The time before a long press gesture attempts to win.
+                  
+  <div>
+            <span class="signature"><code>const <a href="dart-core/Duration/Duration.html">Duration</a>(milliseconds: 500)</code></span>
+          </div>
+        </dd>
+        <dt id="kMaxFlingVelocity" class="constant">
+          <span class="name "><a href="gestures/kMaxFlingVelocity-constant.html">kMaxFlingVelocity</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          Drag gesture fling velocities are clipped to this value.
+                  
+  <div>
+            <span class="signature"><code>8000.0</code></span>
+          </div>
+        </dd>
+        <dt id="kMiddleMouseButton" class="constant">
+          <span class="name "><a href="gestures/kMiddleMouseButton-constant.html">kMiddleMouseButton</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/int-class.html">int</a></span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the middle mouse button. <a href="gestures/kMiddleMouseButton-constant.html">[...]</a>
+                  
+  <div>
+            <span class="signature"><code>4</code></span>
+          </div>
+        </dd>
+        <dt id="kMinFlingVelocity" class="constant">
+          <span class="name "><a href="gestures/kMinFlingVelocity-constant.html">kMinFlingVelocity</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          The minimum velocity for a touch to consider that touch to trigger a fling
+gesture.
+                  
+  <div>
+            <span class="signature"><code>50.0</code></span>
+          </div>
+        </dd>
+        <dt id="kPagingTouchSlop" class="constant">
+          <span class="name "><a href="gestures/kPagingTouchSlop-constant.html">kPagingTouchSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          The distance a touch has to travel for the framework to be confident that
+the gesture is a paging gesture. (Currently not used, because paging uses a
+regular drag gesture, which uses kTouchSlop.)
+                  
+  <div>
+            <span class="signature"><code>kTouchSlop * 2.0</code></span>
+          </div>
+        </dd>
+        <dt id="kPanSlop" class="constant">
+          <span class="name "><a href="gestures/kPanSlop-constant.html">kPanSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          The distance a touch has to travel for the framework to be confident that
+the gesture is a panning gesture.
+                  
+  <div>
+            <span class="signature"><code>kTouchSlop * 2.0</code></span>
+          </div>
+        </dd>
+        <dt id="kPressTimeout" class="constant">
+          <span class="name "><a href="gestures/kPressTimeout-constant.html">kPressTimeout</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/Duration-class.html">Duration</a></span>
+                  </dt>
+        <dd>
+          The time that must elapse before a tap gesture sends onTapDown, if there's
+any doubt that the gesture is a tap.
+                  
+  <div>
+            <span class="signature"><code>const <a href="dart-core/Duration/Duration.html">Duration</a>(milliseconds: 100)</code></span>
+          </div>
+        </dd>
+        <dt id="kPrimaryMouseButton" class="constant">
+          <span class="name "><a href="gestures/kPrimaryMouseButton-constant.html">kPrimaryMouseButton</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/int-class.html">int</a></span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the primary mouse button. <a href="gestures/kPrimaryMouseButton-constant.html">[...]</a>
+                  
+  <div>
+            <span class="signature"><code>1</code></span>
+          </div>
+        </dd>
+        <dt id="kPrimaryStylusButton" class="constant">
+          <span class="name "><a href="gestures/kPrimaryStylusButton-constant.html">kPrimaryStylusButton</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/int-class.html">int</a></span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the primary stylus button. <a href="gestures/kPrimaryStylusButton-constant.html">[...]</a>
+                  
+  <div>
+            <span class="signature"><code>2</code></span>
+          </div>
+        </dd>
+        <dt id="kScaleSlop" class="constant">
+          <span class="name "><a href="gestures/kScaleSlop-constant.html">kScaleSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          The distance a touch has to travel for the framework to be confident that
+the gesture is a scale gesture.
+                  
+  <div>
+            <span class="signature"><code>kTouchSlop</code></span>
+          </div>
+        </dd>
+        <dt id="kSecondaryMouseButton" class="constant">
+          <span class="name "><a href="gestures/kSecondaryMouseButton-constant.html">kSecondaryMouseButton</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/int-class.html">int</a></span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the secondary mouse button. <a href="gestures/kSecondaryMouseButton-constant.html">[...]</a>
+                  
+  <div>
+            <span class="signature"><code>2</code></span>
+          </div>
+        </dd>
+        <dt id="kSecondaryStylusButton" class="constant">
+          <span class="name "><a href="gestures/kSecondaryStylusButton-constant.html">kSecondaryStylusButton</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/int-class.html">int</a></span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the secondary stylus button. <a href="gestures/kSecondaryStylusButton-constant.html">[...]</a>
+                  
+  <div>
+            <span class="signature"><code>4</code></span>
+          </div>
+        </dd>
+        <dt id="kTouchSlop" class="constant">
+          <span class="name "><a href="gestures/kTouchSlop-constant.html">kTouchSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          The distance a touch has to travel for the framework to be confident that
+the gesture is a scroll gesture, or, inversely, the maximum distance that a
+touch can travel before the framework becomes confident that it is not a
+tap.
+                  
+  <div>
+            <span class="signature"><code>18.0</code></span>
+          </div>
+        </dd>
+        <dt id="kWindowTouchSlop" class="constant">
+          <span class="name "><a href="gestures/kWindowTouchSlop-constant.html">kWindowTouchSlop</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/double-class.html">double</a></span>
+                  </dt>
+        <dd>
+          The margin around a dialog, popup menu, or other window-like widget inside
+which we do not consider a tap to dismiss the widget. (Not currently used.)
+                  
+  <div>
+            <span class="signature"><code>16.0</code></span>
+          </div>
+        </dd>
+        <dt id="kZoomControlsTimeout" class="constant">
+          <span class="name "><a href="gestures/kZoomControlsTimeout-constant.html">kZoomControlsTimeout</a></span>
+          <span class="signature">&#8594; const <a href="dart-core/Duration-class.html">Duration</a></span>
+                  </dt>
+        <dd>
+          The time for which zoom controls (e.g. in a map interface) are to be
+displayed on the screen, from the moment they were last requested.
+                  
+  <div>
+            <span class="signature"><code>const <a href="dart-core/Duration/Duration.html">Duration</a>(milliseconds: 3000)</code></span>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="debugPrintGestureArenaDiagnostics" class="property">
+          <span class="name"><a href="gestures/debugPrintGestureArenaDiagnostics.html">debugPrintGestureArenaDiagnostics</a></span>
+          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>         
+        </dt>
+        <dd>
+          Prints information about gesture recognizers and gesture arenas. <a href="gestures/debugPrintGestureArenaDiagnostics.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="debugPrintHitTestResults" class="property">
+          <span class="name"><a href="gestures/debugPrintHitTestResults.html">debugPrintHitTestResults</a></span>
+          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>         
+        </dt>
+        <dd>
+          Whether to print the results of each hit test to the console. <a href="gestures/debugPrintHitTestResults.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="debugPrintMouseHoverEvents" class="property">
+          <span class="name"><a href="gestures/debugPrintMouseHoverEvents.html">debugPrintMouseHoverEvents</a></span>
+          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>         
+        </dt>
+        <dd>
+          Whether to print the details of each mouse hover event to the console. <a href="gestures/debugPrintMouseHoverEvents.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="debugPrintRecognizerCallbacksTrace" class="property">
+          <span class="name"><a href="gestures/debugPrintRecognizerCallbacksTrace.html">debugPrintRecognizerCallbacksTrace</a></span>
+          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>         
+        </dt>
+        <dd>
+          Logs a message every time a gesture recognizer callback is invoked. <a href="gestures/debugPrintRecognizerCallbacksTrace.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="functions">
+      <h2>Functions</h2>
+
+      <dl class="callables">
+        <dt id="debugAssertAllGesturesVarsUnset" class="callable">
+          <span class="name"><a href="gestures/debugAssertAllGesturesVarsUnset.html">debugAssertAllGesturesVarsUnset</a></span><span class="signature">(<wbr><span class="parameter" id="debugAssertAllGesturesVarsUnset-param-reason"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">reason</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+                  </dt>
+        <dd>
+          Returns true if none of the gestures library debug variables have been changed. <a href="gestures/debugAssertAllGesturesVarsUnset.html">[...]</a>
+                  
+</dd>
+        <dt id="nthMouseButton" class="callable">
+          <span class="name"><a href="gestures/nthMouseButton.html">nthMouseButton</a></span><span class="signature">(<wbr><span class="parameter" id="nthMouseButton-param-number"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">number</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          </span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the nth mouse button. <a href="gestures/nthMouseButton.html">[...]</a>
+                  
+</dd>
+        <dt id="nthStylusButton" class="callable">
+          <span class="name"><a href="gestures/nthStylusButton.html">nthStylusButton</a></span><span class="signature">(<wbr><span class="parameter" id="nthStylusButton-param-number"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">number</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          </span>
+                  </dt>
+        <dd>
+          The bit of <a href="gestures/PointerEvent/buttons.html">PointerEvent.buttons</a> that corresponds to the nth stylus button. <a href="gestures/nthStylusButton.html">[...]</a>
+                  
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="enums">
+      <h2>Enums</h2>
+
+      <dl>
+        <dt id="DragStartBehavior">
+          <span class="name "><a href="gestures/DragStartBehavior-class.html">DragStartBehavior</a></span>         
+        </dt>
+        <dd>
+          Configuration of offset passed to <a href="gestures/DragStartDetails-class.html">DragStartDetails</a>. <a href="gestures/DragStartBehavior-class.html">[...]</a>
+        </dd>
+        <dt id="GestureDisposition">
+          <span class="name "><a href="gestures/GestureDisposition-class.html">GestureDisposition</a></span>         
+        </dt>
+        <dd>
+          Whether the gesture was accepted or rejected.
+        </dd>
+        <dt id="GestureRecognizerState">
+          <span class="name "><a href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></span>         
+        </dt>
+        <dd>
+          The possible states of a <a href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a>. <a href="gestures/GestureRecognizerState-class.html">[...]</a>
+        </dd>
+        <dt id="PointerDeviceKind">
+          <span class="name "><a href="dart-ui/PointerDeviceKind-class.html">PointerDeviceKind</a></span>         
+        </dt>
+        <dd>
+          The kind of pointer device.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="typedefs">
+      <h2>Typedefs</h2>
+
+      <dl class="callables">
+        <dt id="GestureDoubleTapCallback" class="callable">
+          <span class="name"><a href="gestures/GestureDoubleTapCallback.html">GestureDoubleTapCallback</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for callback when the user has tapped the screen at the same
+location twice in quick succession.
+                  
+</dd>
+        <dt id="GestureDragCancelCallback" class="callable">
+          <span class="name"><a href="gestures/GestureDragCancelCallback.html">GestureDragCancelCallback</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when the pointer that previously triggered a
+<a href="gestures/GestureDragDownCallback.html">GestureDragDownCallback</a> did not complete. <a href="gestures/GestureDragCancelCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureDragDownCallback" class="callable">
+          <span class="name"><a href="gestures/GestureDragDownCallback.html">GestureDragDownCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureDragDownCallback-param-details"><span class="type-annotation"><a href="gestures/DragDownDetails-class.html">DragDownDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer has contacted the screen and might begin to
+move. <a href="gestures/GestureDragDownCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureDragEndCallback" class="callable">
+          <span class="name"><a href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureDragEndCallback-param-details"><span class="type-annotation"><a href="gestures/DragEndDetails-class.html">DragEndDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer that was previously in contact with the screen
+and moving is no longer in contact with the screen. <a href="gestures/GestureDragEndCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureDragStartCallback" class="callable">
+          <span class="name"><a href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureDragStartCallback-param-details"><span class="type-annotation"><a href="gestures/DragStartDetails-class.html">DragStartDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer has contacted the screen and has begun to move. <a href="gestures/GestureDragStartCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureDragUpdateCallback" class="callable">
+          <span class="name"><a href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureDragUpdateCallback-param-details"><span class="type-annotation"><a href="gestures/DragUpdateDetails-class.html">DragUpdateDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer that is in contact with the screen and moving
+has moved again. <a href="gestures/GestureDragUpdateCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureForceInterpolation" class="callable">
+          <span class="name"><a href="gestures/GestureForceInterpolation.html">GestureForceInterpolation</a></span><span class="signature">(<wbr><span class="parameter" id="GestureForceInterpolation-param-pressureMin"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">pressureMin</span>, </span> <span class="parameter" id="GestureForceInterpolation-param-pressureMax"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">pressureMax</span>, </span> <span class="parameter" id="GestureForceInterpolation-param-pressure"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">pressure</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+                  </dt>
+        <dd>
+          Signature used by <a href="gestures/ForcePressGestureRecognizer-class.html">ForcePressGestureRecognizer</a> for interpolating the raw
+device pressure to a value in the range <code>0, 1</code> given the device's pressure
+min and pressure max.
+                  
+</dd>
+        <dt id="GestureForcePressEndCallback" class="callable">
+          <span class="name"><a href="gestures/GestureForcePressEndCallback.html">GestureForcePressEndCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureForcePressEndCallback-param-details"><span class="type-annotation"><a href="gestures/ForcePressDetails-class.html">ForcePressDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when the pointer that previously triggered a
+<a href="gestures/ForcePressGestureRecognizer/onStart.html">ForcePressGestureRecognizer.onStart</a> callback is no longer in contact
+with the screen.
+                  
+</dd>
+        <dt id="GestureForcePressPeakCallback" class="callable">
+          <span class="name"><a href="gestures/GestureForcePressPeakCallback.html">GestureForcePressPeakCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureForcePressPeakCallback-param-details"><span class="type-annotation"><a href="gestures/ForcePressDetails-class.html">ForcePressDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature used by <a href="gestures/ForcePressGestureRecognizer-class.html">ForcePressGestureRecognizer</a> for when a pointer that has
+pressed with at least <a href="gestures/ForcePressGestureRecognizer/peakPressure.html">ForcePressGestureRecognizer.peakPressure</a>.
+                  
+</dd>
+        <dt id="GestureForcePressStartCallback" class="callable">
+          <span class="name"><a href="gestures/GestureForcePressStartCallback.html">GestureForcePressStartCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureForcePressStartCallback-param-details"><span class="type-annotation"><a href="gestures/ForcePressDetails-class.html">ForcePressDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature used by a <a href="gestures/ForcePressGestureRecognizer-class.html">ForcePressGestureRecognizer</a> for when a pointer has
+pressed with at least <a href="gestures/ForcePressGestureRecognizer/startPressure.html">ForcePressGestureRecognizer.startPressure</a>.
+                  
+</dd>
+        <dt id="GestureForcePressUpdateCallback" class="callable">
+          <span class="name"><a href="gestures/GestureForcePressUpdateCallback.html">GestureForcePressUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureForcePressUpdateCallback-param-details"><span class="type-annotation"><a href="gestures/ForcePressDetails-class.html">ForcePressDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature used by <a href="gestures/ForcePressGestureRecognizer-class.html">ForcePressGestureRecognizer</a> during the frames
+after the triggering of a <a href="gestures/ForcePressGestureRecognizer/onStart.html">ForcePressGestureRecognizer.onStart</a> callback.
+                  
+</dd>
+        <dt id="GestureLongPressCallback" class="callable">
+          <span class="name"><a href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer has remained in contact with the screen at the
+same location for a long period of time.
+                  
+</dd>
+        <dt id="GestureLongPressDragStartCallback" class="callable">
+          <span class="name"><a href="gestures/GestureLongPressDragStartCallback.html">GestureLongPressDragStartCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureLongPressDragStartCallback-param-details"><span class="type-annotation"><a href="gestures/GestureLongPressDragStartDetails-class.html">GestureLongPressDragStartDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature from a <a href="gestures/LongPressDragGestureRecognizer-class.html">LongPressDragGestureRecognizer</a> when a pointer has remained
+in contact with the screen at the same location for a long period of time.
+                  
+</dd>
+        <dt id="GestureLongPressDragUpCallback" class="callable">
+          <span class="name"><a href="gestures/GestureLongPressDragUpCallback.html">GestureLongPressDragUpCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureLongPressDragUpCallback-param-details"><span class="type-annotation"><a href="gestures/GestureLongPressDragUpDetails-class.html">GestureLongPressDragUpDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature from a <a href="gestures/LongPressDragGestureRecognizer-class.html">LongPressDragGestureRecognizer</a> after a pointer stops
+contacting the screen. <a href="gestures/GestureLongPressDragUpCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureLongPressDragUpdateCallback" class="callable">
+          <span class="name"><a href="gestures/GestureLongPressDragUpdateCallback.html">GestureLongPressDragUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureLongPressDragUpdateCallback-param-details"><span class="type-annotation"><a href="gestures/GestureLongPressDragUpdateDetails-class.html">GestureLongPressDragUpdateDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature from a <a href="gestures/LongPressDragGestureRecognizer-class.html">LongPressDragGestureRecognizer</a> when a pointer is moving
+after being held in contact at the same location for a long period of time.
+                  
+</dd>
+        <dt id="GestureLongPressUpCallback" class="callable">
+          <span class="name"><a href="gestures/GestureLongPressUpCallback.html">GestureLongPressUpCallback</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer stops contacting the screen after a long press
+gesture was detected.
+                  
+</dd>
+        <dt id="GestureMultiDragStartCallback" class="callable">
+          <span class="name"><a href="gestures/GestureMultiDragStartCallback.html">GestureMultiDragStartCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiDragStartCallback-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span>)
+            <span class="returntype parameter">&#8594; <a href="gestures/Drag-class.html">Drag</a></span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when <a href="gestures/MultiDragGestureRecognizer-class.html">MultiDragGestureRecognizer</a> recognizes the start of a drag gesture.
+                  
+</dd>
+        <dt id="GestureMultiTapCallback" class="callable">
+          <span class="name"><a href="gestures/GestureMultiTapCallback.html">GestureMultiTapCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapCallback-param-pointer"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">pointer</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature used by <a href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a> for when a tap has occurred.
+                  
+</dd>
+        <dt id="GestureMultiTapCancelCallback" class="callable">
+          <span class="name"><a href="gestures/GestureMultiTapCancelCallback.html">GestureMultiTapCancelCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapCancelCallback-param-pointer"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">pointer</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when the pointer that previously triggered a
+<a href="gestures/GestureMultiTapDownCallback.html">GestureMultiTapDownCallback</a> will not end up causing a tap.
+                  
+</dd>
+        <dt id="GestureMultiTapDownCallback" class="callable">
+          <span class="name"><a href="gestures/GestureMultiTapDownCallback.html">GestureMultiTapDownCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapDownCallback-param-pointer"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">pointer</span>, </span> <span class="parameter" id="GestureMultiTapDownCallback-param-details"><span class="type-annotation"><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature used by <a href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a> for when a pointer that might
+cause a tap has contacted the screen at a particular location.
+                  
+</dd>
+        <dt id="GestureMultiTapUpCallback" class="callable">
+          <span class="name"><a href="gestures/GestureMultiTapUpCallback.html">GestureMultiTapUpCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapUpCallback-param-pointer"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">pointer</span>, </span> <span class="parameter" id="GestureMultiTapUpCallback-param-details"><span class="type-annotation"><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature used by <a href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a> for when a pointer that will
+trigger a tap has stopped contacting the screen at a particular location.
+                  
+</dd>
+        <dt id="GestureScaleEndCallback" class="callable">
+          <span class="name"><a href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureScaleEndCallback-param-details"><span class="type-annotation"><a href="gestures/ScaleEndDetails-class.html">ScaleEndDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when the pointers are no longer in contact with the screen.
+                  
+</dd>
+        <dt id="GestureScaleStartCallback" class="callable">
+          <span class="name"><a href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureScaleStartCallback-param-details"><span class="type-annotation"><a href="gestures/ScaleStartDetails-class.html">ScaleStartDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when the pointers in contact with the screen have established
+a focal point and initial scale of 1.0.
+                  
+</dd>
+        <dt id="GestureScaleUpdateCallback" class="callable">
+          <span class="name"><a href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureScaleUpdateCallback-param-details"><span class="type-annotation"><a href="gestures/ScaleUpdateDetails-class.html">ScaleUpdateDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when the pointers in contact with the screen have indicated a
+new focal point and/or scale.
+                  
+</dd>
+        <dt id="GestureTapCallback" class="callable">
+          <span class="name"><a href="gestures/GestureTapCallback.html">GestureTapCallback</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a tap has occurred. <a href="gestures/GestureTapCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureTapCancelCallback" class="callable">
+          <span class="name"><a href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when the pointer that previously triggered a
+<a href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a> will not end up causing a tap. <a href="gestures/GestureTapCancelCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureTapDownCallback" class="callable">
+          <span class="name"><a href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureTapDownCallback-param-details"><span class="type-annotation"><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer that might cause a tap has contacted the
+screen. <a href="gestures/GestureTapDownCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="GestureTapUpCallback" class="callable">
+          <span class="name"><a href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureTapUpCallback-param-details"><span class="type-annotation"><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></span> <span class="parameter-name">details</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for when a pointer that will trigger a tap has stopped contacting
+the screen. <a href="gestures/GestureTapUpCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="MouseDetectorAnnotationFinder" class="callable">
+          <span class="name"><a href="gestures/MouseDetectorAnnotationFinder.html">MouseDetectorAnnotationFinder</a></span><span class="signature">(<wbr><span class="parameter" id="MouseDetectorAnnotationFinder-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+            <span class="returntype parameter">&#8594; <a href="gestures/MouseTrackerAnnotation-class.html">MouseTrackerAnnotation</a></span>
+          </span>
+                  </dt>
+        <dd>
+          Describes a function that finds an annotation given an offset in logical
+coordinates. <a href="gestures/MouseDetectorAnnotationFinder.html">[...]</a>
+                  
+</dd>
+        <dt id="PointerEnterEventListener" class="callable">
+          <span class="name"><a href="gestures/PointerEnterEventListener.html">PointerEnterEventListener</a></span><span class="signature">(<wbr><span class="parameter" id="PointerEnterEventListener-param-event"><span class="type-annotation"><a href="gestures/PointerEnterEvent-class.html">PointerEnterEvent</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for listening to <a href="gestures/PointerEnterEvent-class.html">PointerEnterEvent</a> events. <a href="gestures/PointerEnterEventListener.html">[...]</a>
+                  
+</dd>
+        <dt id="PointerExitEventListener" class="callable">
+          <span class="name"><a href="gestures/PointerExitEventListener.html">PointerExitEventListener</a></span><span class="signature">(<wbr><span class="parameter" id="PointerExitEventListener-param-event"><span class="type-annotation"><a href="gestures/PointerExitEvent-class.html">PointerExitEvent</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for listening to <a href="gestures/PointerExitEvent-class.html">PointerExitEvent</a> events. <a href="gestures/PointerExitEventListener.html">[...]</a>
+                  
+</dd>
+        <dt id="PointerHoverEventListener" class="callable">
+          <span class="name"><a href="gestures/PointerHoverEventListener.html">PointerHoverEventListener</a></span><span class="signature">(<wbr><span class="parameter" id="PointerHoverEventListener-param-event"><span class="type-annotation"><a href="gestures/PointerHoverEvent-class.html">PointerHoverEvent</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for listening to <a href="gestures/PointerHoverEvent-class.html">PointerHoverEvent</a> events. <a href="gestures/PointerHoverEventListener.html">[...]</a>
+                  
+</dd>
+        <dt id="PointerRoute" class="callable">
+          <span class="name"><a href="gestures/PointerRoute.html">PointerRoute</a></span><span class="signature">(<wbr><span class="parameter" id="PointerRoute-param-event"><span class="type-annotation"><a href="gestures/PointerEvent-class.html">PointerEvent</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          A callback that receives a <a href="gestures/PointerEvent-class.html">PointerEvent</a>
+                  
+</dd>
+        <dt id="RecognizerCallback" class="callable">
+          <span class="name"><a href="gestures/RecognizerCallback.html">RecognizerCallback</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; T</span>
+          </span>
+                  </dt>
+        <dd>
+          Generic signature for callbacks passed to
+<a href="gestures/GestureRecognizer/invokeCallback.html">GestureRecognizer.invokeCallback</a>. This allows the
+<a href="gestures/GestureRecognizer/invokeCallback.html">GestureRecognizer.invokeCallback</a> mechanism to be generically used with
+anonymous functions that return objects of particular types.
+                  
+</dd>
+      </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>gestures library</h5>
+    <ol>
+      <li class="section-title"><a href="gestures/gestures-library.html#classes">Classes</a></li>
+      <li><a href="gestures/DelayedMultiDragGestureRecognizer-class.html">DelayedMultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/DoubleTapGestureRecognizer-class.html">DoubleTapGestureRecognizer</a></li>
+      <li><a href="gestures/Drag-class.html">Drag</a></li>
+      <li><a href="gestures/DragDownDetails-class.html">DragDownDetails</a></li>
+      <li><a href="gestures/DragEndDetails-class.html">DragEndDetails</a></li>
+      <li><a href="gestures/DragGestureRecognizer-class.html">DragGestureRecognizer</a></li>
+      <li><a href="gestures/DragStartDetails-class.html">DragStartDetails</a></li>
+      <li><a href="gestures/DragUpdateDetails-class.html">DragUpdateDetails</a></li>
+      <li><a href="gestures/EagerGestureRecognizer-class.html">EagerGestureRecognizer</a></li>
+      <li><a href="gestures/FlutterErrorDetailsForPointerEventDispatcher-class.html">FlutterErrorDetailsForPointerEventDispatcher</a></li>
+      <li><a href="gestures/FlutterErrorDetailsForPointerRouter-class.html">FlutterErrorDetailsForPointerRouter</a></li>
+      <li><a href="gestures/ForcePressDetails-class.html">ForcePressDetails</a></li>
+      <li><a href="gestures/ForcePressGestureRecognizer-class.html">ForcePressGestureRecognizer</a></li>
+      <li><a href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></li>
+      <li><a href="gestures/GestureArenaManager-class.html">GestureArenaManager</a></li>
+      <li><a href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></li>
+      <li><a href="gestures/GestureArenaTeam-class.html">GestureArenaTeam</a></li>
+      <li><a href="gestures/GestureLongPressDragStartDetails-class.html">GestureLongPressDragStartDetails</a></li>
+      <li><a href="gestures/GestureLongPressDragUpdateDetails-class.html">GestureLongPressDragUpdateDetails</a></li>
+      <li><a href="gestures/GestureLongPressDragUpDetails-class.html">GestureLongPressDragUpDetails</a></li>
+      <li><a href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></li>
+      <li><a href="gestures/HitTestable-class.html">HitTestable</a></li>
+      <li><a href="gestures/HitTestDispatcher-class.html">HitTestDispatcher</a></li>
+      <li><a href="gestures/HitTestEntry-class.html">HitTestEntry</a></li>
+      <li><a href="gestures/HitTestResult-class.html">HitTestResult</a></li>
+      <li><a href="gestures/HitTestTarget-class.html">HitTestTarget</a></li>
+      <li><a href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
+      <li><a href="gestures/HorizontalMultiDragGestureRecognizer-class.html">HorizontalMultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/ImmediateMultiDragGestureRecognizer-class.html">ImmediateMultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/LeastSquaresSolver-class.html">LeastSquaresSolver</a></li>
+      <li><a href="gestures/LongPressDragGestureRecognizer-class.html">LongPressDragGestureRecognizer</a></li>
+      <li><a href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
+      <li><a href="gestures/MouseTracker-class.html">MouseTracker</a></li>
+      <li><a href="gestures/MouseTrackerAnnotation-class.html">MouseTrackerAnnotation</a></li>
+      <li><a href="gestures/MultiDragGestureRecognizer-class.html">MultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/MultiDragPointerState-class.html">MultiDragPointerState</a></li>
+      <li><a href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="gestures/OneSequenceGestureRecognizer-class.html">OneSequenceGestureRecognizer</a></li>
+      <li><a href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></li>
+      <li><a href="gestures/PointerAddedEvent-class.html">PointerAddedEvent</a></li>
+      <li><a href="gestures/PointerCancelEvent-class.html">PointerCancelEvent</a></li>
+      <li><a href="gestures/PointerDownEvent-class.html">PointerDownEvent</a></li>
+      <li><a href="gestures/PointerEnterEvent-class.html">PointerEnterEvent</a></li>
+      <li><a href="gestures/PointerEvent-class.html">PointerEvent</a></li>
+      <li><a href="gestures/PointerEventConverter-class.html">PointerEventConverter</a></li>
+      <li><a href="gestures/PointerExitEvent-class.html">PointerExitEvent</a></li>
+      <li><a href="gestures/PointerHoverEvent-class.html">PointerHoverEvent</a></li>
+      <li><a href="gestures/PointerMoveEvent-class.html">PointerMoveEvent</a></li>
+      <li><a href="gestures/PointerRemovedEvent-class.html">PointerRemovedEvent</a></li>
+      <li><a href="gestures/PointerRouter-class.html">PointerRouter</a></li>
+      <li><a href="gestures/PointerUpEvent-class.html">PointerUpEvent</a></li>
+      <li><a href="gestures/PolynomialFit-class.html">PolynomialFit</a></li>
+      <li><a href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
+      <li><a href="gestures/ScaleEndDetails-class.html">ScaleEndDetails</a></li>
+      <li><a href="gestures/ScaleGestureRecognizer-class.html">ScaleGestureRecognizer</a></li>
+      <li><a href="gestures/ScaleStartDetails-class.html">ScaleStartDetails</a></li>
+      <li><a href="gestures/ScaleUpdateDetails-class.html">ScaleUpdateDetails</a></li>
+      <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
+      <li><a href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a></li>
+      <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
+      <li><a href="gestures/Velocity-class.html">Velocity</a></li>
+      <li><a href="gestures/VelocityEstimate-class.html">VelocityEstimate</a></li>
+      <li><a href="gestures/VelocityTracker-class.html">VelocityTracker</a></li>
+      <li><a href="gestures/VerticalDragGestureRecognizer-class.html">VerticalDragGestureRecognizer</a></li>
+      <li><a href="gestures/VerticalMultiDragGestureRecognizer-class.html">VerticalMultiDragGestureRecognizer</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#mixins">Mixins</a></li>
+      <li><a href="gestures/GestureBinding-mixin.html">GestureBinding</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#constants">Constants</a></li>
+      <li><a href="gestures/kBackMouseButton-constant.html">kBackMouseButton</a></li>
+      <li><a href="gestures/kDoubleTapMinTime-constant.html">kDoubleTapMinTime</a></li>
+      <li><a href="gestures/kDoubleTapSlop-constant.html">kDoubleTapSlop</a></li>
+      <li><a href="gestures/kDoubleTapTimeout-constant.html">kDoubleTapTimeout</a></li>
+      <li><a href="gestures/kDoubleTapTouchSlop-constant.html">kDoubleTapTouchSlop</a></li>
+      <li><a href="gestures/kForwardMouseButton-constant.html">kForwardMouseButton</a></li>
+      <li><a href="gestures/kHoverTapSlop-constant.html">kHoverTapSlop</a></li>
+      <li><a href="gestures/kHoverTapTimeout-constant.html">kHoverTapTimeout</a></li>
+      <li><a href="gestures/kJumpTapTimeout-constant.html">kJumpTapTimeout</a></li>
+      <li><a href="gestures/kLongPressTimeout-constant.html">kLongPressTimeout</a></li>
+      <li><a href="gestures/kMaxFlingVelocity-constant.html">kMaxFlingVelocity</a></li>
+      <li><a href="gestures/kMiddleMouseButton-constant.html">kMiddleMouseButton</a></li>
+      <li><a href="gestures/kMinFlingVelocity-constant.html">kMinFlingVelocity</a></li>
+      <li><a href="gestures/kPagingTouchSlop-constant.html">kPagingTouchSlop</a></li>
+      <li><a href="gestures/kPanSlop-constant.html">kPanSlop</a></li>
+      <li><a href="gestures/kPressTimeout-constant.html">kPressTimeout</a></li>
+      <li><a href="gestures/kPrimaryMouseButton-constant.html">kPrimaryMouseButton</a></li>
+      <li><a href="gestures/kPrimaryStylusButton-constant.html">kPrimaryStylusButton</a></li>
+      <li><a href="gestures/kScaleSlop-constant.html">kScaleSlop</a></li>
+      <li><a href="gestures/kSecondaryMouseButton-constant.html">kSecondaryMouseButton</a></li>
+      <li><a href="gestures/kSecondaryStylusButton-constant.html">kSecondaryStylusButton</a></li>
+      <li><a href="gestures/kTouchSlop-constant.html">kTouchSlop</a></li>
+      <li><a href="gestures/kWindowTouchSlop-constant.html">kWindowTouchSlop</a></li>
+      <li><a href="gestures/kZoomControlsTimeout-constant.html">kZoomControlsTimeout</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#properties">Properties</a></li>
+      <li><a href="gestures/debugPrintGestureArenaDiagnostics.html">debugPrintGestureArenaDiagnostics</a></li>
+      <li><a href="gestures/debugPrintHitTestResults.html">debugPrintHitTestResults</a></li>
+      <li><a href="gestures/debugPrintMouseHoverEvents.html">debugPrintMouseHoverEvents</a></li>
+      <li><a href="gestures/debugPrintRecognizerCallbacksTrace.html">debugPrintRecognizerCallbacksTrace</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#functions">Functions</a></li>
+      <li><a href="gestures/debugAssertAllGesturesVarsUnset.html">debugAssertAllGesturesVarsUnset</a></li>
+      <li><a href="gestures/nthMouseButton.html">nthMouseButton</a></li>
+      <li><a href="gestures/nthStylusButton.html">nthStylusButton</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#enums">Enums</a></li>
+      <li><a href="gestures/DragStartBehavior-class.html">DragStartBehavior</a></li>
+      <li><a href="gestures/GestureDisposition-class.html">GestureDisposition</a></li>
+      <li><a href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></li>
+      <li><a href="dart-ui/PointerDeviceKind-class.html">PointerDeviceKind</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#typedefs">Typedefs</a></li>
+      <li><a href="gestures/GestureDoubleTapCallback.html">GestureDoubleTapCallback</a></li>
+      <li><a href="gestures/GestureDragCancelCallback.html">GestureDragCancelCallback</a></li>
+      <li><a href="gestures/GestureDragDownCallback.html">GestureDragDownCallback</a></li>
+      <li><a href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></li>
+      <li><a href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></li>
+      <li><a href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></li>
+      <li><a href="gestures/GestureForceInterpolation.html">GestureForceInterpolation</a></li>
+      <li><a href="gestures/GestureForcePressEndCallback.html">GestureForcePressEndCallback</a></li>
+      <li><a href="gestures/GestureForcePressPeakCallback.html">GestureForcePressPeakCallback</a></li>
+      <li><a href="gestures/GestureForcePressStartCallback.html">GestureForcePressStartCallback</a></li>
+      <li><a href="gestures/GestureForcePressUpdateCallback.html">GestureForcePressUpdateCallback</a></li>
+      <li><a href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></li>
+      <li><a href="gestures/GestureLongPressDragStartCallback.html">GestureLongPressDragStartCallback</a></li>
+      <li><a href="gestures/GestureLongPressDragUpCallback.html">GestureLongPressDragUpCallback</a></li>
+      <li><a href="gestures/GestureLongPressDragUpdateCallback.html">GestureLongPressDragUpdateCallback</a></li>
+      <li><a href="gestures/GestureLongPressUpCallback.html">GestureLongPressUpCallback</a></li>
+      <li><a href="gestures/GestureMultiDragStartCallback.html">GestureMultiDragStartCallback</a></li>
+      <li><a href="gestures/GestureMultiTapCallback.html">GestureMultiTapCallback</a></li>
+      <li><a href="gestures/GestureMultiTapCancelCallback.html">GestureMultiTapCancelCallback</a></li>
+      <li><a href="gestures/GestureMultiTapDownCallback.html">GestureMultiTapDownCallback</a></li>
+      <li><a href="gestures/GestureMultiTapUpCallback.html">GestureMultiTapUpCallback</a></li>
+      <li><a href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></li>
+      <li><a href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></li>
+      <li><a href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
+      <li><a href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
+      <li><a href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
+      <li><a href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
+      <li><a href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a></li>
+      <li><a href="gestures/MouseDetectorAnnotationFinder.html">MouseDetectorAnnotationFinder</a></li>
+      <li><a href="gestures/PointerEnterEventListener.html">PointerEnterEventListener</a></li>
+      <li><a href="gestures/PointerExitEventListener.html">PointerExitEventListener</a></li>
+      <li><a href="gestures/PointerHoverEventListener.html">PointerHoverEventListener</a></li>
+      <li><a href="gestures/PointerRoute.html">PointerRoute</a></li>
+      <li><a href="gestures/RecognizerCallback.html">RecognizerCallback</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

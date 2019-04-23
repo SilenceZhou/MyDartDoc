@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the dumpErrorToConsole method from the FlutterError class, for the Dart programming language.">
+  <title>dumpErrorToConsole method - FlutterError class - foundation library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="foundation/foundation-library.html">foundation</a></li>
+    <li><a href="foundation/FlutterError-class.html">FlutterError</a></li>
+    <li class="self-crumb">dumpErrorToConsole method</li>
+  </ol>
+  <div class="self-name">dumpErrorToConsole</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="foundation/foundation-library.html">foundation</a></li>
+      <li><a href="foundation/FlutterError-class.html">FlutterError</a></li>
+      <li class="self-crumb">dumpErrorToConsole method</li>
+    </ol>
+    
+    <h5>FlutterError class</h5>
+    <ol>
+      <li class="section-title"><a href="foundation/FlutterError-class.html#constructors">Constructors</a></li>
+      <li><a href="foundation/FlutterError/FlutterError.html">FlutterError</a></li>
+    
+      <li class="section-title">
+        <a href="foundation/FlutterError-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="foundation/FlutterError/message.html">message</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="dart-core/Error/stackTrace.html">stackTrace</a></li>
+    
+      <li class="section-title"><a href="foundation/FlutterError-class.html#instance-methods">Methods</a></li>
+      <li><a href="foundation/FlutterError/toString.html">toString</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title inherited"><a href="foundation/FlutterError-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="foundation/FlutterError-class.html#static-properties">Static properties</a></li>
+      <li><a href="foundation/FlutterError/onError.html">onError</a></li>
+    
+      <li class="section-title"><a href="foundation/FlutterError-class.html#static-methods">Static methods</a></li>
+      <li><a href="foundation/FlutterError/defaultStackFilter.html">defaultStackFilter</a></li>
+      <li><a href="foundation/FlutterError/dumpErrorToConsole.html">dumpErrorToConsole</a></li>
+      <li><a href="foundation/FlutterError/reportError.html">reportError</a></li>
+      <li><a href="foundation/FlutterError/resetErrorCount.html">resetErrorCount</a></li>
+    
+      <li class="section-title"><a href="foundation/FlutterError-class.html#constants">Constants</a></li>
+      <li><a href="foundation/FlutterError/wrapWidth-constant.html">wrapWidth</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>dumpErrorToConsole method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype">void</span>
+            <span class="name ">dumpErrorToConsole</span>
+(<wbr><span class="parameter" id="dumpErrorToConsole-param-details"><span class="type-annotation"><a href="foundation/FlutterErrorDetails-class.html">FlutterErrorDetails</a></span> <span class="parameter-name">details</span>, {</span> <span class="parameter" id="dumpErrorToConsole-param-forceReport"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">forceReport</span>: <span class="default-value">false</span></span> })
+      
+    </section>
+    <section class="desc markdown">
+      <p>Prints the given exception details to the console.</p>
+<p>The first time this is called, it dumps a very verbose message to the
+console using <a href="foundation/debugPrint.html">debugPrint</a>.</p>
+<p>Subsequent calls only dump the first line of the exception, unless
+<code>forceReport</code> is set to true (in which case it dumps the verbose message).</p>
+<p>Call <a href="foundation/FlutterError/resetErrorCount.html">resetErrorCount</a> to cause this method to go back to acting as if it
+had not been called before (so the next message is verbose again).</p>
+<p>The default behavior for the <a href="foundation/FlutterError/onError.html">onError</a> handler is to call this function.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static void dumpErrorToConsole(FlutterErrorDetails details, { bool forceReport = false }) {
+  assert(details != null);
+  assert(details.exception != null);
+  bool reportError = details.silent != true; &#47;&#47; could be null
+  assert(() {
+    &#47;&#47; In checked mode, we ignore the &quot;silent&quot; flag.
+    reportError = true;
+    return true;
+  }());
+  if (!reportError &amp;&amp; !forceReport)
+    return;
+  if (_errorCount == 0 || forceReport) {
+    final String header = &#39;\u2550\u2550\u2561 EXCEPTION CAUGHT BY ${details.library} \u255E&#39;.toUpperCase();
+    final String footer = &#39;\u2550&#39; * wrapWidth;
+    debugPrint(&#39;$header${&quot;\u2550&quot; * (footer.length - header.length)}&#39;);
+    final String verb = &#39;thrown${ details.context != null ? &quot; ${details.context}&quot; : &quot;&quot;}&#39;;
+    if (details.exception is NullThrownError) {
+      debugPrint(&#39;The null value was $verb.&#39;, wrapWidth: wrapWidth);
+    } else if (details.exception is num) {
+      debugPrint(&#39;The number ${details.exception} was $verb.&#39;, wrapWidth: wrapWidth);
+    } else {
+      String errorName;
+      if (details.exception is AssertionError) {
+        errorName = &#39;assertion&#39;;
+      } else if (details.exception is String) {
+        errorName = &#39;message&#39;;
+      } else if (details.exception is Error || details.exception is Exception) {
+        errorName = &#39;${details.exception.runtimeType}&#39;;
+      } else {
+        errorName = &#39;${details.exception.runtimeType} object&#39;;
+      }
+      &#47;&#47; Many exception classes put their type at the head of their message.
+      &#47;&#47; This is redundant with the way we display exceptions, so attempt to
+      &#47;&#47; strip out that header when we see it.
+      final String prefix = &#39;${details.exception.runtimeType}: &#39;;
+      String message = details.exceptionAsString();
+      if (message.startsWith(prefix))
+        message = message.substring(prefix.length);
+      debugPrint(&#39;The following $errorName was $verb:\n$message&#39;, wrapWidth: wrapWidth);
+    }
+    Iterable&lt;String&gt; stackLines = (details.stack != null) ? details.stack.toString().trimRight().split(&#39;\n&#39;) : null;
+    if ((details.exception is AssertionError) &amp;&amp; (details.exception is! FlutterError)) {
+      bool ourFault = true;
+      if (stackLines != null) {
+        final List&lt;String&gt; stackList = stackLines.take(2).toList();
+        if (stackList.length &gt;= 2) {
+          &#47;&#47; TODO(ianh): This has bitrotted and is no longer matching. https:&#47;&#47;github.com&#47;flutter&#47;flutter&#47;issues&#47;4021
+          final RegExp throwPattern = RegExp(r&#39;^#0 +_AssertionError._throwNew \(dart:.+\)$&#39;);
+          final RegExp assertPattern = RegExp(r&#39;^#1 +[^(]+ \((.+?):([0-9]+)(?::[0-9]+)?\)$&#39;);
+          if (throwPattern.hasMatch(stackList[0])) {
+            final Match assertMatch = assertPattern.firstMatch(stackList[1]);
+            if (assertMatch != null) {
+              assert(assertMatch.groupCount == 2);
+              final RegExp ourLibraryPattern = RegExp(r&#39;^package:flutter&#47;&#39;);
+              ourFault = ourLibraryPattern.hasMatch(assertMatch.group(1));
+            }
+          }
+        }
+      }
+      if (ourFault) {
+        debugPrint(&#39;\nEither the assertion indicates an error in the framework itself, or we should &#39;
+                   &#39;provide substantially more information in this error message to help you determine &#39;
+                   &#39;and fix the underlying cause.&#39;, wrapWidth: wrapWidth);
+        debugPrint(&#39;In either case, please report this assertion by filing a bug on GitHub:&#39;, wrapWidth: wrapWidth);
+        debugPrint(&#39;  https:&#47;&#47;github.com&#47;flutter&#47;flutter&#47;issues&#47;new?template=BUG.md&#39;);
+      }
+    }
+    if (details.stack != null) {
+      debugPrint(&#39;\nWhen the exception was thrown, this was the stack:&#39;, wrapWidth: wrapWidth);
+      if (details.stackFilter != null) {
+        stackLines = details.stackFilter(stackLines);
+      } else {
+        stackLines = defaultStackFilter(stackLines);
+      }
+      for (String line in stackLines)
+        debugPrint(line, wrapWidth: wrapWidth);
+    }
+    if (details.informationCollector != null) {
+      final StringBuffer information = StringBuffer();
+      details.informationCollector(information);
+      debugPrint(&#39;\n${information.toString().trimRight()}&#39;, wrapWidth: wrapWidth);
+    }
+    debugPrint(footer);
+  } else {
+    debugPrint(&#39;Another exception was thrown: ${details.exceptionAsString().split(&quot;\n&quot;)[0].trimLeft()}&#39;);
+  }
+  _errorCount += 1;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

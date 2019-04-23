@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the resolve method from the ImageProvider class, for the Dart programming language.">
+  <title>resolve method - ImageProvider class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="painting/painting-library.html">painting</a></li>
+    <li><a href="painting/ImageProvider-class.html">ImageProvider<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+    <li class="self-crumb">resolve method</li>
+  </ol>
+  <div class="self-name">resolve</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+      <li class="self-crumb">resolve method</li>
+    </ol>
+    
+    <h5>ImageProvider class</h5>
+    <ol>
+      <li class="section-title"><a href="painting/ImageProvider-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/ImageProvider/ImageProvider.html">ImageProvider</a></li>
+    
+      <li class="section-title inherited">
+        <a href="painting/ImageProvider-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="painting/ImageProvider-class.html#instance-methods">Methods</a></li>
+      <li><a href="painting/ImageProvider/evict.html">evict</a></li>
+      <li><a href="painting/ImageProvider/load.html">load</a></li>
+      <li><a href="painting/ImageProvider/obtainKey.html">obtainKey</a></li>
+      <li><a href="painting/ImageProvider/resolve.html">resolve</a></li>
+      <li><a href="painting/ImageProvider/toString.html">toString</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title inherited"><a href="painting/ImageProvider-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>resolve method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="painting/ImageStream-class.html">ImageStream</a></span>
+            <span class="name ">resolve</span>
+(<wbr><span class="parameter" id="resolve-param-configuration"><span class="type-annotation"><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></span> <span class="parameter-name">configuration</span></span>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>Resolves this image provider using the given <code>configuration</code>, returning
+an <a href="painting/ImageStream-class.html">ImageStream</a>.</p>
+<p>This is the public entry-point of the <a href="painting/ImageProvider-class.html">ImageProvider</a> class hierarchy.</p>
+<p>Subclasses should implement <a href="painting/ImageProvider/obtainKey.html">obtainKey</a> and <a href="painting/ImageProvider/load.html">load</a>, which are used by this
+method.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">ImageStream resolve(ImageConfiguration configuration) {
+  assert(configuration != null);
+  final ImageStream stream = ImageStream();
+  T obtainedKey;
+  Future&lt;void&gt; handleError(dynamic exception, StackTrace stack) async {
+    await null; &#47;&#47; wait an event turn in case a listener has been added to the image stream.
+    final _ErrorImageCompleter imageCompleter = _ErrorImageCompleter();
+    stream.setCompleter(imageCompleter);
+    imageCompleter.setError(
+        exception: exception,
+        stack: stack,
+        context: &#39;while resolving an image&#39;,
+        silent: true, &#47;&#47; could be a network error or whatnot
+        informationCollector: (StringBuffer information) {
+          information.writeln(&#39;Image provider: $this&#39;);
+          information.writeln(&#39;Image configuration: $configuration&#39;);
+          if (obtainedKey != null) {
+            information.writeln(&#39;Image key: $obtainedKey&#39;);
+          }
+        });
+  }
+
+  obtainKey(configuration).then&lt;void&gt;((T key) {
+    obtainedKey = key;
+    final ImageStreamCompleter completer = PaintingBinding.instance.imageCache
+        .putIfAbsent(key, () =&gt; load(key), onError: handleError);
+    if (completer != null) {
+      stream.setCompleter(completer);
+    }
+  }).catchError(handleError);
+  return stream;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

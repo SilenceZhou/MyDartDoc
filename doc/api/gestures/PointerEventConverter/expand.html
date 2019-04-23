@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the expand method from the PointerEventConverter class, for the Dart programming language.">
+  <title>expand method - PointerEventConverter class - gestures library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="gestures/gestures-library.html">gestures</a></li>
+    <li><a href="gestures/PointerEventConverter-class.html">PointerEventConverter</a></li>
+    <li class="self-crumb">expand method</li>
+  </ol>
+  <div class="self-name">expand</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="gestures/gestures-library.html">gestures</a></li>
+      <li><a href="gestures/PointerEventConverter-class.html">PointerEventConverter</a></li>
+      <li class="self-crumb">expand method</li>
+    </ol>
+    
+    <h5>PointerEventConverter class</h5>
+    <ol>
+    
+      <li class="section-title inherited">
+        <a href="gestures/PointerEventConverter-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="gestures/PointerEventConverter-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="gestures/PointerEventConverter-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="gestures/PointerEventConverter-class.html#static-methods">Static methods</a></li>
+      <li><a href="gestures/PointerEventConverter/clearPointers.html">clearPointers</a></li>
+      <li><a href="gestures/PointerEventConverter/expand.html">expand</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>expand method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="gestures/PointerEvent-class.html">PointerEvent</a></span>&gt;</span></span>
+            <span class="name ">expand</span>
+(<wbr><span class="parameter" id="expand-param-data"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-ui/PointerData-class.html">PointerData</a></span>&gt;</span></span> <span class="parameter-name">data</span>, </span> <span class="parameter" id="expand-param-devicePixelRatio"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">devicePixelRatio</span></span>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>Expand the given packet of pointer data into a sequence of framework
+pointer events.</p>
+<p>The <code>devicePixelRatio</code> argument (usually given the value from
+<a href="dart-ui/Window/devicePixelRatio.html">dart:ui.Window.devicePixelRatio</a>) is used to convert the incoming data
+from physical coordinates to logical pixels. See the discussion at
+<a href="gestures/PointerEvent-class.html">PointerEvent</a> for more details on the <a href="gestures/PointerEvent-class.html">PointerEvent</a> coordinate space.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static Iterable&lt;PointerEvent&gt; expand(Iterable&lt;ui.PointerData&gt; data, double devicePixelRatio) sync* {
+  for (ui.PointerData datum in data) {
+    final Offset position = Offset(datum.physicalX, datum.physicalY) &#47; devicePixelRatio;
+    final double radiusMinor = _toLogicalPixels(datum.radiusMinor, devicePixelRatio);
+    final double radiusMajor = _toLogicalPixels(datum.radiusMajor, devicePixelRatio);
+    final double radiusMin = _toLogicalPixels(datum.radiusMin, devicePixelRatio);
+    final double radiusMax = _toLogicalPixels(datum.radiusMax, devicePixelRatio);
+    final Duration timeStamp = datum.timeStamp;
+    final PointerDeviceKind kind = datum.kind;
+    assert(datum.change != null);
+    switch (datum.change) {
+      case ui.PointerChange.add:
+        assert(!_pointers.containsKey(datum.device));
+        final _PointerState state = _ensureStateForPointer(datum, position);
+        assert(state.lastPosition == position);
+        yield PointerAddedEvent(
+          timeStamp: timeStamp,
+          kind: kind,
+          device: datum.device,
+          position: position,
+          obscured: datum.obscured,
+          pressureMin: datum.pressureMin,
+          pressureMax: datum.pressureMax,
+          distance: datum.distance,
+          distanceMax: datum.distanceMax,
+          radiusMin: radiusMin,
+          radiusMax: radiusMax,
+          orientation: datum.orientation,
+          tilt: datum.tilt
+        );
+        break;
+      case ui.PointerChange.hover:
+        final bool alreadyAdded = _pointers.containsKey(datum.device);
+        final _PointerState state = _ensureStateForPointer(datum, position);
+        assert(!state.down);
+        if (!alreadyAdded) {
+          assert(state.lastPosition == position);
+          yield PointerAddedEvent(
+            timeStamp: timeStamp,
+            kind: kind,
+            device: datum.device,
+            position: position,
+            obscured: datum.obscured,
+            pressureMin: datum.pressureMin,
+            pressureMax: datum.pressureMax,
+            distance: datum.distance,
+            distanceMax: datum.distanceMax,
+            radiusMin: radiusMin,
+            radiusMax: radiusMax,
+            orientation: datum.orientation,
+            tilt: datum.tilt
+          );
+        }
+        final Offset offset = position - state.lastPosition;
+        state.lastPosition = position;
+        yield PointerHoverEvent(
+          timeStamp: timeStamp,
+          kind: kind,
+          device: datum.device,
+          position: position,
+          delta: offset,
+          buttons: datum.buttons,
+          obscured: datum.obscured,
+          pressureMin: datum.pressureMin,
+          pressureMax: datum.pressureMax,
+          distance: datum.distance,
+          distanceMax: datum.distanceMax,
+          size: datum.size,
+          radiusMajor: radiusMajor,
+          radiusMinor: radiusMinor,
+          radiusMin: radiusMin,
+          radiusMax: radiusMax,
+          orientation: datum.orientation,
+          tilt: datum.tilt
+        );
+        state.lastPosition = position;
+        break;
+      case ui.PointerChange.down:
+        final bool alreadyAdded = _pointers.containsKey(datum.device);
+        final _PointerState state = _ensureStateForPointer(datum, position);
+        assert(!state.down);
+        if (!alreadyAdded) {
+          assert(state.lastPosition == position);
+          yield PointerAddedEvent(
+            timeStamp: timeStamp,
+            kind: kind,
+            device: datum.device,
+            position: position,
+            obscured: datum.obscured,
+            pressureMin: datum.pressureMin,
+            pressureMax: datum.pressureMax,
+            distance: datum.distance,
+            distanceMax: datum.distanceMax,
+            radiusMin: radiusMin,
+            radiusMax: radiusMax,
+            orientation: datum.orientation,
+            tilt: datum.tilt
+          );
+        }
+        if (state.lastPosition != position) {
+          &#47;&#47; Not all sources of pointer packets respect the invariant that
+          &#47;&#47; they hover the pointer to the down location before sending the
+          &#47;&#47; down event. We restore the invariant here for our clients.
+          final Offset offset = position - state.lastPosition;
+          state.lastPosition = position;
+          yield PointerHoverEvent(
+            timeStamp: timeStamp,
+            kind: kind,
+            device: datum.device,
+            position: position,
+            delta: offset,
+            buttons: datum.buttons,
+            obscured: datum.obscured,
+            pressureMin: datum.pressureMin,
+            pressureMax: datum.pressureMax,
+            distance: datum.distance,
+            distanceMax: datum.distanceMax,
+            size: datum.size,
+            radiusMajor: radiusMajor,
+            radiusMinor: radiusMinor,
+            radiusMin: radiusMin,
+            radiusMax: radiusMax,
+            orientation: datum.orientation,
+            tilt: datum.tilt,
+            synthesized: true,
+          );
+          state.lastPosition = position;
+        }
+        state.startNewPointer();
+        state.setDown();
+        yield PointerDownEvent(
+          timeStamp: timeStamp,
+          pointer: state.pointer,
+          kind: kind,
+          device: datum.device,
+          position: position,
+          buttons: datum.buttons,
+          obscured: datum.obscured,
+          pressure: datum.pressure,
+          pressureMin: datum.pressureMin,
+          pressureMax: datum.pressureMax,
+          distanceMax: datum.distanceMax,
+          size: datum.size,
+          radiusMajor: radiusMajor,
+          radiusMinor: radiusMinor,
+          radiusMin: radiusMin,
+          radiusMax: radiusMax,
+          orientation: datum.orientation,
+          tilt: datum.tilt
+        );
+        break;
+      case ui.PointerChange.move:
+        &#47;&#47; If the service starts supporting hover pointers, then it must also
+        &#47;&#47; start sending us ADDED and REMOVED data points.
+        &#47;&#47; See also: https:&#47;&#47;github.com&#47;flutter&#47;flutter&#47;issues&#47;720
+        assert(_pointers.containsKey(datum.device));
+        final _PointerState state = _pointers[datum.device];
+        assert(state.down);
+        final Offset offset = position - state.lastPosition;
+        state.lastPosition = position;
+        yield PointerMoveEvent(
+          timeStamp: timeStamp,
+          pointer: state.pointer,
+          kind: kind,
+          device: datum.device,
+          position: position,
+          delta: offset,
+          buttons: datum.buttons,
+          obscured: datum.obscured,
+          pressure: datum.pressure,
+          pressureMin: datum.pressureMin,
+          pressureMax: datum.pressureMax,
+          distanceMax: datum.distanceMax,
+          size: datum.size,
+          radiusMajor: radiusMajor,
+          radiusMinor: radiusMinor,
+          radiusMin: radiusMin,
+          radiusMax: radiusMax,
+          orientation: datum.orientation,
+          tilt: datum.tilt,
+          platformData: datum.platformData,
+        );
+        break;
+      case ui.PointerChange.up:
+      case ui.PointerChange.cancel:
+        assert(_pointers.containsKey(datum.device));
+        final _PointerState state = _pointers[datum.device];
+        assert(state.down);
+        if (position != state.lastPosition) {
+          &#47;&#47; Not all sources of pointer packets respect the invariant that
+          &#47;&#47; they move the pointer to the up location before sending the up
+          &#47;&#47; event. For example, in the iOS simulator, of you drag outside the
+          &#47;&#47; window, you&#39;ll get a stream of pointers that violates that
+          &#47;&#47; invariant. We restore the invariant here for our clients.
+          final Offset offset = position - state.lastPosition;
+          state.lastPosition = position;
+          yield PointerMoveEvent(
+            timeStamp: timeStamp,
+            pointer: state.pointer,
+            kind: kind,
+            device: datum.device,
+            position: position,
+            delta: offset,
+            buttons: datum.buttons,
+            obscured: datum.obscured,
+            pressure: datum.pressure,
+            pressureMin: datum.pressureMin,
+            pressureMax: datum.pressureMax,
+            distanceMax: datum.distanceMax,
+            size: datum.size,
+            radiusMajor: radiusMajor,
+            radiusMinor: radiusMinor,
+            radiusMin: radiusMin,
+            radiusMax: radiusMax,
+            orientation: datum.orientation,
+            tilt: datum.tilt,
+            synthesized: true,
+          );
+          state.lastPosition = position;
+        }
+        assert(position == state.lastPosition);
+        state.setUp();
+        if (datum.change == ui.PointerChange.up) {
+          yield PointerUpEvent(
+            timeStamp: timeStamp,
+            pointer: state.pointer,
+            kind: kind,
+            device: datum.device,
+            position: position,
+            buttons: datum.buttons,
+            obscured: datum.obscured,
+            pressure: datum.pressure,
+            pressureMin: datum.pressureMin,
+            pressureMax: datum.pressureMax,
+            distance: datum.distance,
+            distanceMax: datum.distanceMax,
+            size: datum.size,
+            radiusMajor: radiusMajor,
+            radiusMinor: radiusMinor,
+            radiusMin: radiusMin,
+            radiusMax: radiusMax,
+            orientation: datum.orientation,
+            tilt: datum.tilt
+          );
+        } else {
+          yield PointerCancelEvent(
+            timeStamp: timeStamp,
+            pointer: state.pointer,
+            kind: kind,
+            device: datum.device,
+            position: position,
+            buttons: datum.buttons,
+            obscured: datum.obscured,
+            pressureMin: datum.pressureMin,
+            pressureMax: datum.pressureMax,
+            distance: datum.distance,
+            distanceMax: datum.distanceMax,
+            size: datum.size,
+            radiusMajor: radiusMajor,
+            radiusMinor: radiusMinor,
+            radiusMin: radiusMin,
+            radiusMax: radiusMax,
+            orientation: datum.orientation,
+            tilt: datum.tilt
+          );
+        }
+        break;
+      case ui.PointerChange.remove:
+        assert(_pointers.containsKey(datum.device));
+        final _PointerState state = _pointers[datum.device];
+        if (state.down) {
+          yield PointerCancelEvent(
+            timeStamp: timeStamp,
+            pointer: state.pointer,
+            kind: kind,
+            device: datum.device,
+            position: position,
+            buttons: datum.buttons,
+            obscured: datum.obscured,
+            pressureMin: datum.pressureMin,
+            pressureMax: datum.pressureMax,
+            distance: datum.distance,
+            distanceMax: datum.distanceMax,
+            size: datum.size,
+            radiusMajor: radiusMajor,
+            radiusMinor: radiusMinor,
+            radiusMin: radiusMin,
+            radiusMax: radiusMax,
+            orientation: datum.orientation,
+            tilt: datum.tilt
+          );
+        }
+        _pointers.remove(datum.device);
+        yield PointerRemovedEvent(
+          timeStamp: timeStamp,
+          kind: kind,
+          device: datum.device,
+          obscured: datum.obscured,
+          pressureMin: datum.pressureMin,
+          pressureMax: datum.pressureMax,
+          distanceMax: datum.distanceMax,
+          radiusMin: radiusMin,
+          radiusMax: radiusMax
+        );
+        break;
+    }
+  }
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

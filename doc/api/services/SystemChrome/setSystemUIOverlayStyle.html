@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the setSystemUIOverlayStyle method from the SystemChrome class, for the Dart programming language.">
+  <title>setSystemUIOverlayStyle method - SystemChrome class - services library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="services/services-library.html">services</a></li>
+    <li><a href="services/SystemChrome-class.html">SystemChrome</a></li>
+    <li class="self-crumb">setSystemUIOverlayStyle method</li>
+  </ol>
+  <div class="self-name">setSystemUIOverlayStyle</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="services/services-library.html">services</a></li>
+      <li><a href="services/SystemChrome-class.html">SystemChrome</a></li>
+      <li class="self-crumb">setSystemUIOverlayStyle method</li>
+    </ol>
+    
+    <h5>SystemChrome class</h5>
+    <ol>
+    
+      <li class="section-title inherited">
+        <a href="services/SystemChrome-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="services/SystemChrome-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="services/SystemChrome-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="services/SystemChrome-class.html#static-properties">Static properties</a></li>
+      <li><a href="services/SystemChrome/latestStyle.html">latestStyle</a></li>
+    
+      <li class="section-title"><a href="services/SystemChrome-class.html#static-methods">Static methods</a></li>
+      <li><a href="services/SystemChrome/restoreSystemUIOverlays.html">restoreSystemUIOverlays</a></li>
+      <li><a href="services/SystemChrome/setApplicationSwitcherDescription.html">setApplicationSwitcherDescription</a></li>
+      <li><a href="services/SystemChrome/setEnabledSystemUIOverlays.html">setEnabledSystemUIOverlays</a></li>
+      <li><a href="services/SystemChrome/setPreferredOrientations.html">setPreferredOrientations</a></li>
+      <li><a href="services/SystemChrome/setSystemUIOverlayStyle.html">setSystemUIOverlayStyle</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>setSystemUIOverlayStyle method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype">void</span>
+            <span class="name ">setSystemUIOverlayStyle</span>
+(<wbr><span class="parameter" id="setSystemUIOverlayStyle-param-style"><span class="type-annotation"><a href="services/SystemUiOverlayStyle-class.html">SystemUiOverlayStyle</a></span> <span class="parameter-name">style</span></span>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>Specifies the style to use for the system overlays that are visible (if
+any).</p>
+<p>This method will schedule the embedder update to be run in a microtask.
+Any subsequent calls to this method during the current event loop will
+overwrite the pending value, such that only the last specified value takes
+effect.</p>
+<p>Call this API in code whose lifecycle matches that of the desired
+system UI styles. For instance, to change the system UI style on a new
+page, consider calling when pushing/popping a new <a href="widgets/PageRoute-class.html">PageRoute</a>.</p>
+<p>However, the <a href="material/AppBar-class.html">AppBar</a> widget automatically sets the system overlay style
+based on its <a href="material/AppBar/brightness.html">AppBar.brightness</a>, so configure that instead of calling
+this method directly. Likewise, do the same for <a href="cupertino/CupertinoNavigationBar-class.html">CupertinoNavigationBar</a>
+via <a href="cupertino/CupertinoNavigationBar/backgroundColor.html">CupertinoNavigationBar.backgroundColor</a>.</p>
+<p>If a particular style is not supported on the platform, selecting it will
+have no effect.</p>
+<h2 id="sample-code">Sample Code</h2>
+<pre class="language-dart"><code class="language-dart">@override
+Widget build(BuildContext context) {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+  return /* ... */;
+}
+</code></pre>
+<p>For more complex control of the system overlay styles, consider using
+an <a href="widgets/AnnotatedRegion-class.html">AnnotatedRegion</a> widget instead of calling <code>setSystemUiOverlayStyle</code>
+directly. This widget places a value directly into the layer tree where
+it can be hit-tested by the framework. On every frame, the framework will
+hit-test and select the annotated region it finds under the status and
+navigation bar and synthesize them into a single style. This can be used
+to configure the system styles when an app bar is not used.</p>
+<p>See also:</p><ul><li><a href="widgets/AnnotatedRegion-class.html">AnnotatedRegion</a>, the widget used to place data into the layer tree.</li></ul>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static void setSystemUIOverlayStyle(SystemUiOverlayStyle style) {
+  assert(style != null);
+  if (_pendingStyle != null) {
+    &#47;&#47; The microtask has already been queued; just update the pending value.
+    _pendingStyle = style;
+    return;
+  }
+  if (style == _latestStyle) {
+    &#47;&#47; Trivial success: no microtask has been queued and the given style is
+    &#47;&#47; already in effect, so no need to queue a microtask.
+    return;
+  }
+  _pendingStyle = style;
+  scheduleMicrotask(() {
+    assert(_pendingStyle != null);
+    if (_pendingStyle != _latestStyle) {
+      SystemChannels.platform.invokeMethod&lt;void&gt;(
+        &#39;SystemChrome.setSystemUIOverlayStyle&#39;,
+        _pendingStyle._toMap(),
+      );
+      _latestStyle = _pendingStyle;
+    }
+    _pendingStyle = null;
+  });
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the createCylindricalProjectionTransform method from the MatrixUtils class, for the Dart programming language.">
+  <title>createCylindricalProjectionTransform method - MatrixUtils class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="painting/painting-library.html">painting</a></li>
+    <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+    <li class="self-crumb">createCylindricalProjectionTransform method</li>
+  </ol>
+  <div class="self-name">createCylindricalProjectionTransform</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li class="self-crumb">createCylindricalProjectionTransform method</li>
+    </ol>
+    
+    <h5>MatrixUtils class</h5>
+    <ol>
+    
+      <li class="section-title inherited">
+        <a href="painting/MatrixUtils-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="painting/MatrixUtils-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="painting/MatrixUtils-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="painting/MatrixUtils-class.html#static-methods">Static methods</a></li>
+      <li><a href="painting/MatrixUtils/createCylindricalProjectionTransform.html">createCylindricalProjectionTransform</a></li>
+      <li><a href="painting/MatrixUtils/getAsScale.html">getAsScale</a></li>
+      <li><a href="painting/MatrixUtils/getAsTranslation.html">getAsTranslation</a></li>
+      <li><a href="painting/MatrixUtils/inverseTransformRect.html">inverseTransformRect</a></li>
+      <li><a href="painting/MatrixUtils/isIdentity.html">isIdentity</a></li>
+      <li><a href="painting/MatrixUtils/matrixEquals.html">matrixEquals</a></li>
+      <li><a href="painting/MatrixUtils/transformPoint.html">transformPoint</a></li>
+      <li><a href="painting/MatrixUtils/transformRect.html">transformRect</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>createCylindricalProjectionTransform method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+            <span class="name ">createCylindricalProjectionTransform</span>
+(<wbr>{<span class="parameter" id="createCylindricalProjectionTransform-param-radius"><span>@required</span> <span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radius</span>, </span> <span class="parameter" id="createCylindricalProjectionTransform-param-angle"><span>@required</span> <span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">angle</span>, </span> <span class="parameter" id="createCylindricalProjectionTransform-param-perspective"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">perspective</span>: <span class="default-value">0.001</span>, </span> <span class="parameter" id="createCylindricalProjectionTransform-param-orientation"><span class="type-annotation"><a href="painting/Axis-class.html">Axis</a></span> <span class="parameter-name">orientation</span>: <span class="default-value">Axis.vertical</span></span> })
+      
+    </section>
+    <section class="desc markdown">
+      <p>Create a transformation matrix which mimics the effects of tangentially
+wrapping the plane on which this transform is applied around a cylinder
+and then looking at the cylinder from a point outside the cylinder.</p>
+<p>The <code>radius</code> simulates the radius of the cylinder the plane is being
+wrapped onto. If the transformation is applied to a 0-dimensional dot
+instead of a plane, the dot would simply translate by +/- <code>radius</code> pixels
+along the <code>orientation</code> <a href="painting/Axis-class.html">Axis</a> when rotating from 0 to +/- 90 degrees.</p>
+<p>A positive radius means the object is closest at 0 <code>angle</code> and a negative
+radius means the object is closest at π <code>angle</code> or 180 degrees.</p>
+<p>The <code>angle</code> argument is the difference in angle in radians between the
+object and the viewing point. A positive <code>angle</code> on a positive <code>radius</code>
+moves the object up when <code>orientation</code> is vertical and right when
+horizontal.</p>
+<p>The transformation is always done such that a 0 <code>angle</code> keeps the
+transformed object at exactly the same size as before regardless of
+<code>radius</code> and <code>perspective</code> when <code>radius</code> is positive.</p>
+<p>The <code>perspective</code> argument is a number between 0 and 1 where 0 means
+looking at the object from infinitely far with an infinitely narrow field
+of view and 1 means looking at the object from infinitely close with an
+infinitely wide field of view. Defaults to a sane but arbitrary 0.001.</p>
+<p>The <code>orientation</code> is the direction of the rotation axis.</p>
+<p>Because the viewing position is a point, it's never possible to see the
+outer side of the cylinder at or past +/- π / 2 or 90 degrees and it's
+almost always possible to end up seeing the inner side of the cylinder
+or the back side of the transformed plane before π / 2 when perspective &gt; 0.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static Matrix4 createCylindricalProjectionTransform({
+  @required double radius,
+  @required double angle,
+  double perspective = 0.001,
+  Axis orientation = Axis.vertical,
+}) {
+  assert(radius != null);
+  assert(angle != null);
+  assert(perspective &gt;= 0 &amp;&amp; perspective &lt;= 1.0);
+  assert(orientation != null);
+
+  &#47;&#47; Pre-multiplied matrix of a projection matrix and a view matrix.
+  &#47;&#47;
+  &#47;&#47; Projection matrix is a simplified perspective matrix
+  &#47;&#47; http:&#47;&#47;web.iitd.ac.in&#47;~hegde&#47;cad&#47;lecture&#47;L9_persproj.pdf
+  &#47;&#47; in the form of
+  &#47;&#47; [[1.0, 0.0, 0.0, 0.0],
+  &#47;&#47;  [0.0, 1.0, 0.0, 0.0],
+  &#47;&#47;  [0.0, 0.0, 1.0, 0.0],
+  &#47;&#47;  [0.0, 0.0, -perspective, 1.0]]
+  &#47;&#47;
+  &#47;&#47; View matrix is a simplified camera view matrix.
+  &#47;&#47; Basically re-scales to keep object at original size at angle = 0 at
+  &#47;&#47; any radius in the form of
+  &#47;&#47; [[1.0, 0.0, 0.0, 0.0],
+  &#47;&#47;  [0.0, 1.0, 0.0, 0.0],
+  &#47;&#47;  [0.0, 0.0, 1.0, -radius],
+  &#47;&#47;  [0.0, 0.0, 0.0, 1.0]]
+  Matrix4 result = Matrix4.identity()
+      ..setEntry(3, 2, -perspective)
+      ..setEntry(2, 3, -radius)
+      ..setEntry(3, 3, perspective * radius + 1.0);
+
+  &#47;&#47; Model matrix by first translating the object from the origin of the world
+  &#47;&#47; by radius in the z axis and then rotating against the world.
+  result *= (
+      orientation == Axis.horizontal
+          ? Matrix4.rotationY(angle)
+          : Matrix4.rotationX(angle)
+  ) * Matrix4.translationValues(0.0, 0.0, radius);
+
+  &#47;&#47; Essentially perspective * view * model.
+  return result;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the SliverGeometry constructor from the Class SliverGeometry class from the rendering library, for the Dart programming language.">
+  <title>SliverGeometry constructor - SliverGeometry class - rendering library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="rendering/rendering-library.html">rendering</a></li>
+    <li><a href="rendering/SliverGeometry-class.html">SliverGeometry</a></li>
+    <li class="self-crumb">SliverGeometry const constructor</li>
+  </ol>
+  <div class="self-name">SliverGeometry</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="rendering/rendering-library.html">rendering</a></li>
+      <li><a href="rendering/SliverGeometry-class.html">SliverGeometry</a></li>
+      <li class="self-crumb">SliverGeometry const constructor</li>
+    </ol>
+    
+    <h5>SliverGeometry class</h5>
+    <ol>
+      <li class="section-title"><a href="rendering/SliverGeometry-class.html#constructors">Constructors</a></li>
+      <li><a href="rendering/SliverGeometry/SliverGeometry.html">SliverGeometry</a></li>
+    
+      <li class="section-title">
+        <a href="rendering/SliverGeometry-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="rendering/SliverGeometry/cacheExtent.html">cacheExtent</a></li>
+      <li><a href="rendering/SliverGeometry/hasVisualOverflow.html">hasVisualOverflow</a></li>
+      <li><a href="rendering/SliverGeometry/hitTestExtent.html">hitTestExtent</a></li>
+      <li><a href="rendering/SliverGeometry/layoutExtent.html">layoutExtent</a></li>
+      <li><a href="rendering/SliverGeometry/maxPaintExtent.html">maxPaintExtent</a></li>
+      <li><a href="rendering/SliverGeometry/maxScrollObstructionExtent.html">maxScrollObstructionExtent</a></li>
+      <li><a href="rendering/SliverGeometry/paintExtent.html">paintExtent</a></li>
+      <li><a href="rendering/SliverGeometry/paintOrigin.html">paintOrigin</a></li>
+      <li><a href="rendering/SliverGeometry/scrollExtent.html">scrollExtent</a></li>
+      <li><a href="rendering/SliverGeometry/scrollOffsetCorrection.html">scrollOffsetCorrection</a></li>
+      <li><a href="rendering/SliverGeometry/visible.html">visible</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="rendering/SliverGeometry-class.html#instance-methods">Methods</a></li>
+      <li><a href="rendering/SliverGeometry/debugAssertIsValid.html">debugAssertIsValid</a></li>
+      <li><a href="rendering/SliverGeometry/debugFillProperties.html">debugFillProperties</a></li>
+      <li><a href="rendering/SliverGeometry/toStringShort.html">toStringShort</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="rendering/SliverGeometry-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+      <li class="section-title"><a href="rendering/SliverGeometry-class.html#constants">Constants</a></li>
+      <li><a href="rendering/SliverGeometry/zero-constant.html">zero</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>SliverGeometry constructor</h1></div>
+
+    <section class="multi-line-signature">
+      const
+      <span class="name ">SliverGeometry</span>(<wbr>{<span class="parameter" id="-param-scrollExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">scrollExtent</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-paintExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">paintExtent</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-paintOrigin"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">paintOrigin</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-layoutExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">layoutExtent</span>, </span> <span class="parameter" id="-param-maxPaintExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">maxPaintExtent</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-maxScrollObstructionExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">maxScrollObstructionExtent</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-hitTestExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">hitTestExtent</span>, </span> <span class="parameter" id="-param-visible"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">visible</span>, </span> <span class="parameter" id="-param-hasVisualOverflow"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hasVisualOverflow</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-scrollOffsetCorrection"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">scrollOffsetCorrection</span>, </span> <span class="parameter" id="-param-cacheExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">cacheExtent</span></span> })
+    </section>
+
+    <section class="desc markdown">
+      <p>Creates an object that describes the amount of space occupied by a sliver.</p>
+<p>If the <code>layoutExtent</code> argument is null, <code>layoutExtent</code> defaults to the
+<code>paintExtent</code>. If the <code>hitTestExtent</code> argument is null, <code>hitTestExtent</code>
+defaults to the <code>paintExtent</code>. If <code>visible</code> is null, <code>visible</code> defaults to
+whether <code>paintExtent</code> is greater than zero.</p>
+<p>The other arguments must not be null.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">const SliverGeometry({
+  this.scrollExtent = 0.0,
+  this.paintExtent = 0.0,
+  this.paintOrigin = 0.0,
+  double layoutExtent,
+  this.maxPaintExtent = 0.0,
+  this.maxScrollObstructionExtent = 0.0,
+  double hitTestExtent,
+  bool visible,
+  this.hasVisualOverflow = false,
+  this.scrollOffsetCorrection,
+  double cacheExtent,
+}) : assert(scrollExtent != null),
+     assert(paintExtent != null),
+     assert(paintOrigin != null),
+     assert(maxPaintExtent != null),
+     assert(hasVisualOverflow != null),
+     assert(scrollOffsetCorrection != 0.0),
+     layoutExtent = layoutExtent ?? paintExtent,
+     hitTestExtent = hitTestExtent ?? paintExtent,
+     cacheExtent = cacheExtent ?? layoutExtent ?? paintExtent,
+     visible = visible ?? paintExtent &gt; 0.0;</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

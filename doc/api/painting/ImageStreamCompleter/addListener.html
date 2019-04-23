@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the addListener method from the ImageStreamCompleter class, for the Dart programming language.">
+  <title>addListener method - ImageStreamCompleter class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="painting/painting-library.html">painting</a></li>
+    <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+    <li class="self-crumb">addListener method</li>
+  </ol>
+  <div class="self-name">addListener</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li class="self-crumb">addListener method</li>
+    </ol>
+    
+    <h5>ImageStreamCompleter class</h5>
+    <ol>
+      <li class="section-title"><a href="painting/ImageStreamCompleter-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/ImageStreamCompleter/ImageStreamCompleter.html">ImageStreamCompleter</a></li>
+    
+      <li class="section-title">
+        <a href="painting/ImageStreamCompleter-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="painting/ImageStreamCompleter/hasListeners.html">hasListeners</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="painting/ImageStreamCompleter-class.html#instance-methods">Methods</a></li>
+      <li><a href="painting/ImageStreamCompleter/addListener.html">addListener</a></li>
+      <li><a href="painting/ImageStreamCompleter/debugFillProperties.html">debugFillProperties</a></li>
+      <li><a href="painting/ImageStreamCompleter/removeListener.html">removeListener</a></li>
+      <li><a href="painting/ImageStreamCompleter/reportError.html">reportError</a></li>
+      <li><a href="painting/ImageStreamCompleter/setImage.html">setImage</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="painting/ImageStreamCompleter-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>addListener method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype">void</span>
+            <span class="name ">addListener</span>
+(<wbr><span class="parameter" id="addListener-param-listener"><span class="type-annotation"><a href="painting/ImageListener.html">ImageListener</a></span> <span class="parameter-name">listener</span>, {</span> <span class="parameter" id="addListener-param-onError"><span class="type-annotation"><a href="painting/ImageErrorListener.html">ImageErrorListener</a></span> <span class="parameter-name">onError</span></span> })
+      
+    </section>
+    <section class="desc markdown">
+      <p>Adds a listener callback that is called whenever a new concrete <a href="painting/ImageInfo-class.html">ImageInfo</a>
+object is available or an error is reported. If a concrete image is
+already available, or if an error has been already reported, this object
+will call the listener or error listener synchronously.</p>
+<p>If the <a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a> completes multiple images over its lifetime,
+this listener will fire multiple times.</p>
+<p>The listener will be passed a flag indicating whether a synchronous call
+occurred. If the listener is added within a render object paint function,
+then use this flag to avoid calling <a href="rendering/RenderObject/markNeedsPaint.html">RenderObject.markNeedsPaint</a> during
+a paint.</p>
+<p>An <a href="painting/ImageErrorListener.html">ImageErrorListener</a> can also optionally be added along with the
+<code>listener</code>. If an error occurred, <code>onError</code> will be called instead of
+<code>listener</code>.</p>
+<p>If a <code>listener</code> or <code>onError</code> handler is registered multiple times, then it
+will be called multiple times when the image stream completes (whether
+because a new image is available or because an error occurs,
+respectively). In general, registering a listener multiple times is
+discouraged because <a href="painting/ImageStreamCompleter/removeListener.html">removeListener</a> will remove the first instance that
+was added, even if it was added with a different <code>onError</code> than the
+intended paired <code>addListener</code> call.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">void addListener(ImageListener listener, { ImageErrorListener onError }) {
+  _listeners.add(_ImageListenerPair(listener, onError));
+  if (_currentImage != null) {
+    try {
+      listener(_currentImage, true);
+    } catch (exception, stack) {
+      reportError(
+        context: &#39;by a synchronously-called image listener&#39;,
+        exception: exception,
+        stack: stack,
+      );
+    }
+  }
+  if (_currentError != null &amp;&amp; onError != null) {
+    try {
+      onError(_currentError.exception, _currentError.stack);
+    } catch (exception, stack) {
+      FlutterError.reportError(
+        FlutterErrorDetails(
+          exception: exception,
+          library: &#39;image resource service&#39;,
+          context: &#39;by a synchronously-called image error listener&#39;,
+          stack: stack,
+        ),
+      );
+    }
+  }
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

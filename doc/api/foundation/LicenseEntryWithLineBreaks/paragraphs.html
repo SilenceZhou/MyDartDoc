@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the paragraphs property from the LicenseEntryWithLineBreaks class, for the Dart programming language.">
+  <title>paragraphs property - LicenseEntryWithLineBreaks class - foundation library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="foundation/foundation-library.html">foundation</a></li>
+    <li><a href="foundation/LicenseEntryWithLineBreaks-class.html">LicenseEntryWithLineBreaks</a></li>
+    <li class="self-crumb">paragraphs property</li>
+  </ol>
+  <div class="self-name">paragraphs</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="foundation/foundation-library.html">foundation</a></li>
+      <li><a href="foundation/LicenseEntryWithLineBreaks-class.html">LicenseEntryWithLineBreaks</a></li>
+      <li class="self-crumb">paragraphs property</li>
+    </ol>
+    
+    <h5>LicenseEntryWithLineBreaks class</h5>
+    <ol>
+      <li class="section-title"><a href="foundation/LicenseEntryWithLineBreaks-class.html#constructors">Constructors</a></li>
+      <li><a href="foundation/LicenseEntryWithLineBreaks/LicenseEntryWithLineBreaks.html">LicenseEntryWithLineBreaks</a></li>
+    
+      <li class="section-title">
+        <a href="foundation/LicenseEntryWithLineBreaks-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="foundation/LicenseEntryWithLineBreaks/packages.html">packages</a></li>
+      <li><a href="foundation/LicenseEntryWithLineBreaks/paragraphs.html">paragraphs</a></li>
+      <li><a href="foundation/LicenseEntryWithLineBreaks/text.html">text</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="foundation/LicenseEntryWithLineBreaks-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="foundation/LicenseEntryWithLineBreaks-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>paragraphs property</h1></div>
+
+
+        <section id="getter">
+        
+        <section class="multi-line-signature">
+          <span class="returntype"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="foundation/LicenseParagraph-class.html">LicenseParagraph</a></span>&gt;</span></span>
+                  <span class="name ">paragraphs</span>
+          <div class="features">override</div>
+</section>
+        
+                <section class="desc markdown">
+          <p>The paragraphs of the license, each as a <a href="foundation/LicenseParagraph-class.html">LicenseParagraph</a> consisting of
+a string and some formatting information. Paragraphs can include newline
+characters, but this is discouraged as it results in ugliness.</p>
+        </section>
+                <section class="summary source-code" id="source">
+          <h2><span>Implementation</span></h2>
+          <pre class="language-dart"><code class="language-dart">@override
+Iterable&lt;LicenseParagraph&gt; get paragraphs sync* {
+  int lineStart = 0;
+  int currentPosition = 0;
+  int lastLineIndent = 0;
+  int currentLineIndent = 0;
+  int currentParagraphIndentation;
+  _LicenseEntryWithLineBreaksParserState state = _LicenseEntryWithLineBreaksParserState.beforeParagraph;
+  final List&lt;String&gt; lines = &lt;String&gt;[];
+
+  void addLine() {
+    assert(lineStart &lt; currentPosition);
+    lines.add(text.substring(lineStart, currentPosition));
+  }
+
+  LicenseParagraph getParagraph() {
+    assert(lines.isNotEmpty);
+    assert(currentParagraphIndentation != null);
+    final LicenseParagraph result = LicenseParagraph(lines.join(&#39; &#39;), currentParagraphIndentation);
+    assert(result.text.trimLeft() == result.text);
+    assert(result.text.isNotEmpty);
+    lines.clear();
+    return result;
+  }
+
+  while (currentPosition &lt; text.length) {
+    switch (state) {
+      case _LicenseEntryWithLineBreaksParserState.beforeParagraph:
+        assert(lineStart == currentPosition);
+        switch (text[currentPosition]) {
+          case &#39; &#39;:
+            lineStart = currentPosition + 1;
+            currentLineIndent += 1;
+            state = _LicenseEntryWithLineBreaksParserState.beforeParagraph;
+            break;
+          case &#39;\t&#39;:
+            lineStart = currentPosition + 1;
+            currentLineIndent += 8;
+            state = _LicenseEntryWithLineBreaksParserState.beforeParagraph;
+            break;
+          case &#39;\n&#39;:
+          case &#39;\f&#39;:
+            if (lines.isNotEmpty) {
+              yield getParagraph();
+            }
+            lastLineIndent = 0;
+            currentLineIndent = 0;
+            currentParagraphIndentation = null;
+            lineStart = currentPosition + 1;
+            state = _LicenseEntryWithLineBreaksParserState.beforeParagraph;
+            break;
+          case &#39;[&#39;:
+            &#47;&#47; This is a bit of a hack for the LGPL 2.1, which does something like this:
+            &#47;&#47;
+            &#47;&#47;   [this is a
+            &#47;&#47;    single paragraph]
+            &#47;&#47;
+            &#47;&#47; ...near the top.
+            currentLineIndent += 1;
+            continue startParagraph;
+          startParagraph:
+          default:
+            if (lines.isNotEmpty &amp;&amp; currentLineIndent &gt; lastLineIndent) {
+              yield getParagraph();
+              currentParagraphIndentation = null;
+            }
+            &#47;&#47; The following is a wild heuristic for guessing the indentation level.
+            &#47;&#47; It happens to work for common variants of the BSD and LGPL licenses.
+            if (currentParagraphIndentation == null) {
+              if (currentLineIndent &gt; 10)
+                currentParagraphIndentation = LicenseParagraph.centeredIndent;
+              else
+                currentParagraphIndentation = currentLineIndent ~&#47; 3;
+            }
+            state = _LicenseEntryWithLineBreaksParserState.inParagraph;
+        }
+        break;
+      case _LicenseEntryWithLineBreaksParserState.inParagraph:
+        switch (text[currentPosition]) {
+          case &#39;\n&#39;:
+            addLine();
+            lastLineIndent = currentLineIndent;
+            currentLineIndent = 0;
+            lineStart = currentPosition + 1;
+            state = _LicenseEntryWithLineBreaksParserState.beforeParagraph;
+            break;
+          case &#39;\f&#39;:
+            addLine();
+            yield getParagraph();
+            lastLineIndent = 0;
+            currentLineIndent = 0;
+            currentParagraphIndentation = null;
+            lineStart = currentPosition + 1;
+            state = _LicenseEntryWithLineBreaksParserState.beforeParagraph;
+            break;
+          default:
+            state = _LicenseEntryWithLineBreaksParserState.inParagraph;
+        }
+        break;
+    }
+    currentPosition += 1;
+  }
+  switch (state) {
+    case _LicenseEntryWithLineBreaksParserState.beforeParagraph:
+      if (lines.isNotEmpty) {
+        yield getParagraph();
+      }
+      break;
+    case _LicenseEntryWithLineBreaksParserState.inParagraph:
+      addLine();
+      yield getParagraph();
+      break;
+  }
+}</code></pre>
+        </section>
+</section>
+        
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

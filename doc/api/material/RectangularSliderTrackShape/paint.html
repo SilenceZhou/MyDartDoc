@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the paint method from the RectangularSliderTrackShape class, for the Dart programming language.">
+  <title>paint method - RectangularSliderTrackShape class - material library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="material/material-library.html">material</a></li>
+    <li><a href="material/RectangularSliderTrackShape-class.html">RectangularSliderTrackShape</a></li>
+    <li class="self-crumb">paint method</li>
+  </ol>
+  <div class="self-name">paint</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="material/RectangularSliderTrackShape-class.html">RectangularSliderTrackShape</a></li>
+      <li class="self-crumb">paint method</li>
+    </ol>
+    
+    <h5>RectangularSliderTrackShape class</h5>
+    <ol>
+      <li class="section-title"><a href="material/RectangularSliderTrackShape-class.html#constructors">Constructors</a></li>
+      <li><a href="material/RectangularSliderTrackShape/RectangularSliderTrackShape.html">RectangularSliderTrackShape</a></li>
+    
+      <li class="section-title">
+        <a href="material/RectangularSliderTrackShape-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="material/RectangularSliderTrackShape/disabledThumbGapWidth.html">disabledThumbGapWidth</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="material/RectangularSliderTrackShape-class.html#instance-methods">Methods</a></li>
+      <li><a href="material/RectangularSliderTrackShape/getPreferredRect.html">getPreferredRect</a></li>
+      <li><a href="material/RectangularSliderTrackShape/paint.html">paint</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="material/RectangularSliderTrackShape-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>paint method</h1></div>
+
+    <section class="multi-line-signature">
+      <div>
+        <ol class="annotation-list">
+          <li>@override</li>
+        </ol>
+      </div>
+      <span class="returntype">void</span>
+            <span class="name ">paint</span>
+(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span>, {</span> <span class="parameter" id="paint-param-parentBox"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">parentBox</span>, </span> <span class="parameter" id="paint-param-sliderTheme"><span class="type-annotation"><a href="material/SliderThemeData-class.html">SliderThemeData</a></span> <span class="parameter-name">sliderTheme</span>, </span> <span class="parameter" id="paint-param-enableAnimation"><span class="type-annotation"><a href="animation/Animation-class.html">Animation</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/double-class.html">double</a></span>&gt;</span></span> <span class="parameter-name">enableAnimation</span>, </span> <span class="parameter" id="paint-param-textDirection"><span class="type-annotation"><a href="dart-ui/TextDirection-class.html">TextDirection</a></span> <span class="parameter-name">textDirection</span>, </span> <span class="parameter" id="paint-param-thumbCenter"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">thumbCenter</span>, </span> <span class="parameter" id="paint-param-isDiscrete"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isDiscrete</span>, </span> <span class="parameter" id="paint-param-isEnabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isEnabled</span></span> })
+      <div class="features">override</div>
+    </section>
+    <section class="desc markdown">
+      <p>Paints the track shape based on the state passed to it.</p>
+<p><code>context</code> is the same context for the render box of the <a href="material/Slider-class.html">Slider</a>.</p>
+<p><code>offset</code> is the offset of the origin of the <code>parentBox</code> to the origin of
+its <code>context</code> canvas. This shape must be painted relative to this
+offset. See <a href="rendering/PaintingContextCallback.html">PaintingContextCallback</a>.</p>
+<p><code>parentBox</code> is the <a href="rendering/RenderBox-class.html">RenderBox</a> of the <a href="material/Slider-class.html">Slider</a>. Its attributes, such as
+size, can be used to assist in painting this shape.</p>
+<p><code>sliderTheme</code> is the theme assigned to the <a href="material/Slider-class.html">Slider</a> that this shape
+belongs to.</p>
+<p><code>enableAnimation</code> is an animation triggered when the <a href="material/Slider-class.html">Slider</a> is enabled,
+and it reverses when the slider is disabled. Enabled is the
+<code>Slider.isInteractive</code> state. Use this to paint intermediate frames for
+this shape when the slider changes enabled state.</p>
+<p><code>thumbCenter</code> is the offset of the center of the thumb relative to the
+origin of the <a href="rendering/PaintingContext/canvas.html">PaintingContext.canvas</a>. It can be used as the point that
+divides the track into 2 segments.</p>
+<p><code>isEnabled</code> has the same value as <code>Slider.isInteractive</code>. If true, the
+slider will respond to input.</p>
+<p><code>isDiscrete</code> is true if <a href="material/Slider/divisions.html">Slider.divisions</a> is non-null. If true, the
+slider will render tick marks on top of the track.</p>
+<p><code>textDirection</code> can be used to determine how the track segments are
+painted depending on whether they are active or not. The track segment
+between the start of the slider and the thumb is the active track segment.
+The track segment between the thumb and the end of the slider is the
+inactive track segment. In LTR text direction, the start of the slider is
+on the left, and in RTL text direction, the start of the slider is on the
+right.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">@override
+void paint(
+  PaintingContext context,
+  Offset offset, {
+  RenderBox parentBox,
+  SliderThemeData sliderTheme,
+  Animation&lt;double&gt; enableAnimation,
+  TextDirection textDirection,
+  Offset thumbCenter,
+  bool isDiscrete,
+  bool isEnabled,
+}) {
+  &#47;&#47; If the slider track height is 0, then it makes no difference whether the
+  &#47;&#47; track is painted or not, therefore the painting can be a no-op.
+  if (sliderTheme.trackHeight == 0) {
+    return;
+  }
+
+  &#47;&#47; Assign the track segment paints, which are left: active, right: inactive,
+  &#47;&#47; but reversed for right to left text.
+  final ColorTween activeTrackColorTween = ColorTween(begin: sliderTheme.disabledActiveTrackColor , end: sliderTheme.activeTrackColor);
+  final ColorTween inactiveTrackColorTween = ColorTween(begin: sliderTheme.disabledInactiveTrackColor , end: sliderTheme.inactiveTrackColor);
+  final Paint activePaint = Paint()..color = activeTrackColorTween.evaluate(enableAnimation);
+  final Paint inactivePaint = Paint()..color = inactiveTrackColorTween.evaluate(enableAnimation);
+  Paint leftTrackPaint;
+  Paint rightTrackPaint;
+  switch (textDirection) {
+    case TextDirection.ltr:
+      leftTrackPaint = activePaint;
+      rightTrackPaint = inactivePaint;
+      break;
+    case TextDirection.rtl:
+      leftTrackPaint = inactivePaint;
+      rightTrackPaint = activePaint;
+      break;
+  }
+
+  &#47;&#47; Used to create a gap around the thumb iff the slider is disabled.
+  &#47;&#47; If the slider is enabled, the track can be drawn beneath the thumb
+  &#47;&#47; without a gap. But when the slider is disabled, the track is shortened
+  &#47;&#47; and this gap helps determine how much shorter it should be.
+  &#47;&#47; TODO(clocksmith): The new Material spec has a gray circle in place of this gap.
+  double horizontalAdjustment = 0.0;
+  if (!isEnabled) {
+    final double disabledThumbRadius = sliderTheme.thumbShape.getPreferredSize(false, isDiscrete).width &#47; 2.0;
+    final double gap = disabledThumbGapWidth * (1.0 - enableAnimation.value);
+    horizontalAdjustment = disabledThumbRadius + gap;
+  }
+
+  final Rect trackRect = getPreferredRect(
+      parentBox: parentBox,
+      offset: offset,
+      sliderTheme: sliderTheme,
+      isEnabled: isEnabled,
+      isDiscrete: isDiscrete
+  );
+  final Rect leftTrackSegment = Rect.fromLTRB(trackRect.left, trackRect.top, thumbCenter.dx - horizontalAdjustment, trackRect.bottom);
+  context.canvas.drawRect(leftTrackSegment, leftTrackPaint);
+  final Rect rightTrackSegment = Rect.fromLTRB(thumbCenter.dx + horizontalAdjustment, trackRect.top, trackRect.right, trackRect.bottom);
+  context.canvas.drawRect(rightTrackSegment, rightTrackPaint);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the replaceSemanticsActions method from the RawGestureDetectorState class, for the Dart programming language.">
+  <title>replaceSemanticsActions method - RawGestureDetectorState class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/RawGestureDetectorState-class.html">RawGestureDetectorState</a></li>
+    <li class="self-crumb">replaceSemanticsActions method</li>
+  </ol>
+  <div class="self-name">replaceSemanticsActions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/RawGestureDetectorState-class.html">RawGestureDetectorState</a></li>
+      <li class="self-crumb">replaceSemanticsActions method</li>
+    </ol>
+    
+    <h5>RawGestureDetectorState class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/RawGestureDetectorState-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/RawGestureDetectorState/RawGestureDetectorState.html">RawGestureDetectorState</a></li>
+    
+      <li class="section-title inherited">
+        <a href="widgets/RawGestureDetectorState-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="widgets/State/context.html">context</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="widgets/State/mounted.html">mounted</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="widgets/State/widget.html">widget</a></li>
+    
+      <li class="section-title"><a href="widgets/RawGestureDetectorState-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/RawGestureDetectorState/build.html">build</a></li>
+      <li><a href="widgets/RawGestureDetectorState/debugFillProperties.html">debugFillProperties</a></li>
+      <li><a href="widgets/RawGestureDetectorState/didUpdateWidget.html">didUpdateWidget</a></li>
+      <li><a href="widgets/RawGestureDetectorState/dispose.html">dispose</a></li>
+      <li><a href="widgets/RawGestureDetectorState/initState.html">initState</a></li>
+      <li><a href="widgets/RawGestureDetectorState/replaceGestureRecognizers.html">replaceGestureRecognizers</a></li>
+      <li><a href="widgets/RawGestureDetectorState/replaceSemanticsActions.html">replaceSemanticsActions</a></li>
+      <li class="inherited"><a href="widgets/State/deactivate.html">deactivate</a></li>
+      <li class="inherited"><a href="widgets/State/didChangeDependencies.html">didChangeDependencies</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="widgets/State/reassemble.html">reassemble</a></li>
+      <li class="inherited"><a href="widgets/State/setState.html">setState</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/RawGestureDetectorState-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>replaceSemanticsActions method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype">void</span>
+            <span class="name ">replaceSemanticsActions</span>
+(<wbr><span class="parameter" id="replaceSemanticsActions-param-actions"><span class="type-annotation"><a href="dart-core/Set-class.html">Set</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-ui/SemanticsAction-class.html">SemanticsAction</a></span>&gt;</span></span> <span class="parameter-name">actions</span></span>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>This method can be called outside of the build phase to filter the list of
+available semantic actions.</p>
+<p>The actual filtering is happening in the next frame and a frame will be
+scheduled if non is pending.</p>
+<p>This is used by <a href="widgets/Scrollable-class.html">Scrollable</a> to configure system accessibility tools so
+that they know in which direction a particular list can be scrolled.</p>
+<p>If this is never called, then the actions are not filtered. If the list of
+actions to filter changes, it must be called again.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">void replaceSemanticsActions(Set&lt;SemanticsAction&gt; actions) {
+  assert(() {
+    final Element element = context;
+    if (element.owner.debugBuilding) {
+      throw FlutterError(
+        &#39;Unexpected call to replaceSemanticsActions() method of RawGestureDetectorState.\n&#39;
+        &#39;The replaceSemanticsActions() method can only be called outside of the build phase.&#39;
+      );
+    }
+    return true;
+  }());
+  if (!widget.excludeFromSemantics) {
+    final RenderSemanticsGestureHandler semanticsGestureHandler = context.findRenderObject();
+    semanticsGestureHandler.validActions = actions; &#47;&#47; will call _markNeedsSemanticsUpdate(), if required.
+  }
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

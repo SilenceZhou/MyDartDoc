@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the collectMousePositions method from the MouseTracker class, for the Dart programming language.">
+  <title>collectMousePositions method - MouseTracker class - gestures library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="gestures/gestures-library.html">gestures</a></li>
+    <li><a href="gestures/MouseTracker-class.html">MouseTracker</a></li>
+    <li class="self-crumb">collectMousePositions method</li>
+  </ol>
+  <div class="self-name">collectMousePositions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="gestures/gestures-library.html">gestures</a></li>
+      <li><a href="gestures/MouseTracker-class.html">MouseTracker</a></li>
+      <li class="self-crumb">collectMousePositions method</li>
+    </ol>
+    
+    <h5>MouseTracker class</h5>
+    <ol>
+      <li class="section-title"><a href="gestures/MouseTracker-class.html#constructors">Constructors</a></li>
+      <li><a href="gestures/MouseTracker/MouseTracker.html">MouseTracker</a></li>
+    
+      <li class="section-title">
+        <a href="gestures/MouseTracker-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="gestures/MouseTracker/annotationFinder.html">annotationFinder</a></li>
+      <li><a href="gestures/MouseTracker/mouseIsConnected.html">mouseIsConnected</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="gestures/MouseTracker-class.html#instance-methods">Methods</a></li>
+      <li><a href="gestures/MouseTracker/attachAnnotation.html">attachAnnotation</a></li>
+      <li><a href="gestures/MouseTracker/collectMousePositions.html">collectMousePositions</a></li>
+      <li><a href="gestures/MouseTracker/detachAnnotation.html">detachAnnotation</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="gestures/MouseTracker-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>collectMousePositions method</h1></div>
+
+    <section class="multi-line-signature">
+      <div>
+        <ol class="annotation-list">
+          <li>@visibleForTesting</li>
+        </ol>
+      </div>
+      <span class="returntype">void</span>
+            <span class="name ">collectMousePositions</span>
+(<wbr>)
+      <div class="features">@visibleForTesting</div>
+    </section>
+    <section class="desc markdown">
+      <p>Tells interested objects that a mouse has entered, exited, or moved, given
+a callback to fetch the <a href="gestures/MouseTrackerAnnotation-class.html">MouseTrackerAnnotation</a> associated with a global
+offset.</p>
+<p>This is called from a post-frame callback when the layer tree has been
+updated, right after rendering the frame.</p>
+<p>This function is only public to allow for proper testing of the
+MouseTracker. Do not call in other contexts.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">@visibleForTesting
+void collectMousePositions() {
+  void exitAnnotation(_TrackedAnnotation trackedAnnotation, int deviceId) {
+    if (trackedAnnotation.annotation?.onExit != null &amp;&amp; trackedAnnotation.activeDevices.contains(deviceId)) {
+      trackedAnnotation.annotation.onExit(PointerExitEvent.fromHoverEvent(_lastMouseEvent[deviceId]));
+      trackedAnnotation.activeDevices.remove(deviceId);
+    }
+  }
+
+  void exitAllDevices(_TrackedAnnotation trackedAnnotation) {
+    if (trackedAnnotation.activeDevices.isNotEmpty) {
+      final Set&lt;int&gt; deviceIds = trackedAnnotation.activeDevices.toSet();
+      for (int deviceId in deviceIds) {
+        exitAnnotation(trackedAnnotation, deviceId);
+      }
+    }
+  }
+
+  &#47;&#47; This indicates that all mouse pointers were removed, or none have been
+  &#47;&#47; connected yet. If no mouse is connected, then we want to make sure that
+  &#47;&#47; all active annotations are exited.
+  if (!mouseIsConnected) {
+    _trackedAnnotations.values.forEach(exitAllDevices);
+    return;
+  }
+
+  for (int deviceId in _lastMouseEvent.keys) {
+    final PointerEvent lastEvent = _lastMouseEvent[deviceId];
+    final MouseTrackerAnnotation hit = annotationFinder(lastEvent.position);
+
+    &#47;&#47; No annotation was found at this position for this deviceId, so send an
+    &#47;&#47; exit to all active tracked annotations, since none of them were hit.
+    if (hit == null) {
+      &#47;&#47; Send an exit to all tracked animations tracking this deviceId.
+      for (_TrackedAnnotation trackedAnnotation in _trackedAnnotations.values) {
+        exitAnnotation(trackedAnnotation, deviceId);
+      }
+      return;
+    }
+
+    final _TrackedAnnotation hitAnnotation = _findAnnotation(hit);
+    if (!hitAnnotation.activeDevices.contains(deviceId)) {
+      &#47;&#47; A tracked annotation that just became active and needs to have an enter
+      &#47;&#47; event sent to it.
+      hitAnnotation.activeDevices.add(deviceId);
+      if (hitAnnotation.annotation?.onEnter != null) {
+        hitAnnotation.annotation.onEnter(PointerEnterEvent.fromHoverEvent(lastEvent));
+      }
+    }
+    if (hitAnnotation.annotation?.onHover != null) {
+      hitAnnotation.annotation.onHover(lastEvent);
+    }
+
+    &#47;&#47; Tell any tracked annotations that weren&#39;t hit that they are no longer
+    &#47;&#47; active.
+    for (_TrackedAnnotation trackedAnnotation in _trackedAnnotations.values) {
+      if (hitAnnotation == trackedAnnotation) {
+        continue;
+      }
+      if (trackedAnnotation.activeDevices.contains(deviceId)) {
+        if (trackedAnnotation.annotation?.onExit != null) {
+          trackedAnnotation.annotation.onExit(PointerExitEvent.fromHoverEvent(lastEvent));
+        }
+        trackedAnnotation.activeDevices.remove(deviceId);
+      }
+    }
+  }
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

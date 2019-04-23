@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Container constructor from the Class Container class from the widgets library, for the Dart programming language.">
+  <title>Container constructor - Container class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/Container-class.html">Container</a></li>
+    <li class="self-crumb">Container constructor</li>
+  </ol>
+  <div class="self-name">Container</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/Container-class.html">Container</a></li>
+      <li class="self-crumb">Container constructor</li>
+    </ol>
+    
+    <h5>Container class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/Container-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/Container/Container.html">Container</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/Container-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/Container/alignment.html">alignment</a></li>
+      <li><a href="widgets/Container/child.html">child</a></li>
+      <li><a href="widgets/Container/constraints.html">constraints</a></li>
+      <li><a href="widgets/Container/decoration.html">decoration</a></li>
+      <li><a href="widgets/Container/foregroundDecoration.html">foregroundDecoration</a></li>
+      <li><a href="widgets/Container/margin.html">margin</a></li>
+      <li><a href="widgets/Container/padding.html">padding</a></li>
+      <li><a href="widgets/Container/transform.html">transform</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="widgets/Widget/key.html">key</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="widgets/Container-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/Container/build.html">build</a></li>
+      <li><a href="widgets/Container/debugFillProperties.html">debugFillProperties</a></li>
+      <li class="inherited"><a href="widgets/StatelessWidget/createElement.html">createElement</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+      <li class="inherited"><a href="widgets/Widget/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/Container-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>Container constructor</h1></div>
+
+    <section class="multi-line-signature">
+      
+      <span class="name ">Container</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a href="foundation/Key-class.html">Key</a></span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="-param-alignment"><span class="type-annotation"><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></span> <span class="parameter-name">alignment</span>, </span> <span class="parameter" id="-param-padding"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">padding</span>, </span> <span class="parameter" id="-param-color"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span>, </span> <span class="parameter" id="-param-decoration"><span class="type-annotation"><a href="painting/Decoration-class.html">Decoration</a></span> <span class="parameter-name">decoration</span>, </span> <span class="parameter" id="-param-foregroundDecoration"><span class="type-annotation"><a href="painting/Decoration-class.html">Decoration</a></span> <span class="parameter-name">foregroundDecoration</span>, </span> <span class="parameter" id="-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span>, </span> <span class="parameter" id="-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span>, </span> <span class="parameter" id="-param-margin"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">margin</span>, </span> <span class="parameter" id="-param-transform"><span class="type-annotation"><a href="widgets/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span>, </span> <span class="parameter" id="-param-child"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span> })
+    </section>
+
+    <section class="desc markdown">
+      <p>Creates a widget that combines common painting, positioning, and sizing widgets.</p>
+<p>The <code>height</code> and <code>width</code> values include the padding.</p>
+<p>The <code>color</code> argument is a shorthand for <code>decoration: new
+BoxDecoration(color: color)</code>, which means you cannot supply both a <code>color</code>
+and a <code>decoration</code> argument. If you want to have both a <code>color</code> and a
+<code>decoration</code>, you can pass the color as the <code>color</code> argument to the
+<code>BoxDecoration</code>.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">Container({
+  Key key,
+  this.alignment,
+  this.padding,
+  Color color,
+  Decoration decoration,
+  this.foregroundDecoration,
+  double width,
+  double height,
+  BoxConstraints constraints,
+  this.margin,
+  this.transform,
+  this.child,
+}) : assert(margin == null || margin.isNonNegative),
+     assert(padding == null || padding.isNonNegative),
+     assert(decoration == null || decoration.debugAssertIsValid()),
+     assert(constraints == null || constraints.debugAssertIsValid()),
+     assert(color == null || decoration == null,
+       &#39;Cannot provide both a color and a decoration\n&#39;
+       &#39;The color argument is just a shorthand for &quot;decoration: new BoxDecoration(color: color)&quot;.&#39;
+     ),
+     decoration = decoration ?? (color != null ? BoxDecoration(color: color) : null),
+     constraints =
+      (width != null || height != null)
+        ? constraints?.tighten(width: width, height: height)
+          ?? BoxConstraints.tightFor(width: width, height: height)
+        : constraints,
+     super(key: key);</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

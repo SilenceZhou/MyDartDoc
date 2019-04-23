@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the shouldRepaint method from the ScrollbarPainter class, for the Dart programming language.">
+  <title>shouldRepaint method - ScrollbarPainter class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/ScrollbarPainter-class.html">ScrollbarPainter</a></li>
+    <li class="self-crumb">shouldRepaint method</li>
+  </ol>
+  <div class="self-name">shouldRepaint</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/ScrollbarPainter-class.html">ScrollbarPainter</a></li>
+      <li class="self-crumb">shouldRepaint method</li>
+    </ol>
+    
+    <h5>ScrollbarPainter class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/ScrollbarPainter-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/ScrollbarPainter/ScrollbarPainter.html">ScrollbarPainter</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/ScrollbarPainter-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/ScrollbarPainter/color.html">color</a></li>
+      <li><a href="widgets/ScrollbarPainter/crossAxisMargin.html">crossAxisMargin</a></li>
+      <li><a href="widgets/ScrollbarPainter/fadeoutOpacityAnimation.html">fadeoutOpacityAnimation</a></li>
+      <li><a href="widgets/ScrollbarPainter/mainAxisMargin.html">mainAxisMargin</a></li>
+      <li><a href="widgets/ScrollbarPainter/minLength.html">minLength</a></li>
+      <li><a href="widgets/ScrollbarPainter/minOverscrollLength.html">minOverscrollLength</a></li>
+      <li><a href="widgets/ScrollbarPainter/radius.html">radius</a></li>
+      <li><a href="widgets/ScrollbarPainter/semanticsBuilder.html">semanticsBuilder</a></li>
+      <li><a href="widgets/ScrollbarPainter/textDirection.html">textDirection</a></li>
+      <li><a href="widgets/ScrollbarPainter/thickness.html">thickness</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="foundation/ChangeNotifier/hasListeners.html">hasListeners</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="widgets/ScrollbarPainter-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/ScrollbarPainter/dispose.html">dispose</a></li>
+      <li><a href="widgets/ScrollbarPainter/hitTest.html">hitTest</a></li>
+      <li><a href="widgets/ScrollbarPainter/paint.html">paint</a></li>
+      <li><a href="widgets/ScrollbarPainter/shouldRebuildSemantics.html">shouldRebuildSemantics</a></li>
+      <li><a href="widgets/ScrollbarPainter/shouldRepaint.html">shouldRepaint</a></li>
+      <li><a href="widgets/ScrollbarPainter/update.html">update</a></li>
+      <li class="inherited"><a href="foundation/ChangeNotifier/addListener.html">addListener</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/ChangeNotifier/notifyListeners.html">notifyListeners</a></li>
+      <li class="inherited"><a href="foundation/ChangeNotifier/removeListener.html">removeListener</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/ScrollbarPainter-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>shouldRepaint method</h1></div>
+
+    <section class="multi-line-signature">
+      <div>
+        <ol class="annotation-list">
+          <li>@override</li>
+        </ol>
+      </div>
+      <span class="returntype"><a href="dart-core/bool-class.html">bool</a></span>
+            <span class="name ">shouldRepaint</span>
+(<wbr><span class="parameter" id="shouldRepaint-param-old"><span>covariant</span> <span class="type-annotation"><a href="widgets/ScrollbarPainter-class.html">ScrollbarPainter</a></span> <span class="parameter-name">old</span></span>)
+      <div class="features">override</div>
+    </section>
+    <section class="desc markdown">
+      <p>Called whenever a new instance of the custom painter delegate class is
+provided to the <a href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a> object, or any time that a new
+<a href="widgets/CustomPaint-class.html">CustomPaint</a> object is created with a new instance of the custom painter
+delegate class (which amounts to the same thing, because the latter is
+implemented in terms of the former).</p>
+<p>If the new instance represents different information than the old
+instance, then the method should return true, otherwise it should return
+false.</p>
+<p>If the method returns false, then the <a href="widgets/ScrollbarPainter/paint.html">paint</a> call might be optimized
+away.</p>
+<p>It's possible that the <a href="widgets/ScrollbarPainter/paint.html">paint</a> method will get called even if
+<a href="widgets/ScrollbarPainter/shouldRepaint.html">shouldRepaint</a> returns false (e.g. if an ancestor or descendant needed to
+be repainted). It's also possible that the <a href="widgets/ScrollbarPainter/paint.html">paint</a> method will get called
+without <a href="widgets/ScrollbarPainter/shouldRepaint.html">shouldRepaint</a> being called at all (e.g. if the box changes
+size).</p>
+<p>If a custom delegate has a particularly expensive paint function such that
+repaints should be avoided as much as possible, a <a href="widgets/RepaintBoundary-class.html">RepaintBoundary</a> or
+<a href="rendering/RenderRepaintBoundary-class.html">RenderRepaintBoundary</a> (or other render object with
+<a href="rendering/RenderObject/isRepaintBoundary.html">RenderObject.isRepaintBoundary</a> set to true) might be helpful.</p>
+<p>The <code>oldDelegate</code> argument will never be null.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">@override
+bool shouldRepaint(ScrollbarPainter old) {
+  &#47;&#47; Should repaint if any properties changed.
+  return color != old.color
+      || textDirection != old.textDirection
+      || thickness != old.thickness
+      || fadeoutOpacityAnimation != old.fadeoutOpacityAnimation
+      || mainAxisMargin != old.mainAxisMargin
+      || crossAxisMargin != old.crossAxisMargin
+      || radius != old.radius
+      || minLength != old.minLength;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

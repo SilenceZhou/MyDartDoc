@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the getScrollPhysics method from the ScrollBehavior class, for the Dart programming language.">
+  <title>getScrollPhysics method - ScrollBehavior class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/ScrollBehavior-class.html">ScrollBehavior</a></li>
+    <li class="self-crumb">getScrollPhysics method</li>
+  </ol>
+  <div class="self-name">getScrollPhysics</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/ScrollBehavior-class.html">ScrollBehavior</a></li>
+      <li class="self-crumb">getScrollPhysics method</li>
+    </ol>
+    
+    <h5>ScrollBehavior class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/ScrollBehavior-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/ScrollBehavior/ScrollBehavior.html">ScrollBehavior</a></li>
+    
+      <li class="section-title inherited">
+        <a href="widgets/ScrollBehavior-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="widgets/ScrollBehavior-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/ScrollBehavior/buildViewportChrome.html">buildViewportChrome</a></li>
+      <li><a href="widgets/ScrollBehavior/getPlatform.html">getPlatform</a></li>
+      <li><a href="widgets/ScrollBehavior/getScrollPhysics.html">getScrollPhysics</a></li>
+      <li><a href="widgets/ScrollBehavior/shouldNotify.html">shouldNotify</a></li>
+      <li><a href="widgets/ScrollBehavior/toString.html">toString</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/ScrollBehavior-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>getScrollPhysics method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a></span>
+            <span class="name ">getScrollPhysics</span>
+(<wbr><span class="parameter" id="getScrollPhysics-param-context"><span class="type-annotation"><a href="widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>The scroll physics to use for the platform given by <a href="widgets/ScrollBehavior/getPlatform.html">getPlatform</a>.</p>
+<p>Defaults to <a href="widgets/BouncingScrollPhysics-class.html">BouncingScrollPhysics</a> on iOS and <a href="widgets/ClampingScrollPhysics-class.html">ClampingScrollPhysics</a> on
+Android.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">ScrollPhysics getScrollPhysics(BuildContext context) {
+  switch (getPlatform(context)) {
+    case TargetPlatform.iOS:
+      return const BouncingScrollPhysics();
+    case TargetPlatform.android:
+    case TargetPlatform.fuchsia:
+      return const ClampingScrollPhysics();
+  }
+  return null;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

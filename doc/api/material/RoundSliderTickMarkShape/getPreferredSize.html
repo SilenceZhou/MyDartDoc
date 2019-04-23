@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the getPreferredSize method from the RoundSliderTickMarkShape class, for the Dart programming language.">
+  <title>getPreferredSize method - RoundSliderTickMarkShape class - material library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="material/material-library.html">material</a></li>
+    <li><a href="material/RoundSliderTickMarkShape-class.html">RoundSliderTickMarkShape</a></li>
+    <li class="self-crumb">getPreferredSize method</li>
+  </ol>
+  <div class="self-name">getPreferredSize</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="material/RoundSliderTickMarkShape-class.html">RoundSliderTickMarkShape</a></li>
+      <li class="self-crumb">getPreferredSize method</li>
+    </ol>
+    
+    <h5>RoundSliderTickMarkShape class</h5>
+    <ol>
+      <li class="section-title"><a href="material/RoundSliderTickMarkShape-class.html#constructors">Constructors</a></li>
+      <li><a href="material/RoundSliderTickMarkShape/RoundSliderTickMarkShape.html">RoundSliderTickMarkShape</a></li>
+    
+      <li class="section-title">
+        <a href="material/RoundSliderTickMarkShape-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="material/RoundSliderTickMarkShape/tickMarkRadius.html">tickMarkRadius</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="material/RoundSliderTickMarkShape-class.html#instance-methods">Methods</a></li>
+      <li><a href="material/RoundSliderTickMarkShape/getPreferredSize.html">getPreferredSize</a></li>
+      <li><a href="material/RoundSliderTickMarkShape/paint.html">paint</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="material/RoundSliderTickMarkShape-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>getPreferredSize method</h1></div>
+
+    <section class="multi-line-signature">
+      <div>
+        <ol class="annotation-list">
+          <li>@override</li>
+        </ol>
+      </div>
+      <span class="returntype"><a href="dart-ui/Size-class.html">Size</a></span>
+            <span class="name ">getPreferredSize</span>
+(<wbr>{<span class="parameter" id="getPreferredSize-param-isEnabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isEnabled</span>, </span> <span class="parameter" id="getPreferredSize-param-sliderTheme"><span class="type-annotation"><a href="material/SliderThemeData-class.html">SliderThemeData</a></span> <span class="parameter-name">sliderTheme</span></span> })
+      <div class="features">override</div>
+    </section>
+    <section class="desc markdown">
+      <p>Returns the preferred size of the shape.</p>
+<p>It is used to help position the tick marks within the slider.</p>
+<p><code>sliderTheme</code> is the theme assigned to the <a href="material/Slider-class.html">Slider</a> that this shape
+belongs to.</p>
+<p><code>isEnabled</code> has the same value as <code>Slider.isInteractive</code>. If true, the
+slider will respond to input.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">@override
+Size getPreferredSize({
+  bool isEnabled,
+  SliderThemeData sliderTheme,
+}) {
+  &#47;&#47; The tick marks are tiny circles. If no radius is provided, then they are
+  &#47;&#47; defaulted to be the same height as the track.
+  return Size.fromRadius(tickMarkRadius ?? sliderTheme.trackHeight &#47; 2);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

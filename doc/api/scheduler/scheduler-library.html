@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="scheduler library API docs, for the Dart programming language.">
+  <title>scheduler library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li class="self-crumb">scheduler library</li>
+  </ol>
+  <div class="self-name">scheduler</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li class="self-crumb">scheduler library</li>
+    </ol>
+    
+    <h5><span class="package-name">flutter</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="animation/animation-library.html">animation</a></li>
+          <li><a href="cupertino/cupertino-library.html">cupertino</a></li>
+          <li><a href="foundation/foundation-library.html">foundation</a></li>
+          <li><a href="gestures/gestures-library.html">gestures</a></li>
+          <li><a href="material/material-library.html">material</a></li>
+          <li><a href="painting/painting-library.html">painting</a></li>
+          <li><a href="physics/physics-library.html">physics</a></li>
+          <li><a href="rendering/rendering-library.html">rendering</a></li>
+          <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
+          <li><a href="semantics/semantics-library.html">semantics</a></li>
+          <li><a href="services/services-library.html">services</a></li>
+          <li><a href="widgets/widgets-library.html">widgets</a></li>
+          <li class="section-title">Dart</li>
+          <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+          <li class="section-subtitle">Core</li>
+            <li class="section-subitem"><a href="dart-async/dart-async-library.html">dart:async</a></li>
+            <li class="section-subitem"><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
+            <li class="section-subitem"><a href="dart-convert/dart-convert-library.html">dart:convert</a></li>
+            <li class="section-subitem"><a href="dart-core/dart-core-library.html">dart:core</a></li>
+            <li class="section-subitem"><a href="dart-developer/dart-developer-library.html">dart:developer</a></li>
+            <li class="section-subitem"><a href="dart-math/dart-math-library.html">dart:math</a></li>
+            <li class="section-subitem"><a href="dart-typed_data/dart-typed_data-library.html">dart:typed_data</a></li>
+          <li class="section-subtitle">VM</li>
+            <li class="section-subitem"><a href="dart-io/dart-io-library.html">dart:io</a></li>
+            <li class="section-subitem"><a href="dart-isolate/dart-isolate-library.html">dart:isolate</a></li>
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>scheduler library </h1></div>
+
+    <section class="desc markdown">
+      <p>The Flutter Scheduler library.</p>
+<p>To use, import <code>package:flutter/scheduler.dart</code>.</p>
+<p>This library is responsible for scheduler frame callbacks, and tasks at
+given priorities.</p>
+<p>The library makes sure that tasks are only run when appropriate.
+For example, an idle-task is only executed when no animation is running.</p>
+    </section>
+    
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="Priority">
+          <span class="name "><a href="scheduler/Priority-class.html">Priority</a></span>         
+        </dt>
+        <dd>
+          A task priority, as passed to <a href="scheduler/SchedulerBinding/scheduleTask.html">SchedulerBinding.scheduleTask</a>.
+        </dd>
+        <dt id="Ticker">
+          <span class="name "><a href="scheduler/Ticker-class.html">Ticker</a></span>         
+        </dt>
+        <dd>
+          Calls its callback once per animation frame. <a href="scheduler/Ticker-class.html">[...]</a>
+        </dd>
+        <dt id="TickerFuture">
+          <span class="name "><a href="scheduler/TickerFuture-class.html">TickerFuture</a></span>         
+        </dt>
+        <dd>
+          An object representing an ongoing <a href="scheduler/Ticker-class.html">Ticker</a> sequence. <a href="scheduler/TickerFuture-class.html">[...]</a>
+        </dd>
+        <dt id="TickerProvider">
+          <span class="name "><a href="scheduler/TickerProvider-class.html">TickerProvider</a></span>         
+        </dt>
+        <dd>
+          An interface implemented by classes that can vend <a href="scheduler/Ticker-class.html">Ticker</a> objects. <a href="scheduler/TickerProvider-class.html">[...]</a>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="mixins">
+      <h2>Mixins</h2>
+
+      <dl>
+        <dt id="SchedulerBinding">
+          <span class="name "><a href="scheduler/SchedulerBinding-mixin.html">SchedulerBinding</a></span>         
+        </dt>
+        <dd>
+          Scheduler for running the following: <a href="scheduler/SchedulerBinding-mixin.html">[...]</a>
+        </dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="debugPrintBeginFrameBanner" class="property">
+          <span class="name"><a href="scheduler/debugPrintBeginFrameBanner.html">debugPrintBeginFrameBanner</a></span>
+          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>         
+        </dt>
+        <dd>
+          Print a banner at the beginning of each frame. <a href="scheduler/debugPrintBeginFrameBanner.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="debugPrintEndFrameBanner" class="property">
+          <span class="name"><a href="scheduler/debugPrintEndFrameBanner.html">debugPrintEndFrameBanner</a></span>
+          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>         
+        </dt>
+        <dd>
+          Print a banner at the end of each frame. <a href="scheduler/debugPrintEndFrameBanner.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="debugPrintScheduleFrameStacks" class="property">
+          <span class="name"><a href="scheduler/debugPrintScheduleFrameStacks.html">debugPrintScheduleFrameStacks</a></span>
+          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>         
+        </dt>
+        <dd>
+          Log the call stacks that cause a frame to be scheduled. <a href="scheduler/debugPrintScheduleFrameStacks.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="timeDilation" class="property">
+          <span class="name"><a href="scheduler/timeDilation.html">timeDilation</a></span>
+          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>         
+        </dt>
+        <dd>
+          Slows down animations by this factor to help in development.
+                  <div class="features">read / write</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="functions">
+      <h2>Functions</h2>
+
+      <dl class="callables">
+        <dt id="debugAssertAllSchedulerVarsUnset" class="callable">
+          <span class="name"><a href="scheduler/debugAssertAllSchedulerVarsUnset.html">debugAssertAllSchedulerVarsUnset</a></span><span class="signature">(<wbr><span class="parameter" id="debugAssertAllSchedulerVarsUnset-param-reason"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">reason</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+                  </dt>
+        <dd>
+          Returns true if none of the scheduler library debug variables have been changed. <a href="scheduler/debugAssertAllSchedulerVarsUnset.html">[...]</a>
+                  
+</dd>
+        <dt id="defaultSchedulingStrategy" class="callable">
+          <span class="name"><a href="scheduler/defaultSchedulingStrategy.html">defaultSchedulingStrategy</a></span><span class="signature">(<wbr>{<span class="parameter" id="defaultSchedulingStrategy-param-priority"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">priority</span>, </span> <span class="parameter" id="defaultSchedulingStrategy-param-scheduler"><span class="type-annotation"><a href="scheduler/SchedulerBinding-mixin.html">SchedulerBinding</a></span> <span class="parameter-name">scheduler</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+                  </dt>
+        <dd>
+          The default <a href="scheduler/SchedulingStrategy.html">SchedulingStrategy</a> for <a href="scheduler/SchedulerBinding/schedulingStrategy.html">SchedulerBinding.schedulingStrategy</a>. <a href="scheduler/defaultSchedulingStrategy.html">[...]</a>
+                  
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="enums">
+      <h2>Enums</h2>
+
+      <dl>
+        <dt id="AppLifecycleState">
+          <span class="name "><a href="dart-ui/AppLifecycleState-class.html">AppLifecycleState</a></span>         
+        </dt>
+        <dd>
+          States that an application can be in. <a href="dart-ui/AppLifecycleState-class.html">[...]</a>
+        </dd>
+        <dt id="SchedulerPhase">
+          <span class="name "><a href="scheduler/SchedulerPhase-class.html">SchedulerPhase</a></span>         
+        </dt>
+        <dd>
+          The various phases that a <a href="scheduler/SchedulerBinding-mixin.html">SchedulerBinding</a> goes through during
+<a href="scheduler/SchedulerBinding/handleBeginFrame.html">SchedulerBinding.handleBeginFrame</a>. <a href="scheduler/SchedulerPhase-class.html">[...]</a>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="typedefs">
+      <h2>Typedefs</h2>
+
+      <dl class="callables">
+        <dt id="FrameCallback" class="callable">
+          <span class="name"><a href="scheduler/FrameCallback.html">FrameCallback</a></span><span class="signature">(<wbr><span class="parameter" id="FrameCallback-param-timeStamp"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">timeStamp</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for frame-related callbacks from the scheduler. <a href="scheduler/FrameCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="SchedulingStrategy" class="callable">
+          <span class="name"><a href="scheduler/SchedulingStrategy.html">SchedulingStrategy</a></span><span class="signature">(<wbr>{<span class="parameter" id="SchedulingStrategy-param-priority"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">priority</span>, </span> <span class="parameter" id="SchedulingStrategy-param-scheduler"><span class="type-annotation"><a href="scheduler/SchedulerBinding-mixin.html">SchedulerBinding</a></span> <span class="parameter-name">scheduler</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for the <a href="scheduler/SchedulerBinding/schedulingStrategy.html">SchedulerBinding.schedulingStrategy</a> callback. Called
+whenever the system needs to decide whether a task at a given
+priority needs to be run. <a href="scheduler/SchedulingStrategy.html">[...]</a>
+                  
+</dd>
+        <dt id="TaskCallback" class="callable">
+          <span class="name"><a href="scheduler/TaskCallback.html">TaskCallback</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; T</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for <code>Scheduler.scheduleTask</code> callbacks. <a href="scheduler/TaskCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="TickerCallback" class="callable">
+          <span class="name"><a href="scheduler/TickerCallback.html">TickerCallback</a></span><span class="signature">(<wbr><span class="parameter" id="TickerCallback-param-elapsed"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">elapsed</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature for the callback passed to the <a href="scheduler/Ticker-class.html">Ticker</a> class's constructor. <a href="scheduler/TickerCallback.html">[...]</a>
+                  
+</dd>
+        <dt id="VoidCallback" class="callable">
+          <span class="name"><a href="dart-ui/VoidCallback.html">VoidCallback</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          Signature of callbacks that have no arguments and return no data.
+                  
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="exceptions">
+      <h2>Exceptions / Errors</h2>
+
+      <dl>
+        <dt id="TickerCanceled">
+          <span class="name "><a href="scheduler/TickerCanceled-class.html">TickerCanceled</a></span>         
+        </dt>
+        <dd>
+          Exception thrown by <a href="scheduler/Ticker-class.html">Ticker</a> objects on the <a href="scheduler/TickerFuture/orCancel.html">TickerFuture.orCancel</a> future
+when the ticker is canceled.
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>scheduler library</h5>
+    <ol>
+      <li class="section-title"><a href="scheduler/scheduler-library.html#classes">Classes</a></li>
+      <li><a href="scheduler/Priority-class.html">Priority</a></li>
+      <li><a href="scheduler/Ticker-class.html">Ticker</a></li>
+      <li><a href="scheduler/TickerFuture-class.html">TickerFuture</a></li>
+      <li><a href="scheduler/TickerProvider-class.html">TickerProvider</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#mixins">Mixins</a></li>
+      <li><a href="scheduler/SchedulerBinding-mixin.html">SchedulerBinding</a></li>
+    
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#properties">Properties</a></li>
+      <li><a href="scheduler/debugPrintBeginFrameBanner.html">debugPrintBeginFrameBanner</a></li>
+      <li><a href="scheduler/debugPrintEndFrameBanner.html">debugPrintEndFrameBanner</a></li>
+      <li><a href="scheduler/debugPrintScheduleFrameStacks.html">debugPrintScheduleFrameStacks</a></li>
+      <li><a href="scheduler/timeDilation.html">timeDilation</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#functions">Functions</a></li>
+      <li><a href="scheduler/debugAssertAllSchedulerVarsUnset.html">debugAssertAllSchedulerVarsUnset</a></li>
+      <li><a href="scheduler/defaultSchedulingStrategy.html">defaultSchedulingStrategy</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#enums">Enums</a></li>
+      <li><a href="dart-ui/AppLifecycleState-class.html">AppLifecycleState</a></li>
+      <li><a href="scheduler/SchedulerPhase-class.html">SchedulerPhase</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#typedefs">Typedefs</a></li>
+      <li><a href="scheduler/FrameCallback.html">FrameCallback</a></li>
+      <li><a href="scheduler/SchedulingStrategy.html">SchedulingStrategy</a></li>
+      <li><a href="scheduler/TaskCallback.html">TaskCallback</a></li>
+      <li><a href="scheduler/TickerCallback.html">TickerCallback</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#exceptions">Exceptions</a></li>
+      <li><a href="scheduler/TickerCanceled-class.html">TickerCanceled</a></li>
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

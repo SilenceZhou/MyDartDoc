@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the inheritFromWidgetOfExactType method from the BuildContext class, for the Dart programming language.">
+  <title>inheritFromWidgetOfExactType method - BuildContext class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/BuildContext-class.html">BuildContext</a></li>
+    <li class="self-crumb">inheritFromWidgetOfExactType abstract method</li>
+  </ol>
+  <div class="self-name">inheritFromWidgetOfExactType</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/BuildContext-class.html">BuildContext</a></li>
+      <li class="self-crumb">inheritFromWidgetOfExactType abstract method</li>
+    </ol>
+    
+    <h5>BuildContext class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/BuildContext-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/BuildContext/BuildContext.html">BuildContext</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/BuildContext-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/BuildContext/owner.html">owner</a></li>
+      <li><a href="widgets/BuildContext/size.html">size</a></li>
+      <li><a href="widgets/BuildContext/widget.html">widget</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="widgets/BuildContext-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/BuildContext/ancestorInheritedElementForWidgetOfExactType.html">ancestorInheritedElementForWidgetOfExactType</a></li>
+      <li><a href="widgets/BuildContext/ancestorRenderObjectOfType.html">ancestorRenderObjectOfType</a></li>
+      <li><a href="widgets/BuildContext/ancestorStateOfType.html">ancestorStateOfType</a></li>
+      <li><a href="widgets/BuildContext/ancestorWidgetOfExactType.html">ancestorWidgetOfExactType</a></li>
+      <li><a href="widgets/BuildContext/findRenderObject.html">findRenderObject</a></li>
+      <li><a href="widgets/BuildContext/inheritFromElement.html">inheritFromElement</a></li>
+      <li><a href="widgets/BuildContext/inheritFromWidgetOfExactType.html">inheritFromWidgetOfExactType</a></li>
+      <li><a href="widgets/BuildContext/rootAncestorStateOfType.html">rootAncestorStateOfType</a></li>
+      <li><a href="widgets/BuildContext/visitAncestorElements.html">visitAncestorElements</a></li>
+      <li><a href="widgets/BuildContext/visitChildElements.html">visitChildElements</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/BuildContext-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>inheritFromWidgetOfExactType method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="widgets/InheritedWidget-class.html">InheritedWidget</a></span>
+            <span class="name ">inheritFromWidgetOfExactType</span>
+(<wbr><span class="parameter" id="inheritFromWidgetOfExactType-param-targetType"><span class="type-annotation"><a href="dart-core/Type-class.html">Type</a></span> <span class="parameter-name">targetType</span>, {</span> <span class="parameter" id="inheritFromWidgetOfExactType-param-aspect"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">aspect</span></span> })
+      
+    </section>
+    <section class="desc markdown">
+      <p>Obtains the nearest widget of the given type, which must be the type of a
+concrete <a href="widgets/InheritedWidget-class.html">InheritedWidget</a> subclass, and registers this build context with
+that widget such that when that widget changes (or a new widget of that
+type is introduced, or the widget goes away), this build context is
+rebuilt so that it can obtain new values from that widget.</p>
+<p>This is typically called implicitly from <code>of()</code> static methods, e.g.
+<a href="material/Theme/of.html">Theme.of</a>.</p>
+<p>This method should not be called from widget constructors or from
+<a href="widgets/State/initState.html">State.initState</a> methods, because those methods would not get called
+again if the inherited value were to change. To ensure that the widget
+correctly updates itself when the inherited value changes, only call this
+(directly or indirectly) from build methods, layout and paint callbacks, or
+from <a href="widgets/State/didChangeDependencies.html">State.didChangeDependencies</a>.</p>
+<p>This method should not be called from <a href="widgets/State/dispose.html">State.dispose</a> because the element
+tree is no longer stable at that time. To refer to an ancestor from that
+method, save a reference to the ancestor in <a href="widgets/State/didChangeDependencies.html">State.didChangeDependencies</a>.
+It is safe to use this method from <a href="widgets/State/deactivate.html">State.deactivate</a>, which is called
+whenever the widget is removed from the tree.</p>
+<p>It is also possible to call this method from interaction event handlers
+(e.g. gesture callbacks) or timers, to obtain a value once, if that value
+is not going to be cached and reused later.</p>
+<p>Calling this method is O(1) with a small constant factor, but will lead to
+the widget being rebuilt more often.</p>
+<p>Once a widget registers a dependency on a particular type by calling this
+method, it will be rebuilt, and <a href="widgets/State/didChangeDependencies.html">State.didChangeDependencies</a> will be
+called, whenever changes occur relating to that widget until the next time
+the widget or one of its ancestors is moved (for example, because an
+ancestor is added or removed).</p>
+<p>The <code>aspect</code> parameter is only used when <code>targetType</code> is an
+<a href="widgets/InheritedWidget-class.html">InheritedWidget</a> subclasses that supports partial updates, like
+<a href="widgets/InheritedModel-class.html">InheritedModel</a>. It specifies what "aspect" of the inherited
+widget this context depends on.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">InheritedWidget inheritFromWidgetOfExactType(Type targetType, { Object aspect });</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the platform constant from the SystemChannels class, for the Dart programming language.">
+  <title>platform constant - SystemChannels class - services library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="services/services-library.html">services</a></li>
+    <li><a href="services/SystemChannels-class.html">SystemChannels</a></li>
+    <li class="self-crumb">platform constant</li>
+  </ol>
+  <div class="self-name">platform</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="services/services-library.html">services</a></li>
+      <li><a href="services/SystemChannels-class.html">SystemChannels</a></li>
+      <li class="self-crumb">platform constant</li>
+    </ol>
+    
+    <h5>SystemChannels class</h5>
+    <ol>
+    
+      <li class="section-title inherited">
+        <a href="services/SystemChannels-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="services/SystemChannels-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="services/SystemChannels-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+      <li class="section-title"><a href="services/SystemChannels-class.html#constants">Constants</a></li>
+      <li><a href="services/SystemChannels/accessibility-constant.html">accessibility</a></li>
+      <li><a href="services/SystemChannels/keyEvent-constant.html">keyEvent</a></li>
+      <li><a href="services/SystemChannels/lifecycle-constant.html">lifecycle</a></li>
+      <li><a href="services/SystemChannels/navigation-constant.html">navigation</a></li>
+      <li><a href="services/SystemChannels/platform-constant.html">platform</a></li>
+      <li><a href="services/SystemChannels/platform_views-constant.html">platform_views</a></li>
+      <li><a href="services/SystemChannels/skia-constant.html">skia</a></li>
+      <li><a href="services/SystemChannels/system-constant.html">system</a></li>
+      <li><a href="services/SystemChannels/textInput-constant.html">textInput</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>platform constant</h1></div>
+
+    <section class="multi-line-signature">
+        <span class="returntype"><a href="services/MethodChannel-class.html">MethodChannel</a></span>
+        const <span class="name ">platform</span>
+        =
+        <span class="constant-value">const <a href="services/OptionalMethodChannel/OptionalMethodChannel.html">OptionalMethodChannel</a>(&#39;flutter&#47;platform&#39;, const JSONMethodCodec())</span>
+    </section>
+
+    <section class="desc markdown">
+      <p>A JSON <a href="services/MethodChannel-class.html">MethodChannel</a> for invoking miscellaneous platform methods.</p>
+<p>The following outgoing methods are defined for this channel (invoked using
+<a href="services/OptionalMethodChannel/invokeMethod.html">OptionalMethodChannel.invokeMethod</a>):</p><ul><li>
+<p><code>Clipboard.setData</code>: Places the data from the <code>text</code> entry of the
+argument, which must be a <a href="dart-core/Map-class.html">Map</a>, onto the system clipboard. See
+<a href="services/Clipboard/setData.html">Clipboard.setData</a>.</p></li><li>
+<p><code>Clipboard.getData</code>: Returns the data that has the format specified in
+the argument, a <a href="dart-core/String-class.html">String</a>, from the system clipboard. The only format
+currently supported is <code>text/plain</code> (<a href="services/Clipboard/kTextPlain-constant.html">Clipboard.kTextPlain</a>). The
+result is a <a href="dart-core/Map-class.html">Map</a> with a single key, <code>text</code>. See <a href="services/Clipboard/getData.html">Clipboard.getData</a>.</p></li><li>
+<p><code>HapticFeedback.vibrate</code>: Triggers a system-default haptic response.
+See <a href="services/HapticFeedback/vibrate.html">HapticFeedback.vibrate</a>.</p></li><li>
+<p><code>SystemSound.play</code>: Triggers a system audio effect. The argument must
+be a <a href="dart-core/String-class.html">String</a> describing the desired effect; currently only <code>click</code> is
+supported. See <a href="services/SystemSound/play.html">SystemSound.play</a>.</p></li><li>
+<p><code>SystemChrome.setPreferredOrientations</code>: Informs the operating system
+of the desired orientation of the display. The argument is a <a href="dart-core/List-class.html">List</a> of
+values which are string representations of values of the
+<a href="services/DeviceOrientation-class.html">DeviceOrientation</a> enum. See <a href="services/SystemChrome/setPreferredOrientations.html">SystemChrome.setPreferredOrientations</a>.</p></li><li>
+<p><code>SystemChrome.setApplicationSwitcherDescription</code>: Informs the operating
+system of the desired label and color to be used to describe the
+application in any system-level application lists (e.g. application
+switchers). The argument is a <a href="dart-core/Map-class.html">Map</a> with two keys, <code>label</code> giving a
+<a href="dart-core/String-class.html">String</a> description, and <code>primaryColor</code> giving a 32 bit integer value
+(the lower eight bits being the blue channel, the next eight bits being
+the green channel, the next eight bits being the red channel, and the
+high eight bits being set, as from <a href="dart-ui/Color/value.html">Color.value</a> for an opaque color).
+The <code>primaryColor</code> can also be zero to indicate that the system default
+should be used. See <a href="services/SystemChrome/setPreferredOrientations.html">SystemChrome.setPreferredOrientations</a>.</p></li><li>
+<p><code>SystemChrome.setEnabledSystemUIOverlays</code>: Specifies the set of system
+overlays to have visible when the application is running. The argument
+is a <a href="dart-core/List-class.html">List</a> of values which are string representations of values of the
+<a href="services/SystemUiOverlay-class.html">SystemUiOverlay</a> enum. See <a href="services/SystemChrome/setEnabledSystemUIOverlays.html">SystemChrome.setEnabledSystemUIOverlays</a>.</p></li><li>
+<p><code>SystemChrome.setSystemUIOverlayStyle</code>: Specifies whether system
+overlays (e.g. the status bar on Android or iOS) should be <code>light</code> or
+<code>dark</code>. The argument is one of those two strings. See
+<a href="services/SystemChrome/setSystemUIOverlayStyle.html">SystemChrome.setSystemUIOverlayStyle</a>.</p></li><li>
+<p><code>SystemNavigator.pop</code>: Tells the operating system to close the
+application, or the closest equivalent. See <a href="services/SystemNavigator/pop.html">SystemNavigator.pop</a>.</p></li></ul>
+<p>Calls to methods that are not implemented on the shell side are ignored
+(so it is safe to call methods when the relevant plugin might be missing).</p>
+    </section>
+        <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static const MethodChannel platform = OptionalMethodChannel(
+    &#39;flutter&#47;platform&#39;,
+    JSONMethodCodec(),
+)
+
+</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

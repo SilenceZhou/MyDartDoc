@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the applyBoundaryConditions method from the BouncingScrollPhysics class, for the Dart programming language.">
+  <title>applyBoundaryConditions method - BouncingScrollPhysics class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/BouncingScrollPhysics-class.html">BouncingScrollPhysics</a></li>
+    <li class="self-crumb">applyBoundaryConditions method</li>
+  </ol>
+  <div class="self-name">applyBoundaryConditions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/BouncingScrollPhysics-class.html">BouncingScrollPhysics</a></li>
+      <li class="self-crumb">applyBoundaryConditions method</li>
+    </ol>
+    
+    <h5>BouncingScrollPhysics class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/BouncingScrollPhysics-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/BouncingScrollPhysics.html">BouncingScrollPhysics</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/BouncingScrollPhysics-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/BouncingScrollPhysics/dragStartDistanceMotionThreshold.html">dragStartDistanceMotionThreshold</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/minFlingVelocity.html">minFlingVelocity</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/allowImplicitScrolling.html">allowImplicitScrolling</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/maxFlingVelocity.html">maxFlingVelocity</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/minFlingDistance.html">minFlingDistance</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/parent.html">parent</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/spring.html">spring</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/tolerance.html">tolerance</a></li>
+    
+      <li class="section-title"><a href="widgets/BouncingScrollPhysics-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/applyBoundaryConditions.html">applyBoundaryConditions</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/applyPhysicsToUserOffset.html">applyPhysicsToUserOffset</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/applyTo.html">applyTo</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/carriedMomentum.html">carriedMomentum</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/createBallisticSimulation.html">createBallisticSimulation</a></li>
+      <li><a href="widgets/BouncingScrollPhysics/frictionFactor.html">frictionFactor</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/buildParent.html">buildParent</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/shouldAcceptUserOffset.html">shouldAcceptUserOffset</a></li>
+      <li class="inherited"><a href="widgets/ScrollPhysics/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/BouncingScrollPhysics-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>applyBoundaryConditions method</h1></div>
+
+    <section class="multi-line-signature">
+      <div>
+        <ol class="annotation-list">
+          <li>@override</li>
+        </ol>
+      </div>
+      <span class="returntype"><a href="dart-core/double-class.html">double</a></span>
+            <span class="name ">applyBoundaryConditions</span>
+(<wbr><span class="parameter" id="applyBoundaryConditions-param-position"><span class="type-annotation"><a href="widgets/ScrollMetrics-class.html">ScrollMetrics</a></span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="applyBoundaryConditions-param-value"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">value</span></span>)
+      <div class="features">override</div>
+    </section>
+    <section class="desc markdown">
+      <p>Determines the overscroll by applying the boundary conditions.</p>
+<p>Called by <a href="widgets/BouncingScrollPhysics/applyBoundaryConditions.html">ScrollPosition.applyBoundaryConditions</a>, which is called by
+<a href="widgets/ScrollPosition/setPixels.html">ScrollPosition.setPixels</a> just before the <a href="widgets/ScrollPosition/pixels.html">ScrollPosition.pixels</a> value
+is updated, to determine how much of the offset is to be clamped off and
+sent to <a href="widgets/ScrollPosition/didOverscrollBy.html">ScrollPosition.didOverscrollBy</a>.</p>
+<p>The <code>value</code> argument is guaranteed to not equal the <a href="widgets/ScrollMetrics/pixels.html">ScrollMetrics.pixels</a>
+of the <code>position</code> argument when this is called.</p>
+<p>It is possible for this method to be called when the <code>position</code> describes
+an already-out-of-bounds position. In that case, the boundary conditions
+should usually only prevent a further increase in the extent to which the
+position is out of bounds, allowing a decrease to be applied successfully,
+so that (for instance) an animation can smoothly snap an out of bounds
+position to the bounds. See <a href="widgets/BallisticScrollActivity-class.html">BallisticScrollActivity</a>.</p>
+<p>This method must not clamp parts of the offset that are entirely within
+the bounds described by the given <code>position</code>.</p>
+<p>The given <code>position</code> is only valid during this method call. Do not keep a
+reference to it to use later, as the values may update, may not update, or
+may update to reflect an entirely unrelated scrollable.</p>
+<h2 id="examples">Examples</h2>
+<p><a href="widgets/BouncingScrollPhysics-class.html">BouncingScrollPhysics</a> returns zero. In other words, it allows scrolling
+past the boundary unhindered.</p>
+<p><a href="widgets/ClampingScrollPhysics-class.html">ClampingScrollPhysics</a> returns the amount by which the value is beyond
+the position or the boundary, whichever is furthest from the content. In
+other words, it disallows scrolling past the boundary, but allows
+scrolling back from being overscrolled, if for some reason the position
+ends up overscrolled.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">@override
+double applyBoundaryConditions(ScrollMetrics position, double value) =&gt; 0.0;</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

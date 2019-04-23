@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Image.asset constructor from the Class Image class from the widgets library, for the Dart programming language.">
+  <title>Image.asset constructor - Image class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/Image-class.html">Image</a></li>
+    <li class="self-crumb">Image.asset constructor</li>
+  </ol>
+  <div class="self-name">Image.asset</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/Image-class.html">Image</a></li>
+      <li class="self-crumb">Image.asset constructor</li>
+    </ol>
+    
+    <h5>Image class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/Image-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/Image/Image.html">Image</a></li>
+      <li><a href="widgets/Image/Image.asset.html">asset</a></li>
+      <li><a href="widgets/Image/Image.file.html">file</a></li>
+      <li><a href="widgets/Image/Image.memory.html">memory</a></li>
+      <li><a href="widgets/Image/Image.network.html">network</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/Image-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/Image/alignment.html">alignment</a></li>
+      <li><a href="widgets/Image/centerSlice.html">centerSlice</a></li>
+      <li><a href="widgets/Image/color.html">color</a></li>
+      <li><a href="widgets/Image/colorBlendMode.html">colorBlendMode</a></li>
+      <li><a href="widgets/Image/excludeFromSemantics.html">excludeFromSemantics</a></li>
+      <li><a href="widgets/Image/filterQuality.html">filterQuality</a></li>
+      <li><a href="widgets/Image/fit.html">fit</a></li>
+      <li><a href="widgets/Image/gaplessPlayback.html">gaplessPlayback</a></li>
+      <li><a href="widgets/Image/height.html">height</a></li>
+      <li><a href="widgets/Image/image.html">image</a></li>
+      <li><a href="widgets/Image/matchTextDirection.html">matchTextDirection</a></li>
+      <li><a href="widgets/Image/repeat.html">repeat</a></li>
+      <li><a href="widgets/Image/semanticLabel.html">semanticLabel</a></li>
+      <li><a href="widgets/Image/width.html">width</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="widgets/Widget/key.html">key</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="widgets/Image-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/Image/createState.html">createState</a></li>
+      <li><a href="widgets/Image/debugFillProperties.html">debugFillProperties</a></li>
+      <li class="inherited"><a href="widgets/StatefulWidget/createElement.html">createElement</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+      <li class="inherited"><a href="widgets/Widget/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/Image-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>Image.asset constructor</h1></div>
+
+    <section class="multi-line-signature">
+      
+      <span class="name ">Image.asset</span>(<wbr><span class="parameter" id="asset-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, {</span> <span class="parameter" id="asset-param-key"><span class="type-annotation"><a href="foundation/Key-class.html">Key</a></span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="asset-param-bundle"><span class="type-annotation"><a href="services/AssetBundle-class.html">AssetBundle</a></span> <span class="parameter-name">bundle</span>, </span> <span class="parameter" id="asset-param-semanticLabel"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">semanticLabel</span>, </span> <span class="parameter" id="asset-param-excludeFromSemantics"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">excludeFromSemantics</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="asset-param-scale"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">scale</span>, </span> <span class="parameter" id="asset-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="asset-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span>, </span> <span class="parameter" id="asset-param-color"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span>, </span> <span class="parameter" id="asset-param-colorBlendMode"><span class="type-annotation"><a href="dart-ui/BlendMode-class.html">BlendMode</a></span> <span class="parameter-name">colorBlendMode</span>, </span> <span class="parameter" id="asset-param-fit"><span class="type-annotation"><a href="painting/BoxFit-class.html">BoxFit</a></span> <span class="parameter-name">fit</span>, </span> <span class="parameter" id="asset-param-alignment"><span class="type-annotation"><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></span> <span class="parameter-name">alignment</span>: <span class="default-value">Alignment.center</span>, </span> <span class="parameter" id="asset-param-repeat"><span class="type-annotation"><a href="painting/ImageRepeat-class.html">ImageRepeat</a></span> <span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span>, </span> <span class="parameter" id="asset-param-centerSlice"><span class="type-annotation"><a href="dart-ui/Rect-class.html">Rect</a></span> <span class="parameter-name">centerSlice</span>, </span> <span class="parameter" id="asset-param-matchTextDirection"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">matchTextDirection</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="asset-param-gaplessPlayback"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">gaplessPlayback</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="asset-param-package"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">package</span>, </span> <span class="parameter" id="asset-param-filterQuality"><span class="type-annotation"><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></span> <span class="parameter-name">filterQuality</span>: <span class="default-value">FilterQuality.low</span></span> })
+    </section>
+
+    <section class="desc markdown">
+      <p>Creates a widget that displays an <a href="painting/ImageStream-class.html">ImageStream</a> obtained from an asset
+bundle. The key for the image is given by the <code>name</code> argument.</p>
+<p>The <code>package</code> argument must be non-null when displaying an image from a
+package and null otherwise. See the <code>Assets in packages</code> section for
+details.</p>
+<p>If the <code>bundle</code> argument is omitted or null, then the
+<a href="widgets/DefaultAssetBundle-class.html">DefaultAssetBundle</a> will be used.</p>
+<p>By default, the pixel-density-aware asset resolution will be attempted. In
+addition:</p><ul><li>If the <code>scale</code> argument is provided and is not null, then the exact
+asset specified will be used. To display an image variant with a specific
+density, the exact path must be provided (e.g. <code>images/2x/cat.png</code>).</li></ul>
+<p>If <code>excludeFromSemantics</code> is true, then <code>semanticLabel</code> will be ignored.</p>
+<p>The <code>name</code> and <code>repeat</code> arguments must not be null.</p>
+<p>Either the <code>width</code> and <code>height</code> arguments should be specified, or the
+widget should be placed in a context that sets tight layout constraints.
+Otherwise, the image dimensions will change as the image is loaded, which
+will result in ugly layout changes.</p>
+<p>Use <code>filterQuality</code> to change the quality when scaling an image.
+Use the <a href="dart-ui/FilterQuality-class.html">FilterQuality.low</a> quality setting to scale the image,
+which corresponds to bilinear interpolation, rather than the default
+<a href="dart-ui/FilterQuality-class.html">FilterQuality.none</a> which corresponds to nearest-neighbor.</p>
+<p>On a screen with a device pixel ratio of 2.0, the following widget would
+render the <code>images/2x/cat.png</code> file:</p>
+<pre class="language-dart"><code class="language-dart">Image.asset('images/cat.png')
+</code></pre>
+<p>This corresponds to the file that is in the project's <code>images/2x/</code>
+directory with the name <code>cat.png</code> (the paths are relative to the
+<code>pubspec.yaml</code> file).</p>
+<p>On a device with a 4.0 device pixel ratio, the <code>images/3.5x/cat.png</code> asset
+would be used. On a device with a 1.0 device pixel ratio, the
+<code>images/cat.png</code> resource would be used.</p>
+<p>The <code>images/cat.png</code> image can be omitted from disk (though it must still
+be present in the manifest). If it is omitted, then on a device with a 1.0
+device pixel ratio, the <code>images/2x/cat.png</code> image would be used instead.</p>
+<h2 id="assets-in-packages">Assets in packages</h2>
+<p>To create the widget with an asset from a package, the <code>package</code> argument
+must be provided. For instance, suppose a package called <code>my_icons</code> has
+<code>icons/heart.png</code> .</p>
+<p>Assets used by the package itself should also be displayed using the
+<code>package</code> argument as above.</p>
+<p>If the desired asset is specified in the <code>pubspec.yaml</code> of the package, it
+is bundled automatically with the app. In particular, assets used by the
+package itself must be specified in its <code>pubspec.yaml</code>.</p>
+<p>A package can also choose to have assets in its 'lib/' folder that are not
+specified in its <code>pubspec.yaml</code>. In this case for those images to be
+bundled, the app has to specify which ones to include. For instance a
+package named <code>fancy_backgrounds</code> could have:</p>
+<pre class="language-dart"><code>lib/backgrounds/background1.png
+lib/backgrounds/background2.png
+lib/backgrounds/background3.png
+</code></pre>
+<p>To include, say the first image, the <code>pubspec.yaml</code> of the app should
+specify it in the assets section:</p>
+<pre class="language-yaml"><code class="language-yaml">  assets:
+    - packages/fancy_backgrounds/backgrounds/background1.png
+</code></pre>
+<p>The <code>lib/</code> is implied, so it should not be included in the asset path.</p>
+<p>See also:</p><ul><li><a href="painting/AssetImage-class.html">AssetImage</a>, which is used to implement the behavior when the scale is
+omitted.</li><li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a>, which is used to implement the behavior when the
+scale is present.</li><li><a href="https://flutter.io/assets-and-images/">flutter.io/assets-and-images/</a>, an introduction to assets in
+Flutter.</li></ul>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">&#47;&#47;
+&#47;&#47; TODO(ianh): Implement the following (see ..&#47;services&#47;image_resolution.dart):
+&#47;&#47; &#47;&#47;&#47;
+&#47;&#47; &#47;&#47;&#47; * If [width] and [height] are both specified, and [scale] is not, then
+&#47;&#47; &#47;&#47;&#47;   size-aware asset resolution will be attempted also, with the given
+&#47;&#47; &#47;&#47;&#47;   dimensions interpreted as logical pixels.
+&#47;&#47; &#47;&#47;&#47;
+&#47;&#47; &#47;&#47;&#47; * If the images have platform, locale, or directionality variants, the
+&#47;&#47; &#47;&#47;&#47;   current platform, locale, and directionality are taken into account
+&#47;&#47; &#47;&#47;&#47;   during asset resolution as well.
+&#47;&#47;&#47;
+&#47;&#47;&#47; The [name] and [repeat] arguments must not be null.
+&#47;&#47;&#47;
+&#47;&#47;&#47; Either the [width] and [height] arguments should be specified, or the
+&#47;&#47;&#47; widget should be placed in a context that sets tight layout constraints.
+&#47;&#47;&#47; Otherwise, the image dimensions will change as the image is loaded, which
+&#47;&#47;&#47; will result in ugly layout changes.
+&#47;&#47;&#47;
+&#47;&#47;&#47; Use [filterQuality] to change the quality when scaling an image.
+&#47;&#47;&#47; Use the [FilterQuality.low] quality setting to scale the image,
+&#47;&#47;&#47; which corresponds to bilinear interpolation, rather than the default
+&#47;&#47;&#47; [FilterQuality.none] which corresponds to nearest-neighbor.
+&#47;&#47;&#47;
+&#47;&#47;&#47; {@tool sample}
+&#47;&#47;&#47;
+&#47;&#47;&#47; Suppose that the project&#39;s `pubspec.yaml` file contains the following:
+&#47;&#47;&#47;
+&#47;&#47;&#47; ```yaml
+&#47;&#47;&#47; flutter:
+&#47;&#47;&#47;   assets:
+&#47;&#47;&#47;     - images&#47;cat.png
+&#47;&#47;&#47;     - images&#47;2x&#47;cat.png
+&#47;&#47;&#47;     - images&#47;3.5x&#47;cat.png
+&#47;&#47;&#47; ```
+&#47;&#47;&#47; {@end-tool}
+&#47;&#47;&#47;
+&#47;&#47;&#47; On a screen with a device pixel ratio of 2.0, the following widget would
+&#47;&#47;&#47; render the `images&#47;2x&#47;cat.png` file:
+&#47;&#47;&#47;
+&#47;&#47;&#47; ```dart
+&#47;&#47;&#47; Image.asset(&#39;images&#47;cat.png&#39;)
+&#47;&#47;&#47; ```
+&#47;&#47;&#47;
+&#47;&#47;&#47; This corresponds to the file that is in the project&#39;s `images&#47;2x&#47;`
+&#47;&#47;&#47; directory with the name `cat.png` (the paths are relative to the
+&#47;&#47;&#47; `pubspec.yaml` file).
+&#47;&#47;&#47;
+&#47;&#47;&#47; On a device with a 4.0 device pixel ratio, the `images&#47;3.5x&#47;cat.png` asset
+&#47;&#47;&#47; would be used. On a device with a 1.0 device pixel ratio, the
+&#47;&#47;&#47; `images&#47;cat.png` resource would be used.
+&#47;&#47;&#47;
+&#47;&#47;&#47; The `images&#47;cat.png` image can be omitted from disk (though it must still
+&#47;&#47;&#47; be present in the manifest). If it is omitted, then on a device with a 1.0
+&#47;&#47;&#47; device pixel ratio, the `images&#47;2x&#47;cat.png` image would be used instead.
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47; ## Assets in packages
+&#47;&#47;&#47;
+&#47;&#47;&#47; To create the widget with an asset from a package, the [package] argument
+&#47;&#47;&#47; must be provided. For instance, suppose a package called `my_icons` has
+&#47;&#47;&#47; `icons&#47;heart.png` .
+&#47;&#47;&#47;
+&#47;&#47;&#47; {@tool sample}
+&#47;&#47;&#47; Then to display the image, use:
+&#47;&#47;&#47;
+&#47;&#47;&#47; ```dart
+&#47;&#47;&#47; Image.asset(&#39;icons&#47;heart.png&#39;, package: &#39;my_icons&#39;)
+&#47;&#47;&#47; ```
+&#47;&#47;&#47; {@end-tool}
+&#47;&#47;&#47;
+&#47;&#47;&#47; Assets used by the package itself should also be displayed using the
+&#47;&#47;&#47; [package] argument as above.
+&#47;&#47;&#47;
+&#47;&#47;&#47; If the desired asset is specified in the `pubspec.yaml` of the package, it
+&#47;&#47;&#47; is bundled automatically with the app. In particular, assets used by the
+&#47;&#47;&#47; package itself must be specified in its `pubspec.yaml`.
+&#47;&#47;&#47;
+&#47;&#47;&#47; A package can also choose to have assets in its &#39;lib&#47;&#39; folder that are not
+&#47;&#47;&#47; specified in its `pubspec.yaml`. In this case for those images to be
+&#47;&#47;&#47; bundled, the app has to specify which ones to include. For instance a
+&#47;&#47;&#47; package named `fancy_backgrounds` could have:
+&#47;&#47;&#47;
+&#47;&#47;&#47; ```
+&#47;&#47;&#47; lib&#47;backgrounds&#47;background1.png
+&#47;&#47;&#47; lib&#47;backgrounds&#47;background2.png
+&#47;&#47;&#47; lib&#47;backgrounds&#47;background3.png
+&#47;&#47;&#47; ```
+&#47;&#47;&#47;
+&#47;&#47;&#47; To include, say the first image, the `pubspec.yaml` of the app should
+&#47;&#47;&#47; specify it in the assets section:
+&#47;&#47;&#47;
+&#47;&#47;&#47; ```yaml
+&#47;&#47;&#47;   assets:
+&#47;&#47;&#47;     - packages&#47;fancy_backgrounds&#47;backgrounds&#47;background1.png
+&#47;&#47;&#47; ```
+&#47;&#47;&#47;
+&#47;&#47;&#47; The `lib&#47;` is implied, so it should not be included in the asset path.
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47; See also:
+&#47;&#47;&#47;
+&#47;&#47;&#47;  * [AssetImage], which is used to implement the behavior when the scale is
+&#47;&#47;&#47;    omitted.
+&#47;&#47;&#47;  * [ExactAssetImage], which is used to implement the behavior when the
+&#47;&#47;&#47;    scale is present.
+&#47;&#47;&#47;  * &lt;https:&#47;&#47;flutter.io&#47;assets-and-images&#47;&gt;, an introduction to assets in
+&#47;&#47;&#47;    Flutter.
+Image.asset(
+  String name, {
+  Key key,
+  AssetBundle bundle,
+  this.semanticLabel,
+  this.excludeFromSemantics = false,
+  double scale,
+  this.width,
+  this.height,
+  this.color,
+  this.colorBlendMode,
+  this.fit,
+  this.alignment = Alignment.center,
+  this.repeat = ImageRepeat.noRepeat,
+  this.centerSlice,
+  this.matchTextDirection = false,
+  this.gaplessPlayback = false,
+  String package,
+  this.filterQuality = FilterQuality.low,
+})  : image = scale != null
+          ? ExactAssetImage(name,
+              bundle: bundle, scale: scale, package: package)
+          : AssetImage(name, bundle: bundle, package: package),
+      assert(alignment != null),
+      assert(repeat != null),
+      assert(matchTextDirection != null),
+      super(key: key);</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the elevation property from the SimpleDialog class, for the Dart programming language.">
+  <title>elevation property - SimpleDialog class - material library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="material/material-library.html">material</a></li>
+    <li><a href="material/SimpleDialog-class.html">SimpleDialog</a></li>
+    <li class="self-crumb">elevation property</li>
+  </ol>
+  <div class="self-name">elevation</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="material/SimpleDialog-class.html">SimpleDialog</a></li>
+      <li class="self-crumb">elevation property</li>
+    </ol>
+    
+    <h5>SimpleDialog class</h5>
+    <ol>
+      <li class="section-title"><a href="material/SimpleDialog-class.html#constructors">Constructors</a></li>
+      <li><a href="material/SimpleDialog/SimpleDialog.html">SimpleDialog</a></li>
+    
+      <li class="section-title">
+        <a href="material/SimpleDialog-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="material/SimpleDialog/backgroundColor.html">backgroundColor</a></li>
+      <li><a href="material/SimpleDialog/children.html">children</a></li>
+      <li><a href="material/SimpleDialog/contentPadding.html">contentPadding</a></li>
+      <li><a href="material/SimpleDialog/elevation.html">elevation</a></li>
+      <li><a href="material/SimpleDialog/semanticLabel.html">semanticLabel</a></li>
+      <li><a href="material/SimpleDialog/shape.html">shape</a></li>
+      <li><a href="material/SimpleDialog/title.html">title</a></li>
+      <li><a href="material/SimpleDialog/titlePadding.html">titlePadding</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="widgets/Widget/key.html">key</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="material/SimpleDialog-class.html#instance-methods">Methods</a></li>
+      <li><a href="material/SimpleDialog/build.html">build</a></li>
+      <li class="inherited"><a href="widgets/StatelessWidget/createElement.html">createElement</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li class="inherited"><a href="widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+      <li class="inherited"><a href="widgets/Widget/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="material/SimpleDialog-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>elevation property</h1></div>
+
+        <section class="multi-line-signature">
+          <span class="returntype"><a href="dart-core/double-class.html">double</a></span>
+          <span class="name ">elevation</span>
+          <div class="features">final</div>
+        </section>
+        <section class="desc markdown">
+          <p>The z-coordinate of this <a href="material/Dialog-class.html">Dialog</a>.</p>
+<p>If null then <a href="material/SimpleDialog/elevation.html">DialogTheme.elevation</a> is used, and if that's null then the
+dialog's elevation is 24.0.
+The z-coordinate at which to place this material relative to its parent.</p>
+<p>This controls the size of the shadow below the material.</p>
+<p>If this is non-zero, the contents of the material are clipped, because the
+widget conceptually defines an independent printed piece of material.</p>
+<p>Defaults to 0. Changing this value will cause the shadow to animate over
+<code>animationDuration</code>.</p>
+<p>The value is non-negative.</p>
+        </section>
+                <section class="summary source-code" id="source">
+          <h2><span>Implementation</span></h2>
+          <pre class="language-dart"><code class="language-dart">final double elevation
+
+</code></pre>
+        </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

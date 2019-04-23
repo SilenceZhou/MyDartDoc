@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the toStringDeep method from the DiagnosticsNode class, for the Dart programming language.">
+  <title>toStringDeep method - DiagnosticsNode class - foundation library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="foundation/foundation-library.html">foundation</a></li>
+    <li><a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></li>
+    <li class="self-crumb">toStringDeep method</li>
+  </ol>
+  <div class="self-name">toStringDeep</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="foundation/foundation-library.html">foundation</a></li>
+      <li><a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></li>
+      <li class="self-crumb">toStringDeep method</li>
+    </ol>
+    
+    <h5>DiagnosticsNode class</h5>
+    <ol>
+      <li class="section-title"><a href="foundation/DiagnosticsNode-class.html#constructors">Constructors</a></li>
+      <li><a href="foundation/DiagnosticsNode/DiagnosticsNode.html">DiagnosticsNode</a></li>
+      <li><a href="foundation/DiagnosticsNode/DiagnosticsNode.message.html">message</a></li>
+    
+      <li class="section-title">
+        <a href="foundation/DiagnosticsNode-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="foundation/DiagnosticsNode/emptyBodyDescription.html">emptyBodyDescription</a></li>
+      <li><a href="foundation/DiagnosticsNode/level.html">level</a></li>
+      <li><a href="foundation/DiagnosticsNode/name.html">name</a></li>
+      <li><a href="foundation/DiagnosticsNode/showName.html">showName</a></li>
+      <li><a href="foundation/DiagnosticsNode/showSeparator.html">showSeparator</a></li>
+      <li><a href="foundation/DiagnosticsNode/style.html">style</a></li>
+      <li><a href="foundation/DiagnosticsNode/textTreeConfiguration.html">textTreeConfiguration</a></li>
+      <li><a href="foundation/DiagnosticsNode/value.html">value</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="foundation/DiagnosticsNode-class.html#instance-methods">Methods</a></li>
+      <li><a href="foundation/DiagnosticsNode/getChildren.html">getChildren</a></li>
+      <li><a href="foundation/DiagnosticsNode/getProperties.html">getProperties</a></li>
+      <li><a href="foundation/DiagnosticsNode/isFiltered.html">isFiltered</a></li>
+      <li><a href="foundation/DiagnosticsNode/toDescription.html">toDescription</a></li>
+      <li><a href="foundation/DiagnosticsNode/toJsonMap.html">toJsonMap</a></li>
+      <li><a href="foundation/DiagnosticsNode/toString.html">toString</a></li>
+      <li><a href="foundation/DiagnosticsNode/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title inherited"><a href="foundation/DiagnosticsNode-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>toStringDeep method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="dart-core/String-class.html">String</a></span>
+            <span class="name ">toStringDeep</span>
+(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixOtherLines</span>, </span> <span class="parameter" id="toStringDeep-param-parentConfiguration"><span class="type-annotation"><a href="foundation/TextTreeConfiguration-class.html">TextTreeConfiguration</a></span> <span class="parameter-name">parentConfiguration</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+      
+    </section>
+    <section class="desc markdown">
+      <p>Returns a string representation of this node and its descendants.</p>
+<p><code>prefixLineOne</code> will be added to the front of the first line of the
+output. <code>prefixOtherLines</code> will be added to the front of each other line.
+If <code>prefixOtherLines</code> is null, the <code>prefixLineOne</code> is used for every line.
+By default, there is no prefix.</p>
+<p><code>minLevel</code> specifies the minimum <a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a> for properties included
+in the output.</p>
+<p>The <a href="foundation/DiagnosticsNode/toStringDeep.html">toStringDeep</a> method takes other arguments, but those are intended
+for internal use when recursing to the descendants, and so can be ignored.</p>
+<p>See also:</p><ul><li><a href="foundation/DiagnosticsNode/toString.html">toString</a>, for a brief description of the <a href="foundation/DiagnosticsNode/value.html">value</a> but not its
+children.</li></ul>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">String toStringDeep({
+  String prefixLineOne = &#39;&#39;,
+  String prefixOtherLines,
+  TextTreeConfiguration parentConfiguration,
+  DiagnosticLevel minLevel = DiagnosticLevel.debug,
+}) {
+  assert(minLevel != null);
+  prefixOtherLines ??= prefixLineOne;
+
+  final List&lt;DiagnosticsNode&gt; children = getChildren();
+  final TextTreeConfiguration config = textTreeConfiguration;
+  if (prefixOtherLines.isEmpty)
+    prefixOtherLines += config.prefixOtherLinesRootNode;
+
+  final _PrefixedStringBuilder builder = _PrefixedStringBuilder(
+    prefixLineOne,
+    prefixOtherLines,
+  );
+
+  final String description = toDescription(parentConfiguration: parentConfiguration);
+  if (description == null || description.isEmpty) {
+    if (showName &amp;&amp; name != null)
+      builder.write(name);
+  } else {
+    if (name != null &amp;&amp; name.isNotEmpty &amp;&amp; showName) {
+      builder.write(name);
+      if (showSeparator)
+        builder.write(config.afterName);
+
+      builder.write(
+          config.isNameOnOwnLine || description.contains(&#39;\n&#39;) ? &#39;\n&#39; : &#39; &#39;);
+      if (description.contains(&#39;\n&#39;) &amp;&amp; style == DiagnosticsTreeStyle.singleLine)
+        builder.prefixOtherLines += &#39;  &#39;;
+    }
+    builder.prefixOtherLines += children.isEmpty ?
+        config.propertyPrefixNoChildren : config.propertyPrefixIfChildren;
+    builder.write(description);
+  }
+
+  final List&lt;DiagnosticsNode&gt; properties = getProperties().where(
+    (DiagnosticsNode n) =&gt; !n.isFiltered(minLevel)
+  ).toList();
+
+  if (properties.isNotEmpty || children.isNotEmpty || emptyBodyDescription != null)
+    builder.write(config.afterDescriptionIfBody);
+
+  if (config.lineBreakProperties)
+    builder.write(config.lineBreak);
+
+  if (properties.isNotEmpty)
+    builder.write(config.beforeProperties);
+
+  builder.prefixOtherLines += config.bodyIndent;
+
+  if (emptyBodyDescription != null &amp;&amp;
+      properties.isEmpty &amp;&amp;
+      children.isEmpty &amp;&amp;
+      prefixLineOne.isNotEmpty) {
+    builder.write(emptyBodyDescription);
+    if (config.lineBreakProperties)
+      builder.write(config.lineBreak);
+  }
+
+  for (int i = 0; i &lt; properties.length; ++i) {
+    final DiagnosticsNode property = properties[i];
+    if (i &gt; 0)
+      builder.write(config.propertySeparator);
+
+    const int kWrapWidth = 65;
+    if (property.style != DiagnosticsTreeStyle.singleLine) {
+      final TextTreeConfiguration propertyStyle = property.textTreeConfiguration;
+      builder.writeRaw(property.toStringDeep(
+        prefixLineOne: &#39;${builder.prefixOtherLines}${propertyStyle.prefixLineOne}&#39;,
+        prefixOtherLines: &#39;${builder.prefixOtherLines}${propertyStyle.linkCharacter}${propertyStyle.prefixOtherLines}&#39;,
+        parentConfiguration: config,
+        minLevel: minLevel,
+      ));
+      continue;
+    }
+    assert(property.style == DiagnosticsTreeStyle.singleLine);
+    final String message = property.toString(parentConfiguration: config, minLevel: minLevel);
+    if (!config.lineBreakProperties || message.length &lt; kWrapWidth) {
+      builder.write(message);
+    } else {
+      &#47;&#47; debugWordWrap doesn&#39;t handle line breaks within the text being
+      &#47;&#47; wrapped so we must call it on each line.
+      final List&lt;String&gt; lines = message.split(&#39;\n&#39;);
+      for (int j = 0; j &lt; lines.length; ++j) {
+        final String line = lines[j];
+        if (j &gt; 0)
+          builder.write(config.lineBreak);
+        builder.write(debugWordWrap(line, kWrapWidth, wrapIndent: &#39;  &#39;).join(&#39;\n&#39;));
+      }
+    }
+    if (config.lineBreakProperties)
+      builder.write(config.lineBreak);
+  }
+  if (properties.isNotEmpty)
+    builder.write(config.afterProperties);
+
+  if (!config.lineBreakProperties)
+    builder.write(config.lineBreak);
+
+  final String prefixChildren = &#39;$prefixOtherLines${config.bodyIndent}&#39;;
+
+  if (children.isEmpty &amp;&amp;
+      config.addBlankLineIfNoChildren &amp;&amp;
+      builder.hasMultipleLines) {
+    final String prefix = prefixChildren.trimRight();
+    if (prefix.isNotEmpty)
+      builder.writeRaw(&#39;$prefix${config.lineBreak}&#39;);
+  }
+
+  if (children.isNotEmpty &amp;&amp; config.showChildren) {
+    if (config.isBlankLineBetweenPropertiesAndChildren &amp;&amp;
+        properties.isNotEmpty &amp;&amp;
+        children.first.textTreeConfiguration.isBlankLineBetweenPropertiesAndChildren) {
+      builder.write(config.lineBreak);
+    }
+
+    for (int i = 0; i &lt; children.length; i++) {
+      final DiagnosticsNode child = children[i];
+      assert(child != null);
+      final TextTreeConfiguration childConfig = _childTextConfiguration(child, config);
+      if (i == children.length - 1) {
+        final String lastChildPrefixLineOne = &#39;$prefixChildren${childConfig.prefixLastChildLineOne}&#39;;
+        builder.writeRawLine(child.toStringDeep(
+          prefixLineOne: lastChildPrefixLineOne,
+          prefixOtherLines: &#39;$prefixChildren${childConfig.childLinkSpace}${childConfig.prefixOtherLines}&#39;,
+          parentConfiguration: config,
+          minLevel: minLevel,
+        ));
+        if (childConfig.footer.isNotEmpty)
+          builder.writeRaw(&#39;$prefixChildren${childConfig.childLinkSpace}${childConfig.footer}&#39;);
+      } else {
+        final TextTreeConfiguration nextChildStyle = _childTextConfiguration(children[i + 1], config);
+        final String childPrefixLineOne = &#39;$prefixChildren${childConfig.prefixLineOne}&#39;;
+        final String childPrefixOtherLines =&#39;$prefixChildren${nextChildStyle.linkCharacter}${childConfig.prefixOtherLines}&#39;;
+        builder.writeRawLine(child.toStringDeep(
+          prefixLineOne: childPrefixLineOne,
+          prefixOtherLines: childPrefixOtherLines,
+          parentConfiguration: config,
+          minLevel: minLevel,
+        ));
+        if (childConfig.footer.isNotEmpty)
+          builder.writeRaw(&#39;$prefixChildren${nextChildStyle.linkCharacter}${childConfig.footer}&#39;);
+      }
+    }
+  }
+  return builder.toString();
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the buildScope method from the BuildOwner class, for the Dart programming language.">
+  <title>buildScope method - BuildOwner class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li><a href="widgets/BuildOwner-class.html">BuildOwner</a></li>
+    <li class="self-crumb">buildScope method</li>
+  </ol>
+  <div class="self-name">buildScope</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets/BuildOwner-class.html">BuildOwner</a></li>
+      <li class="self-crumb">buildScope method</li>
+    </ol>
+    
+    <h5>BuildOwner class</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/BuildOwner-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/BuildOwner/BuildOwner.html">BuildOwner</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/BuildOwner-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/BuildOwner/debugBuilding.html">debugBuilding</a></li>
+      <li><a href="widgets/BuildOwner/focusManager.html">focusManager</a></li>
+      <li><a href="widgets/BuildOwner/onBuildScheduled.html">onBuildScheduled</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="widgets/BuildOwner-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/BuildOwner/buildScope.html">buildScope</a></li>
+      <li><a href="widgets/BuildOwner/finalizeTree.html">finalizeTree</a></li>
+      <li><a href="widgets/BuildOwner/lockState.html">lockState</a></li>
+      <li><a href="widgets/BuildOwner/reassemble.html">reassemble</a></li>
+      <li><a href="widgets/BuildOwner/scheduleBuildFor.html">scheduleBuildFor</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/BuildOwner-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>buildScope method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype">void</span>
+            <span class="name ">buildScope</span>
+(<wbr><span class="parameter" id="buildScope-param-context"><span class="type-annotation"><a href="widgets/Element-class.html">Element</a></span> <span class="parameter-name">context</span>, [</span> <span class="parameter" id="buildScope-param-callback"><span class="type-annotation"><a href="dart-ui/VoidCallback.html">VoidCallback</a></span> <span class="parameter-name">callback</span></span> ])
+      
+    </section>
+    <section class="desc markdown">
+      <p>Establishes a scope for updating the widget tree, and calls the given
+<code>callback</code>, if any. Then, builds all the elements that were marked as
+dirty using <a href="widgets/BuildOwner/scheduleBuildFor.html">scheduleBuildFor</a>, in depth order.</p>
+<p>This mechanism prevents build methods from transitively requiring other
+build methods to run, potentially causing infinite loops.</p>
+<p>The dirty list is processed after <code>callback</code> returns, building all the
+elements that were marked as dirty using <a href="widgets/BuildOwner/scheduleBuildFor.html">scheduleBuildFor</a>, in depth
+order. If elements are marked as dirty while this method is running, they
+must be deeper than the <code>context</code> node, and deeper than any
+previously-built node in this pass.</p>
+<p>To flush the current dirty list without performing any other work, this
+function can be called with no callback. This is what the framework does
+each frame, in <a href="widgets/WidgetsBinding/drawFrame.html">WidgetsBinding.drawFrame</a>.</p>
+<p>Only one <a href="widgets/BuildOwner/buildScope.html">buildScope</a> can be active at a time.</p>
+<p>A <a href="widgets/BuildOwner/buildScope.html">buildScope</a> implies a <a href="widgets/BuildOwner/lockState.html">lockState</a> scope as well.</p>
+<p>To print a console message every time this method is called, set
+<a href="widgets/debugPrintBuildScope.html">debugPrintBuildScope</a> to true. This is useful when debugging problems
+involving widgets not getting marked dirty, or getting marked dirty too
+often.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">void buildScope(Element context, [VoidCallback callback]) {
+  if (callback == null &amp;&amp; _dirtyElements.isEmpty)
+    return;
+  assert(context != null);
+  assert(_debugStateLockLevel &gt;= 0);
+  assert(!_debugBuilding);
+  assert(() {
+    if (debugPrintBuildScope)
+      debugPrint(&#39;buildScope called with context $context; dirty list is: $_dirtyElements&#39;);
+    _debugStateLockLevel += 1;
+    _debugBuilding = true;
+    return true;
+  }());
+  Timeline.startSync(&#39;Build&#39;, arguments: timelineWhitelistArguments);
+  try {
+    _scheduledFlushDirtyElements = true;
+    if (callback != null) {
+      assert(_debugStateLocked);
+      Element debugPreviousBuildTarget;
+      assert(() {
+        context._debugSetAllowIgnoredCallsToMarkNeedsBuild(true);
+        debugPreviousBuildTarget = _debugCurrentBuildTarget;
+        _debugCurrentBuildTarget = context;
+       return true;
+      }());
+      _dirtyElementsNeedsResorting = false;
+      try {
+        callback();
+      } finally {
+        assert(() {
+          context._debugSetAllowIgnoredCallsToMarkNeedsBuild(false);
+          assert(_debugCurrentBuildTarget == context);
+          _debugCurrentBuildTarget = debugPreviousBuildTarget;
+          _debugElementWasRebuilt(context);
+          return true;
+        }());
+      }
+    }
+    _dirtyElements.sort(Element._sort);
+    _dirtyElementsNeedsResorting = false;
+    int dirtyCount = _dirtyElements.length;
+    int index = 0;
+    while (index &lt; dirtyCount) {
+      assert(_dirtyElements[index] != null);
+      assert(_dirtyElements[index]._inDirtyList);
+      assert(!_dirtyElements[index]._active || _dirtyElements[index]._debugIsInScope(context));
+      try {
+        _dirtyElements[index].rebuild();
+      } catch (e, stack) {
+        _debugReportException(
+          &#39;while rebuilding dirty elements&#39;, e, stack,
+          informationCollector: (StringBuffer information) {
+            information.writeln(&#39;The element being rebuilt at the time was index $index of $dirtyCount:&#39;);
+            information.write(&#39;  ${_dirtyElements[index]}&#39;);
+          }
+        );
+      }
+      index += 1;
+      if (dirtyCount &lt; _dirtyElements.length || _dirtyElementsNeedsResorting) {
+        _dirtyElements.sort(Element._sort);
+        _dirtyElementsNeedsResorting = false;
+        dirtyCount = _dirtyElements.length;
+        while (index &gt; 0 &amp;&amp; _dirtyElements[index - 1].dirty) {
+          &#47;&#47; It is possible for previously dirty but inactive widgets to move right in the list.
+          &#47;&#47; We therefore have to move the index left in the list to account for this.
+          &#47;&#47; We don&#39;t know how many could have moved. However, we do know that the only possible
+          &#47;&#47; change to the list is that nodes that were previously to the left of the index have
+          &#47;&#47; now moved to be to the right of the right-most cleaned node, and we do know that
+          &#47;&#47; all the clean nodes were to the left of the index. So we move the index left
+          &#47;&#47; until just after the right-most clean node.
+          index -= 1;
+        }
+      }
+    }
+    assert(() {
+      if (_dirtyElements.any((Element element) =&gt; element._active &amp;&amp; element.dirty)) {
+        throw FlutterError(
+          &#39;buildScope missed some dirty elements.\n&#39;
+          &#39;This probably indicates that the dirty list should have been resorted but was not.\n&#39;
+          &#39;The list of dirty elements at the end of the buildScope call was:\n&#39;
+          &#39;  $_dirtyElements&#39;
+        );
+      }
+      return true;
+    }());
+  } finally {
+    for (Element element in _dirtyElements) {
+      assert(element._inDirtyList);
+      element._inDirtyList = false;
+    }
+    _dirtyElements.clear();
+    _scheduledFlushDirtyElements = false;
+    _dirtyElementsNeedsResorting = null;
+    Timeline.finishSync();
+    assert(_debugBuilding);
+    assert(() {
+      _debugBuilding = false;
+      _debugStateLockLevel -= 1;
+      if (debugPrintBuildScope)
+        debugPrint(&#39;buildScope finished&#39;);
+      return true;
+    }());
+  }
+  assert(_debugStateLockLevel &gt;= 0);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

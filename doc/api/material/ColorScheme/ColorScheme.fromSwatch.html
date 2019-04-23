@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the ColorScheme.fromSwatch constructor from the Class ColorScheme class from the material library, for the Dart programming language.">
+  <title>ColorScheme.fromSwatch constructor - ColorScheme class - material library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="material/material-library.html">material</a></li>
+    <li><a href="material/ColorScheme-class.html">ColorScheme</a></li>
+    <li class="self-crumb">ColorScheme.fromSwatch factory constructor</li>
+  </ol>
+  <div class="self-name">ColorScheme.fromSwatch</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="material/ColorScheme-class.html">ColorScheme</a></li>
+      <li class="self-crumb">ColorScheme.fromSwatch factory constructor</li>
+    </ol>
+    
+    <h5>ColorScheme class</h5>
+    <ol>
+      <li class="section-title"><a href="material/ColorScheme-class.html#constructors">Constructors</a></li>
+      <li><a href="material/ColorScheme/ColorScheme.html">ColorScheme</a></li>
+      <li><a href="material/ColorScheme/ColorScheme.dark.html">dark</a></li>
+      <li><a href="material/ColorScheme/ColorScheme.fromSwatch.html">fromSwatch</a></li>
+      <li><a href="material/ColorScheme/ColorScheme.light.html">light</a></li>
+    
+      <li class="section-title">
+        <a href="material/ColorScheme-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="material/ColorScheme/background.html">background</a></li>
+      <li><a href="material/ColorScheme/brightness.html">brightness</a></li>
+      <li><a href="material/ColorScheme/error.html">error</a></li>
+      <li><a href="material/ColorScheme/hashCode.html">hashCode</a></li>
+      <li><a href="material/ColorScheme/onBackground.html">onBackground</a></li>
+      <li><a href="material/ColorScheme/onError.html">onError</a></li>
+      <li><a href="material/ColorScheme/onPrimary.html">onPrimary</a></li>
+      <li><a href="material/ColorScheme/onSecondary.html">onSecondary</a></li>
+      <li><a href="material/ColorScheme/onSurface.html">onSurface</a></li>
+      <li><a href="material/ColorScheme/primary.html">primary</a></li>
+      <li><a href="material/ColorScheme/primaryVariant.html">primaryVariant</a></li>
+      <li><a href="material/ColorScheme/secondary.html">secondary</a></li>
+      <li><a href="material/ColorScheme/secondaryVariant.html">secondaryVariant</a></li>
+      <li><a href="material/ColorScheme/surface.html">surface</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="material/ColorScheme-class.html#instance-methods">Methods</a></li>
+      <li><a href="material/ColorScheme/copyWith.html">copyWith</a></li>
+      <li><a href="material/ColorScheme/debugFillProperties.html">debugFillProperties</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title"><a href="material/ColorScheme-class.html#operators">Operators</a></li>
+      <li><a href="material/ColorScheme/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="material/ColorScheme-class.html#static-methods">Static methods</a></li>
+      <li><a href="material/ColorScheme/lerp.html">lerp</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1>ColorScheme.fromSwatch constructor</h1></div>
+
+    <section class="multi-line-signature">
+      
+      <span class="name ">ColorScheme.fromSwatch</span>(<wbr>{<span class="parameter" id="fromSwatch-param-primarySwatch"><span class="type-annotation"><a href="material/MaterialColor-class.html">MaterialColor</a></span> <span class="parameter-name">primarySwatch</span>: <span class="default-value">Colors.blue</span>, </span> <span class="parameter" id="fromSwatch-param-primaryColorDark"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">primaryColorDark</span>, </span> <span class="parameter" id="fromSwatch-param-accentColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">accentColor</span>, </span> <span class="parameter" id="fromSwatch-param-cardColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">cardColor</span>, </span> <span class="parameter" id="fromSwatch-param-backgroundColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">backgroundColor</span>, </span> <span class="parameter" id="fromSwatch-param-errorColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">errorColor</span>, </span> <span class="parameter" id="fromSwatch-param-brightness"><span class="type-annotation"><a href="dart-ui/Brightness-class.html">Brightness</a></span> <span class="parameter-name">brightness</span>: <span class="default-value">Brightness.light</span></span> })
+    </section>
+
+    <section class="desc markdown">
+      <p>Create a color scheme from a <a href="material/MaterialColor-class.html">MaterialColor</a> swatch.</p>
+<p>This constructor is used by <a href="material/ThemeData-class.html">ThemeData</a> to create its default
+color scheme.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">factory ColorScheme.fromSwatch({
+  MaterialColor primarySwatch = Colors.blue,
+  Color primaryColorDark,
+  Color accentColor,
+  Color cardColor,
+  Color backgroundColor,
+  Color errorColor,
+  Brightness brightness = Brightness.light,
+}) {
+  assert(primarySwatch != null);
+  assert(brightness != null);
+
+  final bool isDark = brightness == Brightness.dark;
+  final bool primaryIsDark = _brightnessFor(primarySwatch) == Brightness.dark;
+  final Color secondary = accentColor ?? (isDark ? Colors.tealAccent[200] : primarySwatch);
+  final bool secondaryIsDark = _brightnessFor(secondary) == Brightness.dark;
+
+  return ColorScheme(
+    primary: primarySwatch,
+    primaryVariant: primaryColorDark ?? (isDark ? Colors.black : primarySwatch[700]),
+    secondary: secondary,
+    secondaryVariant: isDark ? Colors.tealAccent[700] : primarySwatch[700],
+    surface: cardColor ?? (isDark ? Colors.grey[800] : Colors.white),
+    background: backgroundColor ?? (isDark ? Colors.grey[700] : primarySwatch[200]),
+    error: errorColor ?? Colors.red[700],
+    onPrimary: primaryIsDark ? Colors.white : Colors.black,
+    onSecondary: secondaryIsDark ? Colors.white : Colors.black,
+    onSurface: isDark ? Colors.white : Colors.black,
+    onBackground: primaryIsDark ? Colors.white : Colors.black,
+    onError: isDark ? Colors.black : Colors.white,
+    brightness: brightness,
+  );
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

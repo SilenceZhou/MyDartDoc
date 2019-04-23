@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the TickerCallback property from the scheduler library, for the Dart programming language.">
+  <title>TickerCallback typedef - scheduler library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">flutter</a></li>
+    <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
+    <li class="self-crumb">TickerCallback typedef</li>
+  </ol>
+  <div class="self-name">TickerCallback</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">flutter</a></li>
+      <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
+      <li class="self-crumb">TickerCallback typedef</li>
+    </ol>
+    
+    <h5>scheduler library</h5>
+    <ol>
+      <li class="section-title"><a href="scheduler/scheduler-library.html#classes">Classes</a></li>
+      <li><a href="scheduler/Priority-class.html">Priority</a></li>
+      <li><a href="scheduler/Ticker-class.html">Ticker</a></li>
+      <li><a href="scheduler/TickerFuture-class.html">TickerFuture</a></li>
+      <li><a href="scheduler/TickerProvider-class.html">TickerProvider</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#mixins">Mixins</a></li>
+      <li><a href="scheduler/SchedulerBinding-mixin.html">SchedulerBinding</a></li>
+    
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#properties">Properties</a></li>
+      <li><a href="scheduler/debugPrintBeginFrameBanner.html">debugPrintBeginFrameBanner</a></li>
+      <li><a href="scheduler/debugPrintEndFrameBanner.html">debugPrintEndFrameBanner</a></li>
+      <li><a href="scheduler/debugPrintScheduleFrameStacks.html">debugPrintScheduleFrameStacks</a></li>
+      <li><a href="scheduler/timeDilation.html">timeDilation</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#functions">Functions</a></li>
+      <li><a href="scheduler/debugAssertAllSchedulerVarsUnset.html">debugAssertAllSchedulerVarsUnset</a></li>
+      <li><a href="scheduler/defaultSchedulingStrategy.html">defaultSchedulingStrategy</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#enums">Enums</a></li>
+      <li><a href="dart-ui/AppLifecycleState-class.html">AppLifecycleState</a></li>
+      <li><a href="scheduler/SchedulerPhase-class.html">SchedulerPhase</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#typedefs">Typedefs</a></li>
+      <li><a href="scheduler/FrameCallback.html">FrameCallback</a></li>
+      <li><a href="scheduler/SchedulingStrategy.html">SchedulingStrategy</a></li>
+      <li><a href="scheduler/TaskCallback.html">TaskCallback</a></li>
+      <li><a href="scheduler/TickerCallback.html">TickerCallback</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+    
+      <li class="section-title"><a href="scheduler/scheduler-library.html#exceptions">Exceptions</a></li>
+      <li><a href="scheduler/TickerCanceled-class.html">TickerCanceled</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <div><h1>TickerCallback typedef </h1></div>
+
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+                <span class="name ">TickerCallback</span>
+(<wbr><span class="parameter" id="TickerCallback-param-elapsed"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">elapsed</span></span>)
+    </section>
+
+    <section class="desc markdown">
+      <p>Signature for the callback passed to the <a href="scheduler/Ticker-class.html">Ticker</a> class's constructor.</p>
+<p>The argument is the time that the object had spent enabled so far
+at the time of the callback being called.</p>
+    </section>
+        <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">typedef TickerCallback = void Function(Duration elapsed);</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter 0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
